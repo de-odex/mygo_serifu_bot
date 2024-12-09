@@ -3,53 +3,78 @@ import json
 from discord.ext import commands
 from discord import app_commands
 from discord.ui import Select, View
-
+import sub_process
+import os
+import logging
 
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
+@bot.event
+async def on_ready():
+    try:
+        synced = await bot.tree.sync()
+    except Exception as e:
+        print(e)
+
 
 def text_process(text):
-    # 对输入台词进行 HTML 编码
-    encoded_text = to_unicode_escape(text)
-
     # 加载 JSON 数据
-    with open('src/ocr_data.json', 'r', encoding='utf-8') as f:
+    with open('src/ocr_data_3.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
-
     # 搜索台词
     results = []
     for item in data['result']:
-        if item['text'] in encoded_text:
+         if text in item['text']:
             results.append({
+                "text": item["text"],
                 "episode": item["episode"],
                 "frame_start": item["frame_start"],
                 "frame_end": item["frame_end"],
-                "segment_id": item["segment_id"]
             })
+
 
     # 返回搜索结果
     return results
 
 
 
-def to_unicode_escape(text):
-    """将中文字符转换为 Unicode 转义字符"""
-    return ''.join([f"\\u{ord(c):04x}" for c in text])
 
 
-
-def unicode_to_string(encoded_text):
-    """将 Unicode 转义字符转换为中文字符"""
-    return bytes(encoded_text, "utf-8").decode("unicode_escape")
+async def text_autocompletion(interaction: discord.Interaction, current: str):
+    # 假设 text_process 返回包含字典的列表
+    results = text_process(current)
+    # 筛选出包含当前输入的文本
+    filtered_results = [entry['text'] for entry in results if current in entry['text']]
+    # 返回自动完成建议
+    data = []
+    c= 1
+    for item in filtered_results:
+        c=c+1
+        data.append(discord.app_commands.Choice(name=item, value=item))
+        if c == 20 :
+            break
+    return data
 
 
 
 @bot.tree.command(name="mygo", description="尋找MyGO梗圖")
+@app_commands.autocomplete(text=text_autocompletion)
 async def mygo(interaction: discord.Interaction, text: str):
-    results = text_process(text)
+    result = text_process(text)
+
+    print(result)
+
+    await interaction.response.defer()
+    episode = result[0]['episode']
+    frame_start = result[0]['frame_start']
+    frame_end = result[0]['frame_end']
+    image = sub_process.extract_frame(episode=episode, frame_number=frame_start)
+    await interaction.followup.send(file=discord.File(fp=image))
+    logging.info('已傳送，刪除檔案...')
+    os.remove(image)
     
 
 
 
-bot.run('OTU1NDU3OTU1OTk2NzgyNjUy.GELCIA.CaNXW0bLwQTUCQJYYjgMUYAaTMYv7Ud7IWVtzg')
+bot.run('OTY0NDI0OTE2MzI3ODgyNzgy.GjxlFc.om4Gk3GmAJqpEBA6lCeWHymMvW_QDZlmc1rJGU')

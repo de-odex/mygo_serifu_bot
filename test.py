@@ -1,34 +1,37 @@
-import discord
-from discord.ext import commands
-from discord import app_commands
-
-intents = discord.Intents.default()
-bot = commands.Bot(command_prefix="!", intents=intents)
-
-@bot.event
-async def on_ready():
-    try:
-        synced = await bot.tree.sync()
-    except Exception as e:
-        print(e)
-
-# 定义 Slash Command
-@bot.tree.command(name="greet", description="向某人问好")
-@app_commands.describe(name="选择一个名字来问候")
-async def greet(interaction: discord.Interaction, name: str):
-    await interaction.response.send_message(f"你好，{name}！")
-
-# 为该命令添加参数选项
-@bot.tree.command(name="choose", description="选择一个选项")
-async def choose(interaction: discord.Interaction, option: str):
-    await interaction.response.send_message(f"你选择了：{option}")
-
-# 在命令中添加选项（使用选择菜单）
-@bot.tree.command(name="my_option_command", description="有选择项的命令")
-async def my_option_command(interaction: discord.Interaction, option: str):
-    choices = ["选项1", "选项2", "选项3"]  # 选择项列表
-    await interaction.response.send_message(f"你选择了：{option}")
+import json
 
 
-# 启动 bot
-bot.run('OTY0NDI0OTE2MzI3ODgyNzgy.GjxlFc.om4Gk3GmAJqpEBA6lCeWHymMvW_QDZlmc1rJGU')
+def to_unicode_escape(text):
+    """将中文字符转换为 Unicode 转义字符"""
+    return ''.join([f"\\u{ord(c):04x}" for c in text])
+
+
+
+def unicode_to_string(encoded_text):
+    """将 Unicode 转义字符转换为中文字符"""
+    return bytes(encoded_text, "utf-8").decode("unicode_escape")
+
+
+def text_process(text):
+    # 加载 JSON 数据
+    with open('src/ocr_data_3.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    # 搜索台词
+    results = []
+    for item in data['result']:
+         if text in item['text']:
+            results.append({
+                "text": item["text"],
+                "episode": item["episode"],
+                "frame_start": item["frame_start"],
+                "frame_end": item["frame_end"],
+            })
+
+
+    # 返回搜索结果
+    return results
+
+
+
+if __name__ == '__main__':
+    print(text_process("小祥退出"))

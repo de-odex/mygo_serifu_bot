@@ -77,9 +77,9 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     if len(result) == 0:
         embed = discord.Embed(title="❌錯誤",description='沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
-        await interaction.response.send_message(embed=embed)
+        await interaction.response.send_message(embed=embed, ephemeral=True)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 未找到台詞")
+        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 未找到台詞{text}")
         return
     start_time = datetime.now()
     await interaction.response.defer()

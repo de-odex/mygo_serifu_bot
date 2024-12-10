@@ -12,7 +12,7 @@ import io
 load_dotenv()
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
-error_gif_link = 'https://media1.tenor.com/m/3sxmP1FgJ9MAAAAd/tomori-tomori-takamatsu.gif'
+error_gif_link = 'https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif'
 
 
 @bot.event

@@ -1,7 +1,7 @@
 # 台詞搜尋DC機器人
 
 邀請連結:
-<https://discord.com/oauth2/authorize?client_id=1315838959708012604>
+[https://discord.com/oauth2/authorize?client_id=1315838959708012604](https://discord.com/oauth2/authorize?client_id=1315838959708012604 "https://discord.com/oauth2/authorize?client_id=1315838959708012604")
 
 ### 效果演示
 

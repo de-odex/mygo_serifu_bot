@@ -74,6 +74,13 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 @app_commands.describe(second="延後秒數(可小數點)")
 async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     result = text_process(text)
+    if len(result) == 0:
+        embed = discord.Embed(title="❌錯誤",description='沒有你要找的台詞...', color=discord.Color.red())
+        embed.set_image(url=error_gif_link)
+        await interaction.response.send_message(embed=embed)
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 未找到台詞")
+        return
     start_time = datetime.now()
     await interaction.response.defer()
     episode = result[0]['episode']
@@ -87,7 +94,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
             .global_args('-loglevel', 'error')\
             .run(capture_stdout=True)
     if error:
-        embed = discord.Embed(title="發生錯誤...",description='請稍後再試', color=discord.Color.red())
+        embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.followup.send(embed=embed)
         end_time = datetime.now()

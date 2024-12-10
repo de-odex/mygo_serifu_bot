@@ -8,6 +8,9 @@ import datetime
 from datetime import datetime
 import ffmpeg
 import io
+from discord.ext import commands, tasks
+
+
 
 load_dotenv()
 intents = discord.Intents.default()
@@ -17,10 +20,20 @@ error_gif_link = 'https://raw.githubusercontent.com/eason102/mygo_serifu_bot/ref
 
 @bot.event
 async def on_ready():
-    try:
-        synced = await bot.tree.sync()
-    except Exception as e:
-        print(e)
+    synced = await bot.tree.sync()
+    server_count = len(bot.guilds)
+    activity = discord.Game(f"{server_count} 個伺服器")
+    await bot.change_presence(status=discord.Status.online, activity=activity)
+    print(f"已上線: {bot.user} | 在 {server_count} 個伺服器中")
+    update_status.start()
+
+
+
+@tasks.loop(minutes=60)  
+async def update_status():
+    server_count = len(bot.guilds)
+    activity = discord.Game(f"{server_count} 個伺服器")
+    await bot.change_presence(status=discord.Status.online, activity=activity)
 
 
 
@@ -47,14 +60,15 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
     c= 1
     for item in filtered_results:
         c=c+1
-        data.append(discord.app_commands.Choice(name=item, value=item))
+        if len(item) < 100:
+            data.append(discord.app_commands.Choice(name=item, value=item))
         if c == 20 :
             break
     return data
 
 
 
-@bot.tree.command(name="mygo", description="尋找MyGO台詞")
+@bot.tree.command(name="mygo", description="搜尋MyGO台詞")
 @app_commands.autocomplete(text=text_autocompletion)
 @app_commands.describe(text="需要尋找的台詞")
 @app_commands.describe(second="延後秒數(可小數點)")

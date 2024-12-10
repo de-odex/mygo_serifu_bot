@@ -2,13 +2,12 @@ import discord
 import json
 from discord.ext import commands
 from discord import app_commands
-from discord.ui import Select, View
-import sub_process
 import os
 from dotenv import load_dotenv
 import datetime
 from datetime import datetime
-import time
+import ffmpeg
+import io
 
 load_dotenv()
 intents = discord.Intents.default()
@@ -64,19 +63,27 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     start_time = datetime.now()
     await interaction.response.defer()
     episode = result[0]['episode']
-    frame_start = result[0]['frame_start']
-    image = sub_process.extract_frame(episode=episode, frame_number=frame_start, back_seconds=second)
-    try:
-        await interaction.followup.send(file=discord.File(fp=image))
-        os.remove(image)
-        end_time = datetime.now()
-        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-        run_time = end_time - start_time
-        total_seconds = run_time.total_seconds()
-        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
-    except Exception as e:
-        await interaction.followup.send("發生錯誤")
-        print(f"{timestamp}--> 伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {e}")
+    frame_number = result[0]['frame_start']
+    back_frames = second * 23.98
+    frame_number = frame_number + back_frames + 15   #test
+    timestamp = frame_number / 23.98
+    #ffmpeg-python
+    buffer, error = ffmpeg.input(filename=f'src/{str(episode)}.mp4', ss=timestamp) \
+            .output('pipe:', vframes=1, format='image2', vcodec='png') \
+            .global_args('-loglevel', 'error')\
+            .run(capture_stdout=True)
+    if error:
+        await interaction.followup.send(f"發生錯誤...")
+        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}")
+        return
+    #send
+    await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f'{str(frame_number)}.png'))
+    end_time = datetime.now()
+    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+    run_time = end_time - start_time
+    total_seconds = run_time.total_seconds()
+    print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
+
     
 
 

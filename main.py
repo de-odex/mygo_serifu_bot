@@ -58,20 +58,16 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 
 
 
-@bot.tree.command(name="mygo", description="尋找MyGO梗圖")
+@bot.tree.command(name="mygo", description="尋找MyGO台詞")
 @app_commands.autocomplete(text=text_autocompletion)
-async def mygo(interaction: discord.Interaction, text: str):
+async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     result = text_process(text)
-
-    print(result)
-
     await interaction.response.defer()
     episode = result[0]['episode']
     frame_start = result[0]['frame_start']
     frame_end = result[0]['frame_end']
-    image = sub_process.extract_frame(episode=episode, frame_number=frame_start)
+    image = sub_process.extract_frame(episode=episode, frame_number=frame_start, back_seconds=second)
     await interaction.followup.send(file=discord.File(fp=image))
-    logging.info('已傳送，刪除檔案...')
     os.remove(image)
     
 

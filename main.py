@@ -10,19 +10,19 @@ import datetime
 from datetime import datetime
 import time
 
-
-
 load_dotenv()
-
-
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
+
+
+
 @bot.event
 async def on_ready():
     try:
         synced = await bot.tree.sync()
     except Exception as e:
         print(e)
+
 
 
 def text_process(text):
@@ -38,8 +38,6 @@ def text_process(text):
                 "frame_end": item["frame_end"],
             })
     return results
-
-
 
 
 

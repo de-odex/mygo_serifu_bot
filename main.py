@@ -6,6 +6,8 @@ from discord.ui import Select, View
 import sub_process
 import os
 import logging
+from dotenv import load_dotenv
+load_dotenv()
 
 
 intents = discord.Intents.default()
@@ -72,5 +74,5 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     
 
 
+bot.run(os.getenv('DISCORD_TOKEN'))
 
-bot.run('OTY0NDI0OTE2MzI3ODgyNzgy.GjxlFc.om4Gk3GmAJqpEBA6lCeWHymMvW_QDZlmc1rJGU')

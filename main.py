@@ -12,7 +12,7 @@ import io
 load_dotenv()
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
-
+error_gif_link = 'https://media1.tenor.com/m/3sxmP1FgJ9MAAAAd/tomori-tomori-takamatsu.gif'
 
 
 @bot.event
@@ -73,7 +73,9 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
             .global_args('-loglevel', 'error')\
             .run(capture_stdout=True)
     if error:
-        await interaction.followup.send(f"發生錯誤...")
+        embed = discord.Embed(title="發生錯誤...",description='請稍後再試', color=discord.Color.red())
+        embed.set_image(url=error_gif_link)
+        await interaction.followup.send(embed=embed)
         print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}")
         return
     #send

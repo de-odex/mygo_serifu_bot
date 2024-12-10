@@ -15,3 +15,8 @@
 
 使用VirtualDruid提供之OCR資料搭配ffmpeg對原檔進行截圖
 畫面皆來自動畫瘋
+
+
+### TODO
+
+GIF生成

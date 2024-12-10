@@ -65,7 +65,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     episode = result[0]['episode']
     frame_number = result[0]['frame_start']
     back_frames = second * 23.98
-    frame_number = frame_number + back_frames + 15   #test
+    frame_number = frame_number + back_frames + 15
     timestamp = frame_number / 23.98
     #ffmpeg-python
     buffer, error = ffmpeg.input(filename=f'src/{str(episode)}.mp4', ss=timestamp) \
@@ -76,6 +76,8 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
         embed = discord.Embed(title="發生錯誤...",description='請稍後再試', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.followup.send(embed=embed)
+        end_time = datetime.now()
+        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
         print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}")
         return
     #send

@@ -19,6 +19,7 @@ intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
 error_gif_link = 'https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif'
 
+
 #logging
 log_filename = datetime.now().strftime("logs/%Y-%m-%d.log")  
 logging.basicConfig(
@@ -35,18 +36,16 @@ logging.basicConfig(
 async def on_ready():
     synced = await bot.tree.sync()
     server_count = len(bot.guilds)
-    activity = discord.Game(f"{server_count} 個伺服器")
-    await bot.change_presence(status=discord.Status.online, activity=activity)
     logging.info(f"已上線: {bot.user} | 在 {server_count} 個伺服器中")
     update_status.start()
 
 
 
-@tasks.loop(minutes=60)  
+@tasks.loop(minutes=15)  
 async def update_status():
     server_count = len(bot.guilds)
-    activity = discord.Game(f"{server_count} 個伺服器")
-    await bot.change_presence(status=discord.Status.online, activity=activity)
+
+    await bot.change_presence(activity=discord.CustomActivity(name=f'GO了{times}次 | {server_count} 個伺服器'))
     logging.info(f'伺服器數量更新為: {server_count}')
 
 
@@ -82,6 +81,7 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 
 
 def record(text):
+
     if not os.path.exists('logs/ranks.json'):
         with open('logs/ranks.json', 'w', encoding='utf-8') as f:
             json.dump({"title": []}, f, indent=4, ensure_ascii=False)
@@ -93,7 +93,12 @@ def record(text):
         except json.JSONDecodeError:
             data = {"title": [], "times": 0} 
     
+    if text == 0:
+        times = data['times']
+        return times
+    
     # 更新
+    times = data['times']
     data['times'] += 1
     for item in data['title']:
         if item['text'] == text:
@@ -102,6 +107,7 @@ def record(text):
     else:
         new_record = {"text": text, "times": 1}
         data['title'].append(new_record)
+        
     
 
     with open('logs/ranks.json', 'w', encoding='utf-8') as f:
@@ -220,5 +226,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
 
 
 if __name__ == "__main__":
+    times = 0
+    times = record(times)
     bot.run(os.getenv('DISCORD_TOKEN'))
 

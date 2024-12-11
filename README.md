@@ -14,7 +14,7 @@
 ![延後截圖效果](https://github.com/eason102/mygo_serifu_bot/blob/main/images/2024-12-10%2013-52-31%20(1).gif?raw=true)  
 
 **可自訂義時長製作GIF**：
-![GIF製作]()  
+![GIF製作](https://github.com/eason102/mygo_serifu_bot/blob/main/images/GIF.gif?raw=true)  
 
 ---
 
@@ -27,4 +27,4 @@
 
 ### TODO
 
-GIF生成
+統計網頁

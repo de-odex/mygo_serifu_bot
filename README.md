@@ -13,6 +13,9 @@
 **可自訂截圖延後時間，精準捕捉角色表情**：  
 ![延後截圖效果](https://github.com/eason102/mygo_serifu_bot/blob/main/images/2024-12-10%2013-52-31%20(1).gif?raw=true)  
 
+**可自訂義時長製作GIF**：
+![GIF製作]()  
+
 ---
 
 ## **資料來源**

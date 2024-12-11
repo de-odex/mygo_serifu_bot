@@ -9,7 +9,9 @@ from datetime import datetime
 import ffmpeg
 import io
 from discord.ext import commands, tasks
-import subprocess
+import asyncio
+import logging
+
 
 
 load_dotenv()
@@ -17,6 +19,17 @@ intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
 error_gif_link = 'https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif'
 
+#logging
+log_filename = datetime.now().strftime("logs/%Y-%m-%d.log")  
+logging.basicConfig(
+    level=logging.INFO,  
+    format='%(asctime)s --> %(levelname)s: %(message)s',  
+    datefmt='%Y-%m-%d %H:%M:%S',  
+    handlers=[
+        logging.FileHandler(log_filename, encoding='utf-8'),  
+        logging.StreamHandler() 
+    ]
+)
 
 @bot.event
 async def on_ready():
@@ -24,7 +37,7 @@ async def on_ready():
     server_count = len(bot.guilds)
     activity = discord.Game(f"{server_count} 個伺服器")
     await bot.change_presence(status=discord.Status.online, activity=activity)
-    print(f"已上線: {bot.user} | 在 {server_count} 個伺服器中")
+    logging.info(f"已上線: {bot.user} | 在 {server_count} 個伺服器中")
     update_status.start()
 
 
@@ -34,7 +47,7 @@ async def update_status():
     server_count = len(bot.guilds)
     activity = discord.Game(f"{server_count} 個伺服器")
     await bot.change_presence(status=discord.Status.online, activity=activity)
-
+    logging.info(f'伺服器數量更新為: {server_count}')
 
 
 def text_process(text):
@@ -68,6 +81,55 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 
 
 
+def record(text):
+    if not os.path.exists('logs/ranks.json'):
+        with open('logs/ranks.json', 'w', encoding='utf-8') as f:
+            json.dump({"title": []}, f, indent=4, ensure_ascii=False)
+    
+
+    with open('logs/ranks.json', 'r', encoding='utf-8') as f:
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError:
+            data = {"title": [], "times": 0} 
+    
+    # 更新
+    data['times'] += 1
+    for item in data['title']:
+        if item['text'] == text:
+            item['times'] += 1
+            break
+    else:
+        new_record = {"text": text, "times": 1}
+        data['title'].append(new_record)
+    
+
+    with open('logs/ranks.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+        
+
+
+
+def run_ffmpeg_sync(episode, timestamp, end_frame):
+    palettegen = ffmpeg.input(filename=f'src/{episode}.mp4', ss=timestamp) \
+        .trim(start_frame=0, end_frame=end_frame + 1.0) \
+        .filter(filter_name='scale', width=-1, height=720) \
+        .filter(filter_name='palettegen', stats_mode='diff')
+    
+    scale = ffmpeg.input(filename=f'src/{episode}.mp4', ss=timestamp) \
+        .filter(filter_name='scale', width=-1, height=720)
+    
+    try:
+        buffer2, error = ffmpeg.filter([scale, palettegen], filter_name='paletteuse', dither='floyd_steinberg', diff_mode='rectangle') \
+            .output('pipe:1', vframes=round(end_frame + 1.0), format='gif', vcodec='gif') \
+            .global_args('-loglevel', 'error') \
+            .run(capture_stdout=True)
+        return buffer2, error
+    except ffmpeg.Error as e:
+        return None, str(e)
+
+
+
 @bot.tree.command(name="mygo", description="搜尋MyGO台詞")
 @app_commands.autocomplete(text=text_autocompletion)
 @app_commands.describe(text="需要尋找的台詞")
@@ -97,9 +159,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
         embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.followup.send(embed=embed)
-        end_time = datetime.now()
-        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}")
+        logging.error(f'伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}')
         return
     #send
     await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f'{str(frame_number)}.png'))
@@ -107,7 +167,8 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
     run_time = end_time - start_time
     total_seconds = run_time.total_seconds()
-    print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
+    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
+    record(result[0])
 
     
 
@@ -125,8 +186,6 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
         embed = discord.Embed(title="❌錯誤",description='沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.response.send_message(embed=embed, ephemeral=True)
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 未找到台詞{text}")
         return
     start_time = datetime.now()
     await interaction.response.defer()
@@ -134,43 +193,32 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
     frame_number = result[0]['frame_start']
     frame_number = frame_number + 15
     timestamp = frame_number / 23.98
-    embed = discord.Embed(title="GIF製作中...",description='請耐心等候', color=discord.Color.green())
+    embed = discord.Embed(title="GIF製作中...",description='視畫面複雜程度，可能需要一些時間', color=discord.Color.green())
     msg = await interaction.followup.send(embed=embed,ephemeral=True)
+    end_frame = duration * 23.98
 
+    buffer2, error = await asyncio.to_thread(run_ffmpeg_sync, episode, timestamp, end_frame)
 
-    cmd = [
-    'ffmpeg',
-    '-ss', str(timestamp),
-    '-t', str(duration),
-    '-i', f'src/{str(episode)}.mp4',
-    '-vf', 'fps=12,scale=1280:720:flags=lanczos',
-    '-f', 'gif',
-    '-loglevel', 'info',
-    '-'
-    ]
-
-
-    try:
-        buffer2 = subprocess.run(cmd, capture_output=True, check=True).stdout
-        await msg.edit(embed = None,attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f'{str(frame_number)}.gif')])
-        end_time = datetime.now()
-        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-        run_time = end_time - start_time
-        total_seconds = run_time.total_seconds()
-        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒")
-    except Exception as e:
-        embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
+    if error:
+        embed = discord.Embed(title="❌錯誤",description='FFMPEG出事啦', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
-        await interaction.followup.send(embed=embed)
+        # await msg.edit(embed=embed)
         end_time = datetime.now()
         timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 製作GIF錯誤:{e}")
+        logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}")
         return
+    
+    await msg.edit(embed = None, attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f'{str(frame_number)}.gif')])
+    end_time = datetime.now()
+    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+    run_time = end_time - start_time
+    total_seconds = run_time.total_seconds()
+    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒")
+    record(result[0])
 
 
 
 
-
-
-bot.run(os.getenv('DISCORD_TOKEN'))
+if __name__ == "__main__":
+    bot.run(os.getenv('DISCORD_TOKEN'))
 

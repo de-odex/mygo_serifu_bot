@@ -36,7 +36,16 @@
                 "frame_end": 1192
             },
             "times": 1
+        },
+        {
+            "text": {
+                "text": "是又怎樣",
+                "episode": "1-3",
+                "frame_start": 31248,
+                "frame_end": 31272
+            },
+            "times": 5
         }
     ],
-    "times": 5
+    "times": 10
 }

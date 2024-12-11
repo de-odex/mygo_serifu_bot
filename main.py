@@ -127,7 +127,7 @@ def run_ffmpeg_sync(episode, timestamp, end_frame):
         .filter(filter_name='scale', width=-1, height=720)
     
     try:
-        buffer2, error = ffmpeg.filter([scale, palettegen], filter_name='paletteuse', dither='floyd_steinberg', diff_mode='rectangle') \
+        buffer2, error = ffmpeg.filter([scale, palettegen], filter_name='paletteuse', dither='bayer', diff_mode='rectangle') \
             .output('pipe:1', vframes=round(end_frame + 1.0), format='gif', vcodec='gif') \
             .global_args('-loglevel', 'error') \
             .run(capture_stdout=True)

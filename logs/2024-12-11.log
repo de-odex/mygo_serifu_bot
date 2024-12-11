@@ -61,3 +61,8 @@
 2024-12-11 15:58:51 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
 2024-12-11 15:58:51 --> INFO: 伺服器數量更新為: 1
 2024-12-11 15:59:03 --> INFO: 伺服器ID: 762279698360172595 台詞: 我要退出CRYCHIC 耗時: 4.760 秒
+2024-12-11 16:35:23 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-11 16:35:23 --> INFO: logging in using static token
+2024-12-11 16:35:25 --> INFO: Shard ID None has connected to Gateway (Session ID: 8fe82186b11c6b25c99ab77bf30e388c).
+2024-12-11 16:35:27 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-11 16:35:27 --> INFO: 伺服器狀態更新為: GO了5次 | 1 個伺服器

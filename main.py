@@ -44,9 +44,12 @@ async def on_ready():
 @tasks.loop(minutes=15)  
 async def update_status():
     server_count = len(bot.guilds)
-
+    record(None)
+    with open('logs/ranks.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    times = data['times']
     await bot.change_presence(activity=discord.CustomActivity(name=f'GO了{times}次 | {server_count} 個伺服器'))
-    logging.info(f'伺服器數量更新為: {server_count}')
+    logging.info(f'伺服器狀態更新為: GO了{times}次 | {server_count} 個伺服器')
 
 
 def text_process(text):
@@ -84,7 +87,7 @@ def record(text):
 
     if not os.path.exists('logs/ranks.json'):
         with open('logs/ranks.json', 'w', encoding='utf-8') as f:
-            json.dump({"title": []}, f, indent=4, ensure_ascii=False)
+            json.dump({"title": [], "times": 0}, f, indent=4, ensure_ascii=False)
     
 
     with open('logs/ranks.json', 'r', encoding='utf-8') as f:
@@ -93,12 +96,10 @@ def record(text):
         except json.JSONDecodeError:
             data = {"title": [], "times": 0} 
     
-    if text == 0:
-        times = data['times']
-        return times
-    
+    if text == None:
+        return
+
     # 更新
-    times = data['times']
     data['times'] += 1
     for item in data['title']:
         if item['text'] == text:
@@ -224,9 +225,5 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
 
 
 
-
-if __name__ == "__main__":
-    times = 0
-    times = record(times)
-    bot.run(os.getenv('DISCORD_TOKEN'))
+bot.run(os.getenv('DISCORD_TOKEN'))
 

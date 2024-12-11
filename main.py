@@ -9,7 +9,7 @@ from datetime import datetime
 import ffmpeg
 import io
 from discord.ext import commands, tasks
-
+import subprocess
 
 
 load_dotenv()
@@ -42,7 +42,7 @@ def text_process(text):
             data = json.load(f)
     results = []
     for item in data['result']:
-         if text in item['text']:
+         if text.lower() in item['text'].lower():
             results.append({
                 "text": item["text"],
                 "episode": item["episode"],
@@ -55,7 +55,7 @@ def text_process(text):
 
 async def text_autocompletion(interaction: discord.Interaction, current: str):
     results = text_process(current)
-    filtered_results = [entry['text'] for entry in results if current in entry['text']]
+    filtered_results = [entry['text'] for entry in results if current.lower() in (entry['text']).lower()]
     data = []
     c= 1
     for item in filtered_results:
@@ -110,6 +110,66 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
 
     
+
+@bot.tree.command(name="mygogif", description="搜尋MyGO台詞並製作GIF")
+@app_commands.autocomplete(text=text_autocompletion)
+@app_commands.describe(text="需要尋找的台詞")
+@app_commands.describe(duration="製作GIF的秒數(可小數點)-未填預設1.5秒-最大3秒")
+async def mygogif(interaction: discord.Interaction, text: str, duration: float= 1.5):
+    if duration > 3.0:
+        embed = discord.Embed(title="❌錯誤",description='GIF製作間隔最多3秒', color=discord.Color.red())
+        await interaction.response.send_message(embed=embed, ephemeral=True)
+        return
+    result = text_process(text)
+    if len(result) == 0:
+        embed = discord.Embed(title="❌錯誤",description='沒有你要找的台詞...', color=discord.Color.red())
+        embed.set_image(url=error_gif_link)
+        await interaction.response.send_message(embed=embed, ephemeral=True)
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 未找到台詞{text}")
+        return
+    start_time = datetime.now()
+    await interaction.response.defer()
+    episode = result[0]['episode']
+    frame_number = result[0]['frame_start']
+    frame_number = frame_number + 15
+    timestamp = frame_number / 23.98
+    embed = discord.Embed(title="GIF製作中...",description='請耐心等候', color=discord.Color.green())
+    msg = await interaction.followup.send(embed=embed,ephemeral=True)
+
+
+    cmd = [
+    'ffmpeg',
+    '-ss', str(timestamp),
+    '-t', str(duration),
+    '-i', f'src/{str(episode)}.mp4',
+    '-vf', 'fps=12,scale=1280:720:flags=lanczos',
+    '-f', 'gif',
+    '-loglevel', 'info',
+    '-'
+    ]
+
+
+    try:
+        buffer2 = subprocess.run(cmd, capture_output=True, check=True).stdout
+        await msg.edit(embed = None,attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f'{str(frame_number)}.gif')])
+        end_time = datetime.now()
+        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+        run_time = end_time - start_time
+        total_seconds = run_time.total_seconds()
+        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒")
+    except Exception as e:
+        embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
+        embed.set_image(url=error_gif_link)
+        await interaction.followup.send(embed=embed)
+        end_time = datetime.now()
+        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 台詞: {text} 製作GIF錯誤:{e}")
+        return
+
+
+
+
 
 
 bot.run(os.getenv('DISCORD_TOKEN'))

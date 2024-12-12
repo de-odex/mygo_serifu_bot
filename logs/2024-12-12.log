@@ -450,3 +450,337 @@ discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an excepti
 2024-12-12 16:13:27 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
 2024-12-12 16:13:27 --> INFO: 伺服器狀態更新為: GO了29次 | 1 個伺服器
 2024-12-12 16:14:05 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 14568, "frame_end": 14592, "episode": "10"} 耗時: 3.636 秒
+2024-12-12 19:09:13 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:09:13 --> INFO: logging in using static token
+2024-12-12 19:09:15 --> INFO: Shard ID None has connected to Gateway (Session ID: 0a93e3f6e16c39fa607b0d44c8a002e9).
+2024-12-12 19:09:18 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:09:18 --> INFO: 伺服器狀態更新為: GO了30次 | 1 個伺服器
+2024-12-12 19:10:51 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:10:51 --> INFO: logging in using static token
+2024-12-12 19:10:52 --> INFO: Shard ID None has connected to Gateway (Session ID: 927782938a4b2b5f0ec77afac7fbd061).
+2024-12-12 19:10:55 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:10:55 --> INFO: 伺服器狀態更新為: GO了30次 | 1 個伺服器
+2024-12-12 19:11:36 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 94808, "frame_end": 94824, "episode": "1-3"} 耗時: 3.501 秒
+2024-12-12 19:12:40 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:12:40 --> INFO: logging in using static token
+2024-12-12 19:12:42 --> INFO: Shard ID None has connected to Gateway (Session ID: bf5e1f3cb5db6adc5b21e709b43319ff).
+2024-12-12 19:12:44 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:12:44 --> INFO: 伺服器狀態更新為: GO了31次 | 1 個伺服器
+2024-12-12 19:13:02 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 94808, "frame_end": 94824, "episode": "1-3"} 耗時: 10.083 秒
+2024-12-12 19:13:35 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:13:35 --> INFO: logging in using static token
+2024-12-12 19:13:37 --> INFO: Shard ID None has connected to Gateway (Session ID: a73397eebe079b455281e6a62148ca02).
+2024-12-12 19:13:39 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:13:39 --> INFO: 伺服器狀態更新為: GO了32次 | 1 個伺服器
+2024-12-12 19:13:53 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 94808, "frame_end": 94824, "episode": "1-3"} 耗時: 7.537 秒
+2024-12-12 19:14:11 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 43136, "frame_end": 43136, "episode": "1-3"} 耗時: 7.083 秒
+2024-12-12 19:14:52 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 18904, "frame_end": 18944, "episode": "1-3"} 耗時: 7.268 秒
+2024-12-12 19:15:09 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 6208, "frame_end": 6208, "episode": "9"} 耗時: 5.455 秒
+2024-12-12 19:15:24 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 45832, "frame_end": 45856, "episode": "1-3"} 耗時: 6.364 秒
+2024-12-12 19:15:46 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 55328, "frame_end": 55352, "episode": "1-3"} 耗時: 4.777 秒
+2024-12-12 19:16:01 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 10808, "frame_end": 10816, "episode": "1-3"} 耗時: 4.226 秒
+2024-12-12 19:16:11 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 6616, "frame_end": 6632, "episode": "12"} 耗時: 3.833 秒
+2024-12-12 19:16:47 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 47592, "frame_end": 47632, "episode": "1-3"} 耗時: 5.007 秒
+2024-12-12 19:17:28 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 189, in mygo
+    result = text_process_precise(text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 73, in text_process_precise
+    text = json.loads(text)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-12-12 19:17:47 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 5256, "frame_end": 5272, "episode": "7"} 耗時: 5.943 秒
+2024-12-12 19:18:02 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 3592, "frame_end": 3616, "episode": "1-3"} 耗時: 5.324 秒
+2024-12-12 19:18:31 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 7680, "frame_end": 7696, "episode": "11"} 耗時: 5.980 秒
+2024-12-12 19:18:50 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 4160, "frame_end": 4184, "episode": "13"} 耗時: 5.701 秒
+2024-12-12 19:19:04 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 23504, "frame_end": 23536, "episode": "10"} 耗時: 6.217 秒
+2024-12-12 19:20:56 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:20:56 --> INFO: logging in using static token
+2024-12-12 19:20:58 --> INFO: Shard ID None has connected to Gateway (Session ID: ef30fb3cf8b4283d2a987be2aec86b3a).
+2024-12-12 19:21:01 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:21:01 --> INFO: 伺服器狀態更新為: GO了46次 | 1 個伺服器
+2024-12-12 19:21:12 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 1120, "frame_end": 1192, "episode": "1-3"} 耗時: 6.759 秒
+2024-12-12 19:21:53 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:21:53 --> INFO: logging in using static token
+2024-12-12 19:21:55 --> INFO: Shard ID None has connected to Gateway (Session ID: 13d794963cb8b7be85d86a9a4e297180).
+2024-12-12 19:21:58 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:21:58 --> INFO: 伺服器狀態更新為: GO了47次 | 1 個伺服器
+2024-12-12 19:22:22 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 1584, "frame_end": 1632, "episode": "1-3"} 耗時: 3.444 秒
+2024-12-12 19:22:37 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 188, in mygo
+    result = text_process_precise(text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 77, in text_process_precise
+    if item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
+                          ~~~~^^^^^^^^^^^
+TypeError: 'int' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: TypeError: 'int' object is not subscriptable
+2024-12-12 19:23:20 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:23:20 --> INFO: logging in using static token
+2024-12-12 19:23:22 --> INFO: Shard ID None has connected to Gateway (Session ID: 01ff76da021e323bd2de8b8eaf86d228).
+2024-12-12 19:23:25 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:23:25 --> INFO: 伺服器狀態更新為: GO了48次 | 1 個伺服器
+2024-12-12 19:23:25 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 191, in mygo
+    result = text_process_precise(text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 78, in text_process_precise
+    if item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
+                          ~~~~^^^^^^^^^^^
+TypeError: 'int' object is not subscriptable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: TypeError: 'int' object is not subscriptable
+2024-12-12 19:23:39 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:23:39 --> INFO: logging in using static token
+2024-12-12 19:23:41 --> INFO: Shard ID None has connected to Gateway (Session ID: 52254495d2de5165b0196cebb1dac31f).
+2024-12-12 19:24:24 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:24:24 --> INFO: 伺服器狀態更新為: GO了48次 | 1 個伺服器
+2024-12-12 19:28:40 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:28:40 --> INFO: logging in using static token
+2024-12-12 19:28:42 --> INFO: Shard ID None has connected to Gateway (Session ID: a6f0cfa8fae7acc6d3b09ac626ad5ba8).
+2024-12-12 19:28:45 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:28:45 --> INFO: 伺服器狀態更新為: GO了49次 | 1 個伺服器
+2024-12-12 19:29:05 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 80, "frame_end": 88, "episode": "12"} 耗時: 10.004 秒
+2024-12-12 19:30:15 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:30:15 --> INFO: logging in using static token
+2024-12-12 19:30:17 --> INFO: Shard ID None has connected to Gateway (Session ID: 75b129a1ccd33d1a097a674f3b413814).
+2024-12-12 19:30:20 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:30:20 --> INFO: 伺服器狀態更新為: GO了51次 | 1 個伺服器
+2024-12-12 19:30:38 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 221, in mygo
+    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} 耗時: {total_seconds:.3f} 秒")
+                                                           ~~~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: TypeError: list indices must be integers or slices, not str
+2024-12-12 19:32:00 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:32:00 --> INFO: logging in using static token
+2024-12-12 19:32:02 --> INFO: Shard ID None has connected to Gateway (Session ID: 7640ab2dfe33adc93449e0d373a2ab6d).
+2024-12-12 19:32:04 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:32:04 --> INFO: 伺服器狀態更新為: GO了52次 | 1 個伺服器
+2024-12-12 19:32:20 --> INFO: 伺服器ID: 762279698360172595 台詞: 對啊 耗時: 10.535 秒
+2024-12-12 19:34:55 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:34:55 --> INFO: logging in using static token
+2024-12-12 19:34:57 --> INFO: Shard ID None has connected to Gateway (Session ID: 9932f1736fac5810cc98d858a2961388).
+2024-12-12 19:35:00 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:35:00 --> ERROR: Unhandled exception in internal background task 'update_status'.
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\tasks\__init__.py", line 239, in _loop
+    await self.coro(*args, **kwargs)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 47, in update_status
+    record(None)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 154, in record
+    new_record = {"text": text['text'], "episode": text['episode'], "frame_start": text['frame_start'], "frame_end": text['frame_end'], "times": 1}
+                          ~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2024-12-12 19:35:36 --> ERROR: Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Loop._loop() done, defined at C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\tasks\__init__.py:200> exception=TypeError("'NoneType' object is not subscriptable")>
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\tasks\__init__.py", line 264, in _loop
+    raise exc
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\tasks\__init__.py", line 239, in _loop
+    await self.coro(*args, **kwargs)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 47, in update_status
+    record(None)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 154, in record
+    new_record = {"text": text['text'], "episode": text['episode'], "frame_start": text['frame_start'], "frame_end": text['frame_end'], "times": 1}
+                          ^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2024-12-12 19:35:37 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:35:37 --> INFO: logging in using static token
+2024-12-12 19:35:38 --> INFO: Shard ID None has connected to Gateway (Session ID: c56f135fbe7765db94c9edce8273d11a).
+2024-12-12 19:35:41 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:35:41 --> ERROR: Unhandled exception in internal background task 'update_status'.
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\tasks\__init__.py", line 239, in _loop
+    await self.coro(*args, **kwargs)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 47, in update_status
+    record(None)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 150, in record
+    if item['text'] == text['text'] and item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
+                       ~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2024-12-12 19:36:27 --> ERROR: Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<Loop._loop() done, defined at C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\tasks\__init__.py:200> exception=TypeError("'NoneType' object is not subscriptable")>
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\tasks\__init__.py", line 264, in _loop
+    raise exc
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\tasks\__init__.py", line 239, in _loop
+    await self.coro(*args, **kwargs)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 47, in update_status
+    record(None)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 150, in record
+    for item in data['title']:
+                           ^^^^
+TypeError: 'NoneType' object is not subscriptable
+2024-12-12 19:36:27 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:36:27 --> INFO: logging in using static token
+2024-12-12 19:36:29 --> INFO: Shard ID None has connected to Gateway (Session ID: d4a5585fbe35cf7281cf8eae35757618).
+2024-12-12 19:36:32 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:36:32 --> INFO: 伺服器狀態更新為: GO了53次 | 1 個伺服器
+2024-12-12 19:36:48 --> INFO: 伺服器ID: 762279698360172595 台詞: 對啊 耗時: 4.338 秒
+2024-12-12 19:36:48 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 223, in mygo
+    record(result)
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 151, in record
+    if item['text'] == text['text'] and item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
+                       ~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: TypeError: list indices must be integers or slices, not str
+2024-12-12 19:37:41 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:37:41 --> INFO: logging in using static token
+2024-12-12 19:37:43 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:37:43 --> INFO: logging in using static token
+2024-12-12 19:37:45 --> INFO: Shard ID None has connected to Gateway (Session ID: cf7e04910a4e96504e1d332da88d4867).
+2024-12-12 19:37:47 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:37:47 --> INFO: 伺服器狀態更新為: GO了53次 | 1 個伺服器
+2024-12-12 19:37:59 --> INFO: 伺服器ID: 762279698360172595 台詞: 對啊 耗時: 3.317 秒
+2024-12-12 19:38:50 --> INFO: 伺服器ID: 762279698360172595 台詞: 對啊 耗時: 6.560 秒
+2024-12-12 19:39:26 --> INFO: 伺服器ID: 762279698360172595 台詞: 對啊 耗時: 5.702 秒
+2024-12-12 19:40:11 --> ERROR: Ignoring exception in command 'mygogif'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 245, in mygogif
+    episode = result['episode']
+              ~~~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygogif' raised an exception: TypeError: list indices must be integers or slices, not str
+2024-12-12 19:40:41 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:40:41 --> INFO: logging in using static token
+2024-12-12 19:40:42 --> INFO: Shard ID None has connected to Gateway (Session ID: 7604b014f1ae520f4eff36fc36b356f9).
+2024-12-12 19:40:45 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:40:45 --> INFO: 伺服器狀態更新為: GO了56次 | 1 個伺服器
+2024-12-12 19:40:54 --> ERROR: Ignoring exception in command 'mygogif'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 269, in mygogif
+    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒")
+                                                           ~~~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygogif' raised an exception: TypeError: list indices must be integers or slices, not str
+2024-12-12 19:41:20 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:41:20 --> INFO: logging in using static token
+2024-12-12 19:41:22 --> INFO: Shard ID None has connected to Gateway (Session ID: d71d1b8fb02c1791c23501e59f11f6c4).
+2024-12-12 19:41:24 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:41:24 --> INFO: 伺服器狀態更新為: GO了56次 | 1 個伺服器
+2024-12-12 19:42:43 --> INFO: 伺服器ID: 762279698360172595 台詞: 小祥 1.5秒GIF耗時: 73.113 秒
+2024-12-12 19:43:27 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:43:27 --> INFO: logging in using static token
+2024-12-12 19:43:29 --> INFO: Shard ID None has connected to Gateway (Session ID: a5e6af388ac379b43874cc9d2c57d718).
+2024-12-12 19:43:31 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:43:31 --> INFO: 伺服器狀態更新為: GO了57次 | 1 個伺服器
+2024-12-12 19:43:46 --> INFO: 伺服器ID: 762279698360172595 台詞: 是這樣嗎 1.5秒GIF耗時: 10.908 秒
+2024-12-12 19:44:01 --> INFO: 伺服器ID: 762279698360172595 台詞: 可是,小祥是CRYCHIC的創始者啊 耗時: 10.892 秒
+2024-12-12 19:44:17 --> INFO: 伺服器ID: 762279698360172595 台詞: 沒錯 耗時: 6.145 秒
+2024-12-12 19:44:28 --> INFO: 伺服器ID: 762279698360172595 台詞: 為什麼要演奏春日影! 耗時: 2.384 秒
+2024-12-12 19:44:36 --> INFO: 伺服器ID: 762279698360172595 台詞: 味道醇香,我很喜歡 耗時: 4.179 秒
+2024-12-12 19:44:54 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 6.787 秒
+2024-12-12 19:45:24 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 12.033 秒

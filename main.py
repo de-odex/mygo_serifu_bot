@@ -11,7 +11,7 @@ import io
 from discord.ext import commands, tasks
 import asyncio
 import logging
-
+from collections import Counter
 
 
 load_dotenv()
@@ -69,19 +69,22 @@ def text_process(text):
 
 
 def text_process_precise(text):    #answer value 
-    print(text)
     text = json.loads(text)
     with open('src/ocr_data_3.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
     results = []
     for item in data['result']:
-         if item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
-            results.append({
-                "text": item["text"],
-                "episode": item["episode"],
-                "frame_start": item["frame_start"],
-                "frame_end": item["frame_end"],
-            })
+         try:
+            if item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
+                results.append({
+                    "text": item["text"],
+                    "episode": item["episode"],
+                    "frame_start": item["frame_start"],
+                    "frame_end": item["frame_end"],
+                })
+         except:
+            pass
+    # print(results)
     return results
 
 
@@ -92,28 +95,39 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
     data = []
     count = 0
 
+
+    text_counter = Counter(entry['text'] for entry in filtered_results)
+    text_occurrence = {text: 0 for text in text_counter}
+
     for item in filtered_results:
         count += 1
         if len(item['text']) < 95:
-            # 将完整数据序列化为 JSON 字符串
+            if text_counter[item['text']] > 1:
+                text_occurrence[item['text']] += 1
+                name = f"{item['text']} ({text_occurrence[item['text']]})"
+            else:
+                name = item['text']
+
             s_data = {
                 'frame_start': item['frame_start'],
                 'frame_end': item['frame_end'],
                 'episode': item['episode']
             }
             data.append(discord.app_commands.Choice(
-                name=f'{item['text']} -第{item["episode"]}集',
+                name=name,
                 value=json.dumps(s_data, ensure_ascii=False)
             ))
+
         if count == 20:
             break
-    print(data)
+
     return data
 
 
 
 def record(text):
 
+    # print(text)
     if not os.path.exists('logs/ranks.json'):
         with open('logs/ranks.json', 'w', encoding='utf-8') as f:
             json.dump({"title": [], "times": 0}, f, indent=4, ensure_ascii=False)
@@ -124,18 +138,18 @@ def record(text):
             data = json.load(f)
         except json.JSONDecodeError:
             data = {"title": [], "times": 0} 
-    
+
     if text == None:
         return
-
     # 更新
     data['times'] += 1
+    text = text[0]
     for item in data['title']:
-        if item['text'] == text:
+        if item['text'] == text['text'] and item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
             item['times'] += 1
             break
     else:
-        new_record = {"text": text, "times": 1}
+        new_record = {"text": text['text'], "episode": text['episode'], "frame_start": text['frame_start'], "frame_end": text['frame_end'], "times": 1}
         data['title'].append(new_record)
         
     
@@ -180,11 +194,10 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
         return
     start_time = datetime.now()
     await interaction.response.defer()
-
     episode = result[0]['episode']
     frame_number = result[0]['frame_start']
     back_frames = second * 23.98
-    frame_number = frame_number + back_frames + 9
+    frame_number = frame_number + back_frames + 15
     timestamp = frame_number / 23.98
     #ffmpeg-python
     buffer, error = ffmpeg.input(filename=f'src/{str(episode)}.mp4', ss=timestamp) \
@@ -195,7 +208,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
         embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.followup.send(embed=embed)
-        logging.error(f'伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}')
+        logging.error(f'伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}')
         return
     #send
     await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f'{str(frame_number)}.png'))
@@ -203,8 +216,8 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
     run_time = end_time - start_time
     total_seconds = run_time.total_seconds()
-    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
-    record(result[0])
+    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {result[0]['text']} 耗時: {total_seconds:.3f} 秒")
+    record(result)
 
     
 
@@ -225,36 +238,32 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
         return
     start_time = datetime.now()
     await interaction.response.defer()
-    for item in result:
-        if len(item['text']) < 100:
-            if item['text'] == text:
-                episode = item['episode']
-                frame_number = item['frame_start']
-                frame_number = frame_number + 15
-                timestamp = frame_number / 23.98
-                embed = discord.Embed(title="GIF製作中...",description='視畫面複雜程度，可能需要一些時間', color=discord.Color.green())
-                msg = await interaction.followup.send(embed=embed,ephemeral=True)
-                end_frame = duration * 23.98
+    episode = result[0]['episode']
+    frame_number = result[0]['frame_start']
+    frame_number = frame_number + 12
+    timestamp = frame_number / 23.98
+    embed = discord.Embed(title="GIF製作中...",description='視畫面複雜程度，可能需要一些時間', color=discord.Color.green())
+    msg = await interaction.followup.send(embed=embed,ephemeral=True)
+    end_frame = duration * 23.98
 
-                buffer2, error = await asyncio.to_thread(run_ffmpeg_sync, episode, timestamp, end_frame)
+    buffer2, error = await asyncio.to_thread(run_ffmpeg_sync, episode, timestamp, end_frame)
 
-                if error:
-                    embed = discord.Embed(title="❌錯誤",description='FFMPEG出事啦', color=discord.Color.red())
-                    embed.set_image(url=error_gif_link)
-                    # await msg.edit(embed=embed)
-                    end_time = datetime.now()
-                    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-                    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}")
-                    return
-                
-                await msg.edit(embed = None, attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f'{str(frame_number)}.gif')])
-                end_time = datetime.now()
-                timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-                run_time = end_time - start_time
-                total_seconds = run_time.total_seconds()
-                logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒")
-                record(result[0])
-                break
+    if error:
+        embed = discord.Embed(title="❌錯誤",description='FFMPEG出事啦', color=discord.Color.red())
+        embed.set_image(url=error_gif_link)
+        # await msg.edit(embed=embed)
+        end_time = datetime.now()
+        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+        logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}")
+        return
+    
+    await msg.edit(embed = None, attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f'{str(frame_number)}.gif')])
+    end_time = datetime.now()
+    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+    run_time = end_time - start_time
+    total_seconds = run_time.total_seconds()
+    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {result[0]['text']} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒")
+    record(result)
 
 
 

@@ -35,7 +35,7 @@
                 "frame_start": 1120,
                 "frame_end": 1192
             },
-            "times": 1
+            "times": 2
         },
         {
             "text": {
@@ -98,7 +98,7 @@
                 "frame_start": 55328,
                 "frame_end": 55352
             },
-            "times": 2
+            "times": 3
         },
         {
             "text": {
@@ -107,7 +107,7 @@
                 "frame_start": 43136,
                 "frame_end": 43136
             },
-            "times": 5
+            "times": 6
         },
         {
             "text": {
@@ -117,7 +117,227 @@
                 "frame_end": 14592
             },
             "times": 1
+        },
+        {
+            "text": {
+                "text": "是啊",
+                "episode": "1-3",
+                "frame_start": 94808,
+                "frame_end": 94824
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "因為我只是有在收集",
+                "episode": "1-3",
+                "frame_start": 18904,
+                "frame_end": 18944
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "是啊",
+                "episode": "9",
+                "frame_start": 6208,
+                "frame_end": 6208
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "是啊",
+                "episode": "1-3",
+                "frame_start": 45832,
+                "frame_end": 45856
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "對啊",
+                "episode": "1-3",
+                "frame_start": 10808,
+                "frame_end": 10816
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "對啊",
+                "episode": "12",
+                "frame_start": 6616,
+                "frame_end": 6632
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "因為我以前組過樂團",
+                "episode": "1-3",
+                "frame_start": 47592,
+                "frame_end": 47632
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "是這樣嗎",
+                "episode": "7",
+                "frame_start": 5256,
+                "frame_end": 5272
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我",
+                "episode": "1-3",
+                "frame_start": 3592,
+                "frame_end": 3616
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我很感動",
+                "episode": "11",
+                "frame_start": 7680,
+                "frame_end": 7696
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "可以吃了嗎",
+                "episode": "13",
+                "frame_start": 4160,
+                "frame_end": 4184
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我還是會繼續下去",
+                "episode": "10",
+                "frame_start": 23504,
+                "frame_end": 23536
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "還是說就是我們造成的?",
+                "episode": "1-3",
+                "frame_start": 1584,
+                "frame_end": 1632
+            },
+            "times": 1
+        },
+        {
+            "text": null,
+            "times": 3
+        },
+        {
+            "text": [
+                {
+                    "text": "對啊",
+                    "episode": "12",
+                    "frame_start": 80,
+                    "frame_end": 88
+                }
+            ],
+            "times": 1
+        },
+        {
+            "text": [
+                {
+                    "text": "對啊",
+                    "episode": "1-3",
+                    "frame_start": 10808,
+                    "frame_end": 10816
+                }
+            ],
+            "times": 1
+        },
+        {
+            "text": "對啊",
+            "episode": "1-3",
+            "frame_start": 10808,
+            "frame_end": 10816,
+            "times": 3
+        },
+        {
+            "text": "小祥",
+            "episode": "1-3",
+            "frame_start": 752,
+            "frame_end": 768,
+            "times": 1
+        },
+        {
+            "text": "是這樣嗎",
+            "episode": "1-3",
+            "frame_start": 2000,
+            "frame_end": 2064,
+            "times": 1
+        },
+        {
+            "text": "可是,小祥是CRYCHIC的創始者啊",
+            "episode": "1-3",
+            "frame_start": 2096,
+            "frame_end": 2176,
+            "times": 1
+        },
+        {
+            "text": "沒錯",
+            "episode": "1-3",
+            "frame_start": 48592,
+            "frame_end": 48608,
+            "times": 1
+        },
+        {
+            "text": "為什麼要演奏春日影!",
+            "episode": "7",
+            "frame_start": 30124,
+            "frame_end": 30168,
+            "times": 1
+        },
+        {
+            "text": "味道醇香,我很喜歡",
+            "episode": "1-3",
+            "frame_start": 45024,
+            "frame_end": 45064,
+            "times": 1
+        },
+        {
+            "text": "是啊",
+            "episode": "1-3",
+            "frame_start": 43136,
+            "frame_end": 43136,
+            "times": 5
+        },
+        {
+            "text": "是嗎",
+            "episode": "1-3",
+            "frame_start": 51536,
+            "frame_end": 51560,
+            "times": 2
+        },
+        {
+            "text": "為什麼?",
+            "episode": "1-3",
+            "frame_start": 1824,
+            "frame_end": 1848,
+            "times": 1
+        },
+        {
+            "text": "對啊",
+            "episode": "1-3",
+            "frame_start": 47968,
+            "frame_end": 47984,
+            "times": 1
         }
     ],
-    "times": 30
+    "times": 71
 }

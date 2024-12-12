@@ -828,3 +828,41 @@ discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an excepti
 2024-12-12 19:49:34 --> INFO: 伺服器ID: 762279698360172595 台詞: 是嗎 耗時: 6.947 秒
 2024-12-12 19:50:03 --> INFO: 伺服器ID: 762279698360172595 台詞: 為什麼? 耗時: 4.941 秒
 2024-12-12 19:50:20 --> INFO: 伺服器ID: 762279698360172595 台詞: 對啊 耗時: 6.298 秒
+2024-12-12 19:52:08 --> INFO: 伺服器ID: 762279698360172595 台詞: 太棒了,爽世同學LOVE 耗時: 11.369 秒
+2024-12-12 20:04:45 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 20:04:45 --> INFO: logging in using static token
+2024-12-12 20:04:47 --> INFO: Shard ID None has connected to Gateway (Session ID: 14e429ff5a5d2552995d594ec510700d).
+2024-12-12 20:04:49 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 20:04:49 --> INFO: 伺服器狀態更新為: GO了72次 | 1 個伺服器
+2024-12-12 20:05:18 --> INFO: 伺服器ID: 762279698360172595 台詞: 我沒那麼說 1.5秒GIF耗時: 8.291 秒
+2024-12-12 20:06:10 --> INFO: 伺服器ID: 762279698360172595 台詞: 為什麼要演奏春日影! 1.5秒GIF耗時: 29.463 秒
+2024-12-12 20:06:42 --> INFO: 伺服器ID: 762279698360172595 台詞: 味道醇香,我很喜歡 1.5秒GIF耗時: 4.850 秒
+2024-12-12 20:11:31 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 20:11:31 --> INFO: logging in using static token
+2024-12-12 20:11:33 --> INFO: Shard ID None has connected to Gateway (Session ID: bf0c6dbaed6b2ecfb37f9344f5d6cd15).
+2024-12-12 20:11:35 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 20:11:35 --> INFO: 伺服器狀態更新為: GO了75次 | 1 個伺服器
+2024-12-12 20:12:00 --> INFO: 伺服器ID: 762279698360172595 台詞: 牠是阿德利企鵝屬 1.5秒GIF耗時: 11.401 秒
+2024-12-12 20:12:45 --> INFO: 伺服器ID: 762279698360172595 台詞: 為什麼要演奏春日影! 1.5秒GIF耗時: 24.513 秒
+2024-12-12 20:16:29 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 20:16:29 --> INFO: logging in using static token
+2024-12-12 20:16:31 --> INFO: Shard ID None has connected to Gateway (Session ID: 3f46c2fc147da838c40c83e15a9de104).
+2024-12-12 20:16:34 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 20:16:34 --> INFO: 伺服器狀態更新為: GO了77次 | 1 個伺服器
+2024-12-12 20:16:43 --> INFO: json load : 56478
+2024-12-12 20:16:54 --> INFO: json load : {"frame_start": 4136, "frame_end": 4168, "episode": "10"}
+2024-12-12 20:16:56 --> INFO: 伺服器ID: 762279698360172595 台詞: 椅背壓不下去 耗時: 2.390 秒
+2024-12-12 20:32:01 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 20:32:01 --> INFO: logging in using static token
+2024-12-12 20:32:03 --> INFO: Shard ID None has connected to Gateway (Session ID: bda685b0f0ab4f33ded3f1d33996501b).
+2024-12-12 20:32:05 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 20:32:05 --> INFO: 伺服器狀態更新為: GO了78次 | 1 個伺服器
+2024-12-12 20:33:10 --> INFO: 伺服器ID: 762279698360172595 台詞: 妳要不要先去洗澡? 耗時: 3.943 秒
+2024-12-12 20:33:27 --> INFO: 伺服器ID: 762279698360172595 台詞: "春日影"... 耗時: 3.313 秒
+2024-12-12 20:33:35 --> INFO: 伺服器ID: 762279698360172595 台詞: 我要退出CRYCHIC 耗時: 3.162 秒
+2024-12-12 20:33:40 --> INFO: 伺服器ID: 762279698360172595 台詞: 妳沒有來學校上課 耗時: 2.667 秒
+2024-12-12 20:33:44 --> INFO: 伺服器ID: 762279698360172595 台詞: 妳終於來了 太好了 9 耗時: 2.774 秒
+2024-12-12 20:33:48 --> INFO: 伺服器ID: 762279698360172595 台詞: 妳全身都濕透了,沒事吧? 耗時: 3.064 秒
+2024-12-12 20:34:14 --> INFO: 伺服器ID: 762279698360172595 台詞: 傳訊息也都沒有回 1.5秒GIF耗時: 10.088 秒
+2024-12-12 20:34:20 --> INFO: 伺服器ID: 762279698360172595 台詞: I055 CBanG Dream! Projeet LieansedW MuE 耗時: 3.682 秒
+2024-12-12 20:47:05 --> INFO: 伺服器狀態更新為: GO了86次 | 1 個伺服器

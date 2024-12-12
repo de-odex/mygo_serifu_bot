@@ -301,14 +301,14 @@
             "episode": "7",
             "frame_start": 30124,
             "frame_end": 30168,
-            "times": 1
+            "times": 3
         },
         {
             "text": "味道醇香,我很喜歡",
             "episode": "1-3",
             "frame_start": 45024,
             "frame_end": 45064,
-            "times": 1
+            "times": 2
         },
         {
             "text": "是啊",
@@ -337,7 +337,91 @@
             "frame_start": 47968,
             "frame_end": 47984,
             "times": 1
+        },
+        {
+            "text": "太棒了,爽世同學LOVE",
+            "episode": "1-3",
+            "frame_start": 52224,
+            "frame_end": 52288,
+            "times": 1
+        },
+        {
+            "text": "我沒那麼說",
+            "episode": "1-3",
+            "frame_start": 1968,
+            "frame_end": 1992,
+            "times": 1
+        },
+        {
+            "text": "牠是阿德利企鵝屬",
+            "episode": "1-3",
+            "frame_start": 18424,
+            "frame_end": 18448,
+            "times": 1
+        },
+        {
+            "text": "椅背壓不下去",
+            "episode": "10",
+            "frame_start": 4136,
+            "frame_end": 4168,
+            "times": 1
+        },
+        {
+            "text": "妳要不要先去洗澡?",
+            "episode": "9",
+            "frame_start": 3824,
+            "frame_end": 3864,
+            "times": 1
+        },
+        {
+            "text": "\"春日影\"...",
+            "episode": "1-3",
+            "frame_start": 27368,
+            "frame_end": 27408,
+            "times": 1
+        },
+        {
+            "text": "我要退出CRYCHIC",
+            "episode": "1-3",
+            "frame_start": 1120,
+            "frame_end": 1192,
+            "times": 1
+        },
+        {
+            "text": "妳沒有來學校上課",
+            "episode": "1-3",
+            "frame_start": 888,
+            "frame_end": 912,
+            "times": 1
+        },
+        {
+            "text": "妳終於來了 太好了 9",
+            "episode": "1-3",
+            "frame_start": 792,
+            "frame_end": 816,
+            "times": 1
+        },
+        {
+            "text": "妳全身都濕透了,沒事吧?",
+            "episode": "1-3",
+            "frame_start": 824,
+            "frame_end": 880,
+            "times": 1
+        },
+        {
+            "text": "傳訊息也都沒有回",
+            "episode": "1-3",
+            "frame_start": 920,
+            "frame_end": 960,
+            "times": 1
+        },
+        {
+            "text": "I055 CBanG Dream! Projeet LieansedW MuE",
+            "episode": "1-3",
+            "frame_start": 7512,
+            "frame_end": 7512,
+            "times": 1
         }
     ],
-    "times": 71
+    "times": 86
 }

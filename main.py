@@ -69,22 +69,26 @@ def text_process(text):
 
 
 def text_process_precise(text):    #answer value 
-    text = json.loads(text)
-    with open('src/ocr_data_3.json', 'r', encoding='utf-8') as f:
-            data = json.load(f)
-    results = []
-    for item in data['result']:
-         try:
-            if item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
-                results.append({
-                    "text": item["text"],
-                    "episode": item["episode"],
-                    "frame_start": item["frame_start"],
-                    "frame_end": item["frame_end"],
-                })
-         except:
-            pass
-    # print(results)
+    try:
+        text = json.loads(text)
+        with open('src/ocr_data_3.json', 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        results = []
+        for item in data['result']:
+            try:
+                if item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
+                    results.append({
+                        "text": item["text"],
+                        "episode": item["episode"],
+                        "frame_start": item["frame_start"],
+                        "frame_end": item["frame_end"],
+                    })
+            except:
+                pass
+    except Exception as e:
+            logging.info(f'json load : {text}，錯誤: {e}')
+            results = []
+        # print(results)
     return results
 
 
@@ -187,7 +191,7 @@ def run_ffmpeg_sync(episode, timestamp, end_frame):
 async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     result = text_process_precise(text)
     if len(result) == 0:
-        embed = discord.Embed(title="❌錯誤",description='沒有你要找的台詞...', color=discord.Color.red())
+        embed = discord.Embed(title="❌錯誤",description='請再試一次，或是沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.response.send_message(embed=embed, ephemeral=True)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -232,7 +236,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
         return
     result = text_process_precise(text)
     if len(result) == 0:
-        embed = discord.Embed(title="❌錯誤",description='沒有你要找的台詞...', color=discord.Color.red())
+        embed = discord.Embed(title="❌錯誤",description='請再試一次，或是沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.response.send_message(embed=embed, ephemeral=True)
         return
@@ -240,7 +244,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
     await interaction.response.defer()
     episode = result[0]['episode']
     frame_number = result[0]['frame_start']
-    frame_number = frame_number + 12
+    frame_number = frame_number + 5
     timestamp = frame_number / 23.98
     embed = discord.Embed(title="GIF製作中...",description='視畫面複雜程度，可能需要一些時間', color=discord.Color.green())
     msg = await interaction.followup.send(embed=embed,ephemeral=True)

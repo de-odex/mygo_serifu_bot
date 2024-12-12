@@ -81,7 +81,43 @@
                 "frame_end": 45064
             },
             "times": 2
+        },
+        {
+            "text": {
+                "text": "為什麼要演奏春日影!",
+                "episode": "7",
+                "frame_start": 30124,
+                "frame_end": 30168
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "好棒喔",
+                "episode": "1-3",
+                "frame_start": 55328,
+                "frame_end": 55352
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "是啊",
+                "episode": "1-3",
+                "frame_start": 43136,
+                "frame_end": 43136
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "是啊",
+                "episode": "10",
+                "frame_start": 14568,
+                "frame_end": 14592
+            },
+            "times": 1
         }
     ],
-    "times": 21
+    "times": 30
 }

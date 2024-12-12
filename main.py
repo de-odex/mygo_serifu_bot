@@ -68,17 +68,46 @@ def text_process(text):
 
 
 
+def text_process_precise(text):    #answer value 
+    print(text)
+    text = json.loads(text)
+    with open('src/ocr_data_3.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    results = []
+    for item in data['result']:
+         if item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
+            results.append({
+                "text": item["text"],
+                "episode": item["episode"],
+                "frame_start": item["frame_start"],
+                "frame_end": item["frame_end"],
+            })
+    return results
+
+
+
 async def text_autocompletion(interaction: discord.Interaction, current: str):
     results = text_process(current)
-    filtered_results = [entry['text'] for entry in results if current.lower() in (entry['text']).lower()]
+    filtered_results = [entry for entry in results if current.lower() in entry['text'].lower()]
     data = []
-    c= 1
+    count = 0
+
     for item in filtered_results:
-        c=c+1
-        if len(item) < 100:
-            data.append(discord.app_commands.Choice(name=item, value=item))
-        if c == 20 :
+        count += 1
+        if len(item['text']) < 95:
+            # 将完整数据序列化为 JSON 字符串
+            s_data = {
+                'frame_start': item['frame_start'],
+                'frame_end': item['frame_end'],
+                'episode': item['episode']
+            }
+            data.append(discord.app_commands.Choice(
+                name=f'{item['text']} -第{item["episode"]}集',
+                value=json.dumps(s_data, ensure_ascii=False)
+            ))
+        if count == 20:
             break
+    print(data)
     return data
 
 
@@ -142,44 +171,41 @@ def run_ffmpeg_sync(episode, timestamp, end_frame):
 @app_commands.describe(text="需要尋找的台詞")
 @app_commands.describe(second="延後秒數(可小數點)")
 async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
-    result = text_process(text)
+    result = text_process_precise(text)
     if len(result) == 0:
         embed = discord.Embed(title="❌錯誤",description='沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.response.send_message(embed=embed, ephemeral=True)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        logging.info(f"{timestamp}-->伺服器ID: {interaction.guild_id} 未找到台詞{text}")
         return
     start_time = datetime.now()
     await interaction.response.defer()
-    for item in result:
-        if len(item['text']) < 100:
-            if item['text'] == text:
-                episode = item['episode']
-                frame_number = item['frame_start']
-                back_frames = second * 23.98
-                frame_number = frame_number + back_frames + 5
-                timestamp = frame_number / 23.98
-                #ffmpeg-python
-                buffer, error = ffmpeg.input(filename=f'src/{str(episode)}.mp4', ss=timestamp) \
-                        .output('pipe:', vframes=1, format='image2', vcodec='png') \
-                        .global_args('-loglevel', 'error')\
-                        .run(capture_stdout=True)
-                if error:
-                    embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
-                    embed.set_image(url=error_gif_link)
-                    await interaction.followup.send(embed=embed)
-                    logging.error(f'伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}')
-                    return
-                #send
-                await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f'{str(frame_number)}.png'))
-                end_time = datetime.now()
-                timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-                run_time = end_time - start_time
-                total_seconds = run_time.total_seconds()
-                logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
-                record(result[0])
-                break
+
+    episode = result[0]['episode']
+    frame_number = result[0]['frame_start']
+    back_frames = second * 23.98
+    frame_number = frame_number + back_frames + 9
+    timestamp = frame_number / 23.98
+    #ffmpeg-python
+    buffer, error = ffmpeg.input(filename=f'src/{str(episode)}.mp4', ss=timestamp) \
+            .output('pipe:', vframes=1, format='image2', vcodec='png') \
+            .global_args('-loglevel', 'error')\
+            .run(capture_stdout=True)
+    if error:
+        embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
+        embed.set_image(url=error_gif_link)
+        await interaction.followup.send(embed=embed)
+        logging.error(f'伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}')
+        return
+    #send
+    await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f'{str(frame_number)}.png'))
+    end_time = datetime.now()
+    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+    run_time = end_time - start_time
+    total_seconds = run_time.total_seconds()
+    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
+    record(result[0])
+
     
 
 @bot.tree.command(name="mygogif", description="搜尋MyGO台詞並製作GIF")
@@ -191,7 +217,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
         embed = discord.Embed(title="❌錯誤",description='GIF製作間隔最多3秒', color=discord.Color.red())
         await interaction.response.send_message(embed=embed, ephemeral=True)
         return
-    result = text_process(text)
+    result = text_process_precise(text)
     if len(result) == 0:
         embed = discord.Embed(title="❌錯誤",description='沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)

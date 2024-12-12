@@ -188,3 +188,259 @@ discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an excepti
 2024-12-12 10:23:28 --> INFO: 伺服器狀態更新為: GO了19次 | 1 個伺服器
 2024-12-12 10:23:37 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 4.345 秒
 2024-12-12 10:23:50 --> INFO: 伺服器ID: 762279698360172595 台詞: 味道醇香,我很喜歡 耗時: 6.008 秒
+2024-12-12 10:26:35 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 10:26:35 --> INFO: logging in using static token
+2024-12-12 10:26:36 --> INFO: Shard ID None has connected to Gateway (Session ID: 4d34d192a2168b6ab797a153b1091caa).
+2024-12-12 10:26:39 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 10:26:39 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 10:27:35 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 10:27:35 --> INFO: logging in using static token
+2024-12-12 10:27:37 --> INFO: Shard ID None has connected to Gateway (Session ID: afdaf5baa530124c139b0936a43b1ede).
+2024-12-12 10:27:39 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 10:27:39 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 10:28:41 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 10:28:41 --> INFO: logging in using static token
+2024-12-12 10:28:43 --> INFO: Shard ID None has connected to Gateway (Session ID: a5f66a02299a311a218edcc8a2d223ae).
+2024-12-12 10:28:45 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 10:28:45 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:10:38 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:10:38 --> INFO: logging in using static token
+2024-12-12 15:10:41 --> INFO: Shard ID None has connected to Gateway (Session ID: 4795ac7b91a89b65a899a6f6cc18f1f9).
+2024-12-12 15:10:43 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:10:43 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:11:00 --> INFO: 2024-12-12 15:11:00-->伺服器ID: 762279698360172595 未找到台詞{'text': '為什麼要演奏春日影!', 'episode': '7', 'frame_start': 30124, 'frame_end': 30168}
+2024-12-12 15:18:20 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:18:20 --> INFO: logging in using static token
+2024-12-12 15:18:22 --> INFO: Shard ID None has connected to Gateway (Session ID: e730889cfd545f1fed59c3f8c6b12598).
+2024-12-12 15:18:25 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:18:25 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:20:24 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:20:24 --> INFO: logging in using static token
+2024-12-12 15:20:26 --> INFO: Shard ID None has connected to Gateway (Session ID: 1474b83af474daa48dce343ff1a63498).
+2024-12-12 15:20:28 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:20:28 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:22:30 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:22:30 --> INFO: logging in using static token
+2024-12-12 15:22:31 --> INFO: Shard ID None has connected to Gateway (Session ID: 6c3876512e799561c7a22b85b2d06973).
+2024-12-12 15:22:34 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:22:34 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:23:56 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:23:56 --> INFO: logging in using static token
+2024-12-12 15:23:58 --> INFO: Shard ID None has connected to Gateway (Session ID: ac677e09bbe5662a11d5d8b06106fa2a).
+2024-12-12 15:24:00 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:24:00 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:25:37 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:25:37 --> INFO: logging in using static token
+2024-12-12 15:25:39 --> INFO: Shard ID None has connected to Gateway (Session ID: f85cf6ee28b7aeeab6653e08d302ad2d).
+2024-12-12 15:25:42 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:25:42 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:26:01 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 166, in mygo
+    result = text_process_precise(text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 78, in text_process_precise
+    if text['text'].lower() == item['text'].lower() and len(item['text']) < 100 and item['frame_start'] == text['frame_start']:
+       ~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: TypeError: list indices must be integers or slices, not str
+2024-12-12 15:30:35 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:30:35 --> INFO: logging in using static token
+2024-12-12 15:30:37 --> INFO: Shard ID None has connected to Gateway (Session ID: aa00d0199e5997ae598de09eba0fd27a).
+2024-12-12 15:30:40 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:30:40 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:30:59 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:30:59 --> INFO: logging in using static token
+2024-12-12 15:31:01 --> INFO: Shard ID None has connected to Gateway (Session ID: 6d33061720e435da7e3ead3cc59d85eb).
+2024-12-12 15:31:40 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:31:40 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:32:00 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:32:00 --> INFO: logging in using static token
+2024-12-12 15:32:02 --> INFO: Shard ID None has connected to Gateway (Session ID: dd62a23f79a5eff8a45f52a199c9993b).
+2024-12-12 15:32:04 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:32:04 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:32:34 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:32:34 --> INFO: logging in using static token
+2024-12-12 15:32:36 --> INFO: Shard ID None has connected to Gateway (Session ID: cc0e460d2d2691ba2d85208cc74f7b65).
+2024-12-12 15:32:38 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:32:38 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:33:22 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:33:22 --> INFO: logging in using static token
+2024-12-12 15:33:23 --> INFO: Shard ID None has connected to Gateway (Session ID: e3008687bcbbd8bc7c12df8e4db120de).
+2024-12-12 15:33:26 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:33:26 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:35:49 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:35:49 --> INFO: logging in using static token
+2024-12-12 15:35:51 --> INFO: Shard ID None has connected to Gateway (Session ID: d5ca45821c0c863be61a5d0a35a14c95).
+2024-12-12 15:35:54 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:35:54 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:36:28 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:36:28 --> INFO: logging in using static token
+2024-12-12 15:36:30 --> INFO: Shard ID None has connected to Gateway (Session ID: 929d9c3b0e2b613589f52e1964c2b9fa).
+2024-12-12 15:36:33 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:36:33 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:40:28 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:40:28 --> INFO: logging in using static token
+2024-12-12 15:40:30 --> INFO: Shard ID None has connected to Gateway (Session ID: 26c1f7782db084f7094ffe2737544815).
+2024-12-12 15:40:32 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:40:32 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:42:08 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:42:08 --> INFO: logging in using static token
+2024-12-12 15:42:10 --> INFO: Shard ID None has connected to Gateway (Session ID: c31965538dc40cf723365bc47d7050b6).
+2024-12-12 15:44:20 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:44:20 --> INFO: logging in using static token
+2024-12-12 15:44:35 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:44:35 --> INFO: logging in using static token
+2024-12-12 15:44:37 --> INFO: Shard ID None has connected to Gateway (Session ID: 644ab46a4d95d5788228032544bb1e35).
+2024-12-12 15:44:39 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:44:39 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:46:32 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:46:32 --> INFO: logging in using static token
+2024-12-12 15:46:34 --> INFO: Shard ID None has connected to Gateway (Session ID: cf9e145f98ce1e5f0344dfc9e626c065).
+2024-12-12 15:46:37 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:46:37 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:46:42 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 167, in mygo
+    result = text_process_precise(text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 77, in text_process_precise
+    if item['text'] == text['text'] and item['frame_start'] == text['frame_start']:
+                       ~~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: TypeError: string indices must be integers, not 'str'
+2024-12-12 15:47:12 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:47:12 --> INFO: logging in using static token
+2024-12-12 15:47:13 --> INFO: Shard ID None has connected to Gateway (Session ID: 47540569a71ac95079351d6ba602fc25).
+2024-12-12 15:47:16 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:47:16 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:47:20 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 167, in mygo
+    result = text_process_precise(text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 77, in text_process_precise
+    if item['text'] == text['text'] and item['frame_start'] == text['frame_start']:
+                       ~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 842, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: TypeError: list indices must be integers or slices, not str
+2024-12-12 15:48:10 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:48:10 --> INFO: logging in using static token
+2024-12-12 15:48:12 --> INFO: Shard ID None has connected to Gateway (Session ID: b30309f680d1e8f169e8b1b220762eea).
+2024-12-12 15:48:14 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:48:14 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:49:40 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:49:40 --> INFO: logging in using static token
+2024-12-12 15:49:42 --> INFO: Shard ID None has connected to Gateway (Session ID: ca5323a7ac1631e454baaebe1d81a385).
+2024-12-12 15:49:44 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:49:44 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:52:37 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:52:37 --> INFO: logging in using static token
+2024-12-12 15:52:39 --> INFO: Shard ID None has connected to Gateway (Session ID: 942f9603b79593f1912e196d6c1b2a0b).
+2024-12-12 15:52:42 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:52:42 --> INFO: 伺服器狀態更新為: GO了21次 | 1 個伺服器
+2024-12-12 15:52:48 --> INFO: 伺服器ID: 762279698360172595 台詞: {"text": "為什麼要演奏春日影!", "episode": "7", "frame_start": 30124, "frame_end": 30168} 耗時: 2.534 秒
+2024-12-12 15:53:10 --> INFO: 伺服器ID: 762279698360172595 台詞: {"text": "好棒喔", "episode": "1-3", "frame_start": 55328, "frame_end": 55352} 耗時: 2.859 秒
+2024-12-12 15:53:44 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:53:44 --> INFO: logging in using static token
+2024-12-12 15:53:46 --> INFO: Shard ID None has connected to Gateway (Session ID: 3d611c221e67cb38ed8386524bb4e883).
+2024-12-12 15:53:48 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:53:48 --> INFO: 伺服器狀態更新為: GO了23次 | 1 個伺服器
+2024-12-12 15:53:55 --> INFO: 伺服器ID: 762279698360172595 台詞: {"text": "好棒喔", "episode": "1-3", "frame_start": 55328, "frame_end": 55352} 耗時: 2.878 秒
+2024-12-12 15:58:57 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 15:58:57 --> INFO: logging in using static token
+2024-12-12 15:58:59 --> INFO: Shard ID None has connected to Gateway (Session ID: 2b0c0145fc02bd0b9e3640a970987382).
+2024-12-12 15:59:01 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 15:59:01 --> INFO: 伺服器狀態更新為: GO了24次 | 1 個伺服器
+2024-12-12 15:59:59 --> INFO: Shard ID None has successfully RESUMED session 2b0c0145fc02bd0b9e3640a970987382.
+2024-12-12 16:01:30 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 172, in mygo
+    result = text_process_precise(text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 77, in text_process_precise
+    if item['text'] == text['text'] and item['frame_start'] == text['frame_start']:
+                       ~~~~^^^^^^^^
+KeyError: 'text'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: KeyError: 'text'
+2024-12-12 16:02:01 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 16:02:01 --> INFO: logging in using static token
+2024-12-12 16:02:03 --> INFO: Shard ID None has connected to Gateway (Session ID: 3b36c51bf85d457ce3bc7f176a045e3c).
+2024-12-12 16:02:05 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 16:02:05 --> INFO: 伺服器狀態更新為: GO了24次 | 1 個伺服器
+2024-12-12 16:02:22 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 43136, "frame_end": 43136, "episode": "1-3"} 耗時: 3.284 秒
+2024-12-12 16:02:38 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 43136, "frame_end": 43136, "episode": "1-3"} 耗時: 3.621 秒
+2024-12-12 16:04:40 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 16:04:40 --> INFO: logging in using static token
+2024-12-12 16:04:42 --> INFO: Shard ID None has connected to Gateway (Session ID: b56cf4796d9fc20adfcee961ca129ab9).
+2024-12-12 16:04:45 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 16:04:45 --> INFO: 伺服器狀態更新為: GO了26次 | 1 個伺服器
+2024-12-12 16:06:14 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 16:06:14 --> INFO: logging in using static token
+2024-12-12 16:06:15 --> INFO: Shard ID None has connected to Gateway (Session ID: 65bc1ce6d1b040e1c21c2f1b00d76bed).
+2024-12-12 16:06:18 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 16:06:18 --> INFO: 伺服器狀態更新為: GO了26次 | 1 個伺服器
+2024-12-12 16:06:39 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 43136, "frame_end": 43136, "episode": "1-3"} 耗時: 3.488 秒
+2024-12-12 16:07:03 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 43136, "frame_end": 43136, "episode": "1-3"} 耗時: 7.529 秒
+2024-12-12 16:08:25 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 16:08:25 --> INFO: logging in using static token
+2024-12-12 16:08:27 --> INFO: Shard ID None has connected to Gateway (Session ID: 84e2accde55138bca687ff04a63c9722).
+2024-12-12 16:08:30 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 16:08:30 --> INFO: 伺服器狀態更新為: GO了28次 | 1 個伺服器
+2024-12-12 16:09:49 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 43136, "frame_end": 43136, "episode": "1-3"} 耗時: 4.186 秒

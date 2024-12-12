@@ -444,3 +444,9 @@ discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an excepti
 2024-12-12 16:08:30 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
 2024-12-12 16:08:30 --> INFO: 伺服器狀態更新為: GO了28次 | 1 個伺服器
 2024-12-12 16:09:49 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 43136, "frame_end": 43136, "episode": "1-3"} 耗時: 4.186 秒
+2024-12-12 16:13:22 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 16:13:22 --> INFO: logging in using static token
+2024-12-12 16:13:24 --> INFO: Shard ID None has connected to Gateway (Session ID: d809fa3611ccc5df3b9e3b854a4f1dd0).
+2024-12-12 16:13:27 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 16:13:27 --> INFO: 伺服器狀態更新為: GO了29次 | 1 個伺服器
+2024-12-12 16:14:05 --> INFO: 伺服器ID: 762279698360172595 台詞: {"frame_start": 14568, "frame_end": 14592, "episode": "10"} 耗時: 3.636 秒

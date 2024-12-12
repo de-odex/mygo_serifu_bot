@@ -148,35 +148,38 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
         embed.set_image(url=error_gif_link)
         await interaction.response.send_message(embed=embed, ephemeral=True)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        print(f"{timestamp}-->伺服器ID: {interaction.guild_id} 未找到台詞{text}")
+        logging.info(f"{timestamp}-->伺服器ID: {interaction.guild_id} 未找到台詞{text}")
         return
     start_time = datetime.now()
     await interaction.response.defer()
-    episode = result[0]['episode']
-    frame_number = result[0]['frame_start']
-    back_frames = second * 23.98
-    frame_number = frame_number + back_frames + 15
-    timestamp = frame_number / 23.98
-    #ffmpeg-python
-    buffer, error = ffmpeg.input(filename=f'src/{str(episode)}.mp4', ss=timestamp) \
-            .output('pipe:', vframes=1, format='image2', vcodec='png') \
-            .global_args('-loglevel', 'error')\
-            .run(capture_stdout=True)
-    if error:
-        embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
-        embed.set_image(url=error_gif_link)
-        await interaction.followup.send(embed=embed)
-        logging.error(f'伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}')
-        return
-    #send
-    await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f'{str(frame_number)}.png'))
-    end_time = datetime.now()
-    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-    run_time = end_time - start_time
-    total_seconds = run_time.total_seconds()
-    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
-    record(result[0])
-
+    for item in result:
+        if len(item['text']) < 100:
+            if item['text'] == text:
+                episode = item['episode']
+                frame_number = item['frame_start']
+                back_frames = second * 23.98
+                frame_number = frame_number + back_frames + 5
+                timestamp = frame_number / 23.98
+                #ffmpeg-python
+                buffer, error = ffmpeg.input(filename=f'src/{str(episode)}.mp4', ss=timestamp) \
+                        .output('pipe:', vframes=1, format='image2', vcodec='png') \
+                        .global_args('-loglevel', 'error')\
+                        .run(capture_stdout=True)
+                if error:
+                    embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
+                    embed.set_image(url=error_gif_link)
+                    await interaction.followup.send(embed=embed)
+                    logging.error(f'伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}')
+                    return
+                #send
+                await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f'{str(frame_number)}.png'))
+                end_time = datetime.now()
+                timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+                run_time = end_time - start_time
+                total_seconds = run_time.total_seconds()
+                logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 耗時: {total_seconds:.3f} 秒")
+                record(result[0])
+                break
     
 
 @bot.tree.command(name="mygogif", description="搜尋MyGO台詞並製作GIF")
@@ -196,32 +199,36 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
         return
     start_time = datetime.now()
     await interaction.response.defer()
-    episode = result[0]['episode']
-    frame_number = result[0]['frame_start']
-    frame_number = frame_number + 15
-    timestamp = frame_number / 23.98
-    embed = discord.Embed(title="GIF製作中...",description='視畫面複雜程度，可能需要一些時間', color=discord.Color.green())
-    msg = await interaction.followup.send(embed=embed,ephemeral=True)
-    end_frame = duration * 23.98
+    for item in result:
+        if len(item['text']) < 100:
+            if item['text'] == text:
+                episode = item['episode']
+                frame_number = item['frame_start']
+                frame_number = frame_number + 15
+                timestamp = frame_number / 23.98
+                embed = discord.Embed(title="GIF製作中...",description='視畫面複雜程度，可能需要一些時間', color=discord.Color.green())
+                msg = await interaction.followup.send(embed=embed,ephemeral=True)
+                end_frame = duration * 23.98
 
-    buffer2, error = await asyncio.to_thread(run_ffmpeg_sync, episode, timestamp, end_frame)
+                buffer2, error = await asyncio.to_thread(run_ffmpeg_sync, episode, timestamp, end_frame)
 
-    if error:
-        embed = discord.Embed(title="❌錯誤",description='FFMPEG出事啦', color=discord.Color.red())
-        embed.set_image(url=error_gif_link)
-        # await msg.edit(embed=embed)
-        end_time = datetime.now()
-        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-        logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}")
-        return
-    
-    await msg.edit(embed = None, attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f'{str(frame_number)}.gif')])
-    end_time = datetime.now()
-    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-    run_time = end_time - start_time
-    total_seconds = run_time.total_seconds()
-    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒")
-    record(result[0])
+                if error:
+                    embed = discord.Embed(title="❌錯誤",description='FFMPEG出事啦', color=discord.Color.red())
+                    embed.set_image(url=error_gif_link)
+                    # await msg.edit(embed=embed)
+                    end_time = datetime.now()
+                    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+                    logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} 錯誤: {error}")
+                    return
+                
+                await msg.edit(embed = None, attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f'{str(frame_number)}.gif')])
+                end_time = datetime.now()
+                timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
+                run_time = end_time - start_time
+                total_seconds = run_time.total_seconds()
+                logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {text} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒")
+                record(result[0])
+                break
 
 
 

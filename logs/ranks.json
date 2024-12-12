@@ -45,7 +45,43 @@
                 "frame_end": 31272
             },
             "times": 5
+        },
+        {
+            "text": {
+                "text": "妳彈得好棒喔",
+                "episode": "1-3",
+                "frame_start": 14896,
+                "frame_end": 14928
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "不是啊",
+                "episode": "1-3",
+                "frame_start": 27960,
+                "frame_end": 27992
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "為什麼要演奏春日影!",
+                "episode": "7",
+                "frame_start": 30120,
+                "frame_end": 30168
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "味道醇香,我很喜歡",
+                "episode": "1-3",
+                "frame_start": 45024,
+                "frame_end": 45064
+            },
+            "times": 2
         }
     ],
-    "times": 10
+    "times": 21
 }

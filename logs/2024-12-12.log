@@ -1,0 +1,190 @@
+2024-12-12 01:14:09 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 01:14:09 --> INFO: logging in using static token
+2024-12-12 01:14:11 --> INFO: Shard ID None has connected to Gateway (Session ID: 60cd4f3c1de8c1cf3259c9307698eb6a).
+2024-12-12 01:14:13 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 01:14:13 --> INFO: 伺服器狀態更新為: GO了10次 | 1 個伺服器
+2024-12-12 01:14:38 --> INFO: 伺服器ID: 762279698360172595 台詞: 好棒喔 耗時: 3.093 秒
+2024-12-12 01:14:55 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 163, in mygo
+    frame_number = frame_number + back_frames + 15
+                   ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+2024-12-12 01:17:49 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 01:17:49 --> INFO: logging in using static token
+2024-12-12 01:17:51 --> INFO: Shard ID None has connected to Gateway (Session ID: e44f49fa61fc29349e2b1f2da6336c07).
+2024-12-12 01:17:54 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 01:17:54 --> INFO: 伺服器狀態更新為: GO了11次 | 1 個伺服器
+2024-12-12 01:17:56 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 164, in mygo
+    frame_number = frame_number + back_frames + 15
+                   ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+2024-12-12 01:18:16 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 01:18:16 --> INFO: logging in using static token
+2024-12-12 01:18:18 --> INFO: Shard ID None has connected to Gateway (Session ID: a75d75981292810631e2e3bb158fd3ed).
+2024-12-12 01:18:26 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 165, in mygo
+    frame_number = frame_number + back_frames + 15
+                   ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+2024-12-12 01:18:44 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 01:18:44 --> INFO: logging in using static token
+2024-12-12 01:18:46 --> INFO: Shard ID None has connected to Gateway (Session ID: 55a980e0be14c2d8b0018b2426533baa).
+2024-12-12 01:18:50 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 165, in mygo
+    frame_number = frame_number + back_frames + 15
+                   ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+2024-12-12 01:19:24 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 01:19:24 --> INFO: 伺服器狀態更新為: GO了11次 | 1 個伺服器
+2024-12-12 01:21:21 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 165, in mygo
+    back_frames = second * 23.98
+                   ~~~~~~^~~~~~
+UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+2024-12-12 01:22:29 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 01:22:29 --> INFO: logging in using static token
+2024-12-12 01:22:31 --> INFO: Shard ID None has connected to Gateway (Session ID: b9f2f401192c8965cf8c7edbbf91f483).
+2024-12-12 01:22:33 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 01:22:33 --> INFO: 伺服器狀態更新為: GO了11次 | 1 個伺服器
+2024-12-12 01:22:54 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 166, in mygo
+    frame_number = frame_number + back_frames + 15
+                   ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: UnboundLocalError: cannot access local variable 'frame_number' where it is not associated with a value
+2024-12-12 01:23:21 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 01:23:21 --> INFO: logging in using static token
+2024-12-12 01:23:23 --> INFO: Shard ID None has connected to Gateway (Session ID: 82904390b003f3d3633cf54add4d780a).
+2024-12-12 01:23:26 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 01:23:26 --> INFO: 伺服器狀態更新為: GO了11次 | 1 個伺服器
+2024-12-12 01:23:46 --> INFO: 伺服器ID: 762279698360172595 台詞: 好棒喔 耗時: 4.128 秒
+2024-12-12 01:25:19 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 01:25:19 --> INFO: logging in using static token
+2024-12-12 01:25:21 --> INFO: Shard ID None has connected to Gateway (Session ID: 12acce620c9fd7d7dd15610bb076cc16).
+2024-12-12 01:25:24 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 01:25:24 --> INFO: 伺服器狀態更新為: GO了12次 | 1 個伺服器
+2024-12-12 01:25:38 --> INFO: 伺服器ID: 762279698360172595 台詞: 好棒喔 1.5秒GIF耗時: 3.979 秒
+2024-12-12 10:20:41 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 10:20:41 --> INFO: logging in using static token
+2024-12-12 10:20:43 --> INFO: Shard ID None has connected to Gateway (Session ID: 5b287e8c92e02b0de4b1fd73b494b5ad).
+2024-12-12 10:20:46 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 10:20:46 --> INFO: 伺服器狀態更新為: GO了13次 | 1 個伺服器
+2024-12-12 10:21:14 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 5.509 秒
+2024-12-12 10:21:30 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 10:21:30 --> INFO: logging in using static token
+2024-12-12 10:21:31 --> INFO: Shard ID None has connected to Gateway (Session ID: aa9840f60ef5a460c0f596c69fdc6bae).
+2024-12-12 10:21:34 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 10:21:34 --> INFO: 伺服器狀態更新為: GO了14次 | 1 個伺服器
+2024-12-12 10:21:40 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 4.016 秒
+2024-12-12 10:21:52 --> INFO: 伺服器ID: 762279698360172595 台詞: 為什麼要演奏春日影! 耗時: 1.584 秒
+2024-12-12 10:22:01 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 10:22:01 --> INFO: logging in using static token
+2024-12-12 10:22:03 --> INFO: Shard ID None has connected to Gateway (Session ID: 48d53c31351a87d977d2bfc54e5b3148).
+2024-12-12 10:22:05 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 10:22:05 --> INFO: 伺服器狀態更新為: GO了16次 | 1 個伺服器
+2024-12-12 10:22:43 --> INFO: 伺服器ID: 762279698360172595 台詞: 為什麼要演奏春日影! 耗時: 2.565 秒
+2024-12-12 10:22:58 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 4.229 秒
+2024-12-12 10:23:10 --> INFO: 伺服器ID: 762279698360172595 台詞: 味道醇香,我很喜歡 耗時: 4.335 秒
+2024-12-12 10:23:24 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 10:23:24 --> INFO: logging in using static token
+2024-12-12 10:23:25 --> INFO: Shard ID None has connected to Gateway (Session ID: 1c59f7abaf3b68d1c42303e313f12ead).
+2024-12-12 10:23:28 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 10:23:28 --> INFO: 伺服器狀態更新為: GO了19次 | 1 個伺服器
+2024-12-12 10:23:37 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 4.345 秒
+2024-12-12 10:23:50 --> INFO: 伺服器ID: 762279698360172595 台詞: 味道醇香,我很喜歡 耗時: 6.008 秒

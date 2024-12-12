@@ -784,3 +784,47 @@ discord.app_commands.errors.CommandInvokeError: Command 'mygogif' raised an exce
 2024-12-12 19:44:36 --> INFO: 伺服器ID: 762279698360172595 台詞: 味道醇香,我很喜歡 耗時: 4.179 秒
 2024-12-12 19:44:54 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 6.787 秒
 2024-12-12 19:45:24 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 12.033 秒
+2024-12-12 19:45:40 --> WARNING: Privileged message content intent is missing, commands may not work as expected.
+2024-12-12 19:45:40 --> INFO: logging in using static token
+2024-12-12 19:45:41 --> INFO: Shard ID None has connected to Gateway (Session ID: cbb2b9b9b390af12f9a74730ddc18e47).
+2024-12-12 19:45:44 --> INFO: 已上線: 買夠機器人(測試)#9807 | 在 1 個伺服器中
+2024-12-12 19:45:44 --> INFO: 伺服器狀態更新為: GO了64次 | 1 個伺服器
+2024-12-12 19:45:52 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 4.731 秒
+2024-12-12 19:47:08 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 1.5秒GIF耗時: 49.400 秒
+2024-12-12 19:47:45 --> INFO: 伺服器ID: 762279698360172595 台詞: 是啊 耗時: 8.334 秒
+2024-12-12 19:48:24 --> ERROR: Ignoring exception in command 'mygo'
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 828, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 188, in mygo
+    result = text_process_precise(text)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g:\coding PROJECT\mygo_dc\mygo_dc\main.py", line 72, in text_process_precise
+    text = json.loads(text)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 853, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\10403\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\app_commands\commands.py", line 846, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mygo' raised an exception: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-12-12 19:49:13 --> INFO: 伺服器ID: 762279698360172595 台詞: 是嗎 耗時: 6.727 秒
+2024-12-12 19:49:34 --> INFO: 伺服器ID: 762279698360172595 台詞: 是嗎 耗時: 6.947 秒
+2024-12-12 19:50:03 --> INFO: 伺服器ID: 762279698360172595 台詞: 為什麼? 耗時: 4.941 秒
+2024-12-12 19:50:20 --> INFO: 伺服器ID: 762279698360172595 台詞: 對啊 耗時: 6.298 秒

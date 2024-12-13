@@ -17,7 +17,7 @@
                 "frame_start": 1008,
                 "frame_end": 1048
             },
-            "times": 1
+            "times": 25
         },
         {
             "text": {
@@ -26,7 +26,7 @@
                 "frame_start": 3656,
                 "frame_end": 3784
             },
-            "times": 2
+            "times": 23
         },
         {
             "text": {
@@ -34,6 +34,87 @@
                 "episode": "1-3",
                 "frame_start": 1120,
                 "frame_end": 1192
+            },
+            "times": 65
+        },
+        {
+            "text": {
+                "text": "為什麼要演奏春日影!",
+                "episode": "7",
+                "frame_start": 30120,
+                "frame_end": 30168
+            },
+            "times": 66
+        },
+        {
+            "text": {
+                "text": "Tomorin好可愛喔",
+                "episode": "13",
+                "frame_start": 12912,
+                "frame_end": 12952
+            },
+            "times": 7
+        },
+        {
+            "text": {
+                "text": "太過分了",
+                "episode": "8",
+                "frame_start": 632,
+                "frame_end": 648
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "沒問題啦",
+                "episode": "6",
+                "frame_start": 28664,
+                "frame_end": 28680
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "CRYCHIC真是太棒了",
+                "episode": "1-3",
+                "frame_start": 94400,
+                "frame_end": 94432
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "之前的演唱會不是很快樂嗎",
+                "episode": "1-3",
+                "frame_start": 1856,
+                "frame_end": 1912
+            },
+            "times": 16
+        },
+        {
+            "text": {
+                "text": "那麼一起實際試試看吧",
+                "episode": "6",
+                "frame_start": 13048,
+                "frame_end": 13088
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "真是有想法",
+                "episode": "1-3",
+                "frame_start": 5216,
+                "frame_end": 5240
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "可是,要是小祥退出的話",
+                "episode": "1-3",
+                "frame_start": 3000,
+                "frame_end": 3056
             },
             "times": 2
         },
@@ -44,34 +125,970 @@
                 "frame_start": 31248,
                 "frame_end": 31272
             },
-            "times": 5
+            "times": 80
         },
         {
             "text": {
-                "text": "妳彈得好棒喔",
+                "text": "滿腦子都只想到自己呢",
+                "episode": "8",
+                "frame_start": 30784,
+                "frame_end": 30832
+            },
+            "times": 17
+        },
+        {
+            "text": {
+                "text": "這是在講什麼?",
                 "episode": "1-3",
-                "frame_start": 14896,
-                "frame_end": 14928
+                "frame_start": 60272,
+                "frame_end": 60304
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "是我自己的問題",
+                "episode": "1-3",
+                "frame_start": 1728,
+                "frame_end": 1776
+            },
+            "times": 26
+        },
+        {
+            "text": {
+                "text": "什麼跟什麼啊",
+                "episode": "1-3",
+                "frame_start": 94728,
+                "frame_end": 94768
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "還有這樣太不負責了吧?",
+                "episode": "1-3",
+                "frame_start": 2448,
+                "frame_end": 2480
             },
             "times": 3
         },
         {
             "text": {
-                "text": "不是啊",
+                "text": "是嗎%%",
                 "episode": "1-3",
-                "frame_start": 27960,
-                "frame_end": 27992
+                "frame_start": 50936,
+                "frame_end": 50952
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "那當然是騙人的啊",
+                "episode": "9",
+                "frame_start": 21600,
+                "frame_end": 21640
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "這不是小睦的錯",
+                "episode": "1-3",
+                "frame_start": 24496,
+                "frame_end": 24536
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "是這樣沒錯",
+                "episode": "1-3",
+                "frame_start": 42576,
+                "frame_end": 42616
+            },
+            "times": 8
+        },
+        {
+            "text": {
+                "text": "長尾知夏 高根壽美子 度過一段充實的高中生活",
+                "episode": "1-3",
+                "frame_start": 5128,
+                "frame_end": 5160
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "色彩h計/色指足/F查 證足利作 毛=心制作 北 川 順子 宮 道瑁希 菊池真裕子 制作進行 為了不讓悲傷奪走切",
+                "episode": "5",
+                "frame_start": 33032,
+                "frame_end": 33104
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "她是小燈的朋友嗎 問我幹嘛",
+                "episode": "1-3",
+                "frame_start": 30504,
+                "frame_end": 30504
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "是這樣嗎",
+                "episode": "1-3",
+                "frame_start": 2000,
+                "frame_end": 2064
+            },
+            "times": 80
+        },
+        {
+            "text": {
+                "text": "真的好厲害喔",
+                "episode": "5",
+                "frame_start": 25112,
+                "frame_end": 25136
             },
             "times": 4
         },
         {
             "text": {
-                "text": "為什麼要演奏春日影!",
-                "episode": "7",
-                "frame_start": 30120,
-                "frame_end": 30168
+                "text": "那大家都有人開車接送的傳聞是真的嗎",
+                "episode": "1-3",
+                "frame_start": 43888,
+                "frame_end": 43952
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我怎麼可能會生氣",
+                "episode": "4",
+                "frame_start": 14216,
+                "frame_end": 14248
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "太好了,妳終於來了",
+                "episode": "1-3",
+                "frame_start": 776,
+                "frame_end": 784
+            },
+            "times": 57
+        },
+        {
+            "text": {
+                "text": "我還是會繼續下去",
+                "episode": "10",
+                "frame_start": 23504,
+                "frame_end": 23536
+            },
+            "times": 13
+        },
+        {
+            "text": {
+                "text": "的確是很好吃呢",
+                "episode": "5",
+                "frame_start": 4560,
+                "frame_end": 4592
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "像傻瓜一樣",
+                "episode": "11",
+                "frame_start": 2112,
+                "frame_end": 2136
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那又怎麼樣?",
+                "episode": "8",
+                "frame_start": 464,
+                "frame_end": 480
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "燈就是在等妳來啊",
+                "episode": "1-3",
+                "frame_start": 3256,
+                "frame_end": 3296
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "真是的,下次一定要讓妳試試",
+                "episode": "1-3",
+                "frame_start": 25584,
+                "frame_end": 25640
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "大家好像都有在玩樂團?",
+                "episode": "1-3",
+                "frame_start": 10240,
+                "frame_end": 10288
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "真是太好了",
+                "episode": "1-3",
+                "frame_start": 82304,
+                "frame_end": 82328
+            },
+            "times": 11
+        },
+        {
+            "text": {
+                "text": "12月12日,發現塵埃",
+                "episode": "1-3",
+                "frame_start": 19816,
+                "frame_end": 19904
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "簡直不敢相信 怎麼會",
+                "episode": "13",
+                "frame_start": 23640,
+                "frame_end": 23640
             },
             "times": 2
+        },
+        {
+            "text": {
+                "text": "怎麼會 簡直不敢相信",
+                "episode": "13",
+                "frame_start": 23648,
+                "frame_end": 23648
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳怎麼會這麼想?",
+                "episode": "4",
+                "frame_start": 13096,
+                "frame_end": 13120
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "為什麼你的手是如此的溫暖?",
+                "episode": "1-3",
+                "frame_start": 93480,
+                "frame_end": 93656
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我哭得亂七八糟的",
+                "episode": "1-3",
+                "frame_start": 73232,
+                "frame_end": 73288
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "把一切都忘掉吧 讓我",
+                "episode": "7",
+                "frame_start": 33552,
+                "frame_end": 33560
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "一輩子和我一起組樂團嗎",
+                "episode": "1-3",
+                "frame_start": 29040,
+                "frame_end": 29120
+            },
+            "times": 11
+        },
+        {
+            "text": {
+                "text": "到現在都還執著於過去,真難看",
+                "episode": "8",
+                "frame_start": 26688,
+                "frame_end": 26744
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "坐在那邊很冷",
+                "episode": "7",
+                "frame_start": 6008,
+                "frame_end": 6040
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "因為春日影是一首好歌",
+                "episode": "4",
+                "frame_start": 184,
+                "frame_end": 240
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "為什麼? 發生什麼事了嗎",
+                "episode": "1-3",
+                "frame_start": 1480,
+                "frame_end": 1528
+            },
+            "times": 73
+        },
+        {
+            "text": {
+                "text": "妳是來找我吵架的嗎",
+                "episode": "10",
+                "frame_start": 23200,
+                "frame_end": 23232
+            },
+            "times": 13
+        },
+        {
+            "text": {
+                "text": "#9 燈到底哪裡惹到她了",
+                "episode": "9",
+                "frame_start": 11560,
+                "frame_end": 11576
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "一輩子?",
+                "episode": "1-3",
+                "frame_start": 29288,
+                "frame_end": 29312
+            },
+            "times": 9
+        },
+        {
+            "text": {
+                "text": "真的每天都預約時段了呢",
+                "episode": "6",
+                "frame_start": 12344,
+                "frame_end": 12408
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "之前妳不是安慰過我嗎",
+                "episode": "13",
+                "frame_start": 11784,
+                "frame_end": 11824
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我要在這裡重新開始",
+                "episode": "1-3",
+                "frame_start": 5616,
+                "frame_end": 5656
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "吵死了",
+                "episode": "4",
+                "frame_start": 25616,
+                "frame_end": 25632
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "真好喝",
+                "episode": "1-3",
+                "frame_start": 57224,
+                "frame_end": 57240
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "小祥",
+                "episode": "1-3",
+                "frame_start": 752,
+                "frame_end": 768
+            },
+            "times": 20
+        },
+        {
+            "text": {
+                "text": "傳訊息也都沒有回",
+                "episode": "1-3",
+                "frame_start": 920,
+                "frame_end": 960
+            },
+            "times": 20
+        },
+        {
+            "text": {
+                "text": "妳終於來了 太好了 9",
+                "episode": "1-3",
+                "frame_start": 792,
+                "frame_end": 816
+            },
+            "times": 10
+        },
+        {
+            "text": {
+                "text": "來,開始溝通吧",
+                "episode": "4",
+                "frame_start": 11368,
+                "frame_end": 11408
+            },
+            "times": 8
+        },
+        {
+            "text": {
+                "text": "我要封鎖他",
+                "episode": "1-3",
+                "frame_start": 95840,
+                "frame_end": 95856
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "還真是高高在上呢",
+                "episode": "13",
+                "frame_start": 1296,
+                "frame_end": 1328
+            },
+            "times": 18
+        },
+        {
+            "text": {
+                "text": "謝謝妳的回答",
+                "episode": "1-3",
+                "frame_start": 5248,
+                "frame_end": 5280
+            },
+            "times": 7
+        },
+        {
+            "text": {
+                "text": "明天下午五點在RiN6集合)",
+                "episode": "4",
+                "frame_start": 27840,
+                "frame_end": 27928
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我沒那麼說",
+                "episode": "1-3",
+                "frame_start": 1968,
+                "frame_end": 1992
+            },
+            "times": 22
+        },
+        {
+            "text": {
+                "text": "//4<t<7.失 僕@中<碳-7~ 心主-] 亂飛t 寸寸tKh\"v7 台\" (唱詩之歌) 1> 詩",
+                "episode": "10",
+                "frame_start": 11152,
+                "frame_end": 11184
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那要來我家討論嗎",
+                "episode": "11",
+                "frame_start": 19272,
+                "frame_end": 19320
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我把妳加入群組了,以後別缺席",
+                "episode": "6",
+                "frame_start": 16424,
+                "frame_end": 16496
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "要是沒有大家在的話",
+                "episode": "6",
+                "frame_start": 23024,
+                "frame_end": 23072
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "連我們都不能說嗎",
+                "episode": "1-3",
+                "frame_start": 1544,
+                "frame_end": 1576
+            },
+            "times": 19
+        },
+        {
+            "text": {
+                "text": "妳講的話和做的事全都互相矛盾",
+                "episode": "8",
+                "frame_start": 27648,
+                "frame_end": 27696
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "等一下,我們先坐下來講吧?",
+                "episode": "1-3",
+                "frame_start": 1352,
+                "frame_end": 1432
+            },
+            "times": 26
+        },
+        {
+            "text": {
+                "text": "我愛慕虛榮啦",
+                "episode": "10",
+                "frame_start": 20176,
+                "frame_end": 20200
+            },
+            "times": 27
+        },
+        {
+            "text": {
+                "text": "妳沒有來學校上課",
+                "episode": "1-3",
+                "frame_start": 888,
+                "frame_end": 912
+            },
+            "times": 12
+        },
+        {
+            "text": {
+                "text": "有問題的話我們都能改進",
+                "episode": "1-3",
+                "frame_start": 1672,
+                "frame_end": 1720
+            },
+            "times": 23
+        },
+        {
+            "text": {
+                "text": "還有,月之森的學生真的都會講\"貴安\"嗎",
+                "episode": "1-3",
+                "frame_start": 43424,
+                "frame_end": 43512
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "後來我也跟著有樣學樣了",
+                "episode": "1-3",
+                "frame_start": 43752,
+                "frame_end": 43808
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "想喝什麼都可以自己拿",
+                "episode": "1-3",
+                "frame_start": 87552,
+                "frame_end": 87584
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "石頭?",
+                "episode": "1-3",
+                "frame_start": 71072,
+                "frame_end": 71096
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "差勁",
+                "episode": "1-3",
+                "frame_start": 31344,
+                "frame_end": 31368
+            },
+            "times": 11
+        },
+        {
+            "text": {
+                "text": "聽起來好棒喔",
+                "episode": "6",
+                "frame_start": 9464,
+                "frame_end": 9496
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "那個真的害我笑出來了呢",
+                "episode": "1-3",
+                "frame_start": 40360,
+                "frame_end": 40400
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我們都等兩小時五十六分三十-秒了耶",
+                "episode": "6",
+                "frame_start": 27480,
+                "frame_end": 27560
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "我可以用嗎",
+                "episode": "1-3",
+                "frame_start": 18192,
+                "frame_end": 18216
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "千早好厲害喔",
+                "episode": "1-3",
+                "frame_start": 8568,
+                "frame_end": 8584
+            },
+            "times": 10
+        },
+        {
+            "text": {
+                "text": "我不知道",
+                "episode": "1-3",
+                "frame_start": 50208,
+                "frame_end": 50232
+            },
+            "times": 9
+        },
+        {
+            "text": {
+                "text": "那傢伙竟然敢無視燈",
+                "episode": "9",
+                "frame_start": 19776,
+                "frame_end": 19832
+            },
+            "times": 20
+        },
+        {
+            "text": {
+                "text": "燈,妳的表情很棒喔",
+                "episode": "1-3",
+                "frame_start": 95128,
+                "frame_end": 95200
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "一輩子在一起吧",
+                "episode": "4",
+                "frame_start": 16104,
+                "frame_end": 16144
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "那是因為今晚的月亮很特別",
+                "episode": "13",
+                "frame_start": 23288,
+                "frame_end": 23352
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "又來了-個新人",
+                "episode": "13",
+                "frame_start": 22072,
+                "frame_end": 22112
+            },
+            "times": 9
+        },
+        {
+            "text": {
+                "text": "樂團要繼續不能少了貝斯手",
+                "episode": "9",
+                "frame_start": 28104,
+                "frame_end": 28144
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我知道燈很喜歡",
+                "episode": "1-3",
+                "frame_start": 72288,
+                "frame_end": 72328
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "謝謝妳願意過來",
+                "episode": "10",
+                "frame_start": 17672,
+                "frame_end": 17720
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "俄然覺",
+                "episode": "11",
+                "frame_start": 5120,
+                "frame_end": 5152
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳對燈說過自己也會組樂團一輩子吧?",
+                "episode": "9",
+                "frame_start": 21440,
+                "frame_end": 21504
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳定會用詛咒殺死那個人",
+                "episode": "13",
+                "frame_start": 24192,
+                "frame_end": 24224
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "可以吃了嗎",
+                "episode": "13",
+                "frame_start": 4160,
+                "frame_end": 4184
+            },
+            "times": 6
+        },
+        {
+            "text": {
+                "text": "吶,拜託你",
+                "episode": "1-3",
+                "frame_start": 93664,
+                "frame_end": 93696
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "妳是抱著多大的覺悟說出這種話的?",
+                "episode": "8",
+                "frame_start": 30232,
+                "frame_end": 30280
+            },
+            "times": 6
+        },
+        {
+            "text": {
+                "text": "\"春日影\"...",
+                "episode": "1-3",
+                "frame_start": 27368,
+                "frame_end": 27408
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "那首叫春日影的歌明明超好聽的啊",
+                "episode": "4",
+                "frame_start": 13160,
+                "frame_end": 13208
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "全是祥子的錯吧",
+                "episode": "4",
+                "frame_start": 12616,
+                "frame_end": 12632
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我沒有那麼厲害啦",
+                "episode": "5",
+                "frame_start": 25240,
+                "frame_end": 25272
+            },
+            "times": 7
+        },
+        {
+            "text": {
+                "text": "小祥有和妳連絡嗎",
+                "episode": "1-3",
+                "frame_start": 23440,
+                "frame_end": 23480
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我一直為7 CRYCHIC在努力著",
+                "episode": "8",
+                "frame_start": 29088,
+                "frame_end": 29192
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "爽世同學,不用找這個人啦",
+                "episode": "1-3",
+                "frame_start": 59792,
+                "frame_end": 59840
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不要講這種撒嬌的話了",
+                "episode": "1-3",
+                "frame_start": 3064,
+                "frame_end": 3104
+            },
+            "times": 12
+        },
+        {
+            "text": {
+                "text": "大家都一起開心玩樂團這麼久了",
+                "episode": "1-3",
+                "frame_start": 3400,
+                "frame_end": 3456
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "小睦也是這麼想的吧?",
+                "episode": "1-3",
+                "frame_start": 3464,
+                "frame_end": 3512
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "有趣的女人 爽世同學,妳聽到她說什麼了嗎",
+                "episode": "4",
+                "frame_start": 18328,
+                "frame_end": 18384
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "真是的,那些傢伙搞什麼啊",
+                "episode": "5",
+                "frame_start": 7088,
+                "frame_end": 7136
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "愛音同學?",
+                "episode": "4",
+                "frame_start": 6776,
+                "frame_end": 6792
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "有櫻桃喔",
+                "episode": "6",
+                "frame_start": 12624,
+                "frame_end": 12648
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不可以叫人家\"女人\"",
+                "episode": "8",
+                "frame_start": 20792,
+                "frame_end": 20832
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "早知道不該開始的 可奈子,妳今天頭髮味道不一樣耶?",
+                "episode": "10",
+                "frame_start": 1472,
+                "frame_end": 1544
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳不是不需要我了嗎",
+                "episode": "10",
+                "frame_start": 18912,
+                "frame_end": 18936
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "祝妳幸福",
+                "episode": "13",
+                "frame_start": 10296,
+                "frame_end": 10320
+            },
+            "times": 5
         },
         {
             "text": {
@@ -80,52 +1097,2644 @@
                 "frame_start": 45024,
                 "frame_end": 45064
             },
-            "times": 2
+            "times": 13
         },
         {
             "text": {
-                "text": "為什麼要演奏春日影!",
+                "text": "麻煩放慢 點",
                 "episode": "7",
-                "frame_start": 30124,
-                "frame_end": 30168
+                "frame_start": 360,
+                "frame_end": 400
             },
             "times": 1
         },
         {
             "text": {
-                "text": "好棒喔",
+                "text": "妳全身都濕透了,沒事吧?",
                 "episode": "1-3",
-                "frame_start": 55328,
-                "frame_end": 55352
+                "frame_start": 824,
+                "frame_end": 880
+            },
+            "times": 17
+        },
+        {
+            "text": {
+                "text": "io 儿 小睦在笑耶",
+                "episode": "1-3",
+                "frame_start": 90000,
+                "frame_end": 90000
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳工作學得很快,真是幫了大忙",
+                "episode": "1-3",
+                "frame_start": 25328,
+                "frame_end": 25376
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳不僅表裡不 又滿口謊言",
+                "episode": "10",
+                "frame_start": 23072,
+                "frame_end": 23136
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "太棒了,爽世同學LOVE",
+                "episode": "1-3",
+                "frame_start": 52224,
+                "frame_end": 52288
+            },
+            "times": 8
+        },
+        {
+            "text": {
+                "text": "真的嗎",
+                "episode": "1-3",
+                "frame_start": 19160,
+                "frame_end": 19176
+            },
+            "times": 7
+        },
+        {
+            "text": {
+                "text": "我想應該不是",
+                "episode": "1-3",
+                "frame_start": 27912,
+                "frame_end": 27952
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "不要走",
+                "episode": "8",
+                "frame_start": 29656,
+                "frame_end": 29688
             },
             "times": 3
         },
         {
             "text": {
-                "text": "是啊",
+                "text": "立希,妳好厲害喔",
+                "episode": "5",
+                "frame_start": 10760,
+                "frame_end": 10792
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "你好,我是長崎",
+                "episode": "9",
+                "frame_start": 1832,
+                "frame_end": 1864
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳唱得簡直太棒了",
                 "episode": "1-3",
-                "frame_start": 43136,
-                "frame_end": 43136
+                "frame_start": 94776,
+                "frame_end": 94800
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "普通\"和\"理所當然什麼呢?",
+                "episode": "1-3",
+                "frame_start": 31776,
+                "frame_end": 31880
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "大家會露出什麼表情呢",
+                "episode": "4",
+                "frame_start": 18640,
+                "frame_end": 18688
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "是啊,到底為什麼呢",
+                "episode": "4",
+                "frame_start": 4592,
+                "frame_end": 4656
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "只要是我能做的,我什麼都願意做",
+                "episode": "8",
+                "frame_start": 30096,
+                "frame_end": 30152
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "那.那我呢?",
+                "episode": "11",
+                "frame_start": 22840,
+                "frame_end": 22872
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "要睦像那樣騙人大概也做不來吧",
+                "episode": "1-3",
+                "frame_start": 57616,
+                "frame_end": 57672
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "還是說就是我們造成的?",
+                "episode": "1-3",
+                "frame_start": 1584,
+                "frame_end": 1632
+            },
+            "times": 7
+        },
+        {
+            "text": {
+                "text": "就由我來將牠結束掉",
+                "episode": "10",
+                "frame_start": 23864,
+                "frame_end": 23904
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "為什麼都不講話?",
+                "episode": "1-3",
+                "frame_start": 2536,
+                "frame_end": 2560
             },
             "times": 6
         },
         {
             "text": {
-                "text": "是啊",
+                "text": "我需要愛音!",
                 "episode": "10",
-                "frame_start": 14568,
-                "frame_end": 14592
+                "frame_start": 18976,
+                "frame_end": 19008
             },
             "times": 1
         },
         {
             "text": {
-                "text": "是啊",
+                "text": "被剪開了!",
+                "episode": "11",
+                "frame_start": 31344,
+                "frame_end": 31344
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳也說過還想再辦一次吧",
                 "episode": "1-3",
-                "frame_start": 94808,
-                "frame_end": 94824
+                "frame_start": 1920,
+                "frame_end": 1960
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "感謝您讓我佔用的寶貴時間",
+                "episode": "13",
+                "frame_start": 144,
+                "frame_end": 200
             },
             "times": 3
+        },
+        {
+            "text": {
+                "text": "我沒有那麼會迷路啦,我看得懂地圖啊",
+                "episode": "12",
+                "frame_start": 15720,
+                "frame_end": 15792
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "出發點明明就只是愛慕虛榮",
+                "episode": "10",
+                "frame_start": 23552,
+                "frame_end": 23592
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "聽我說啦",
+                "episode": "1-3",
+                "frame_start": 25552,
+                "frame_end": 25576
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "會結束掉的",
+                "episode": "5",
+                "frame_start": 13656,
+                "frame_end": 13672
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "小燈?",
+                "episode": "1-3",
+                "frame_start": 29432,
+                "frame_end": 29448
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳變成老奶奶也要繼續打鼓嗎",
+                "episode": "4",
+                "frame_start": 16912,
+                "frame_end": 16952
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "(如此的溫暖 燈笑起來好可愛喔",
+                "episode": "1-3",
+                "frame_start": 90128,
+                "frame_end": 90160
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "而且挺壞心眼的不是嗎",
+                "episode": "10",
+                "frame_start": 23160,
+                "frame_end": 23192
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "請問,要不要一起玩樂團?",
+                "episode": "1-3",
+                "frame_start": 15056,
+                "frame_end": 15104
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "現在沒有時間玩了吧",
+                "episode": "11",
+                "frame_start": 27000,
+                "frame_end": 27040
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "好了,可以了",
+                "episode": "1-3",
+                "frame_start": 61264,
+                "frame_end": 61312
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "這裡還有斑嘴環企鵝和冠企鵝",
+                "episode": "1-3",
+                "frame_start": 19200,
+                "frame_end": 19256
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "她沒付百匯的錢",
+                "episode": "5",
+                "frame_start": 6304,
+                "frame_end": 6336
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "_17石10015 27 d險高CP值]用零甩錢就可叨 巾心5 Caf& 晚安齧姆齧姆",
+                "episode": "5",
+                "frame_start": 8736,
+                "frame_end": 8776
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我還是想引人注目一點",
+                "episode": "11",
+                "frame_start": 22016,
+                "frame_end": 22048
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "併8為什麼 #8 >7 小燈真的是樂團主唱啊",
+                "episode": "8",
+                "frame_start": 3064,
+                "frame_end": 3112
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我聽她說她找到棲身之處了",
+                "episode": "12",
+                "frame_start": 8840,
+                "frame_end": 8888
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "燈,妳真的沒辦法唱嗎",
+                "episode": "1-3",
+                "frame_start": 85280,
+                "frame_end": 85344
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "美緒也好喜歡",
+                "episode": "1-3",
+                "frame_start": 71632,
+                "frame_end": 71664
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "消音就好了,不要封鎖吧",
+                "episode": "1-3",
+                "frame_start": 95880,
+                "frame_end": 95920
+            },
+            "times": 7
+        },
+        {
+            "text": {
+                "text": "為什麼現在買那些",
+                "episode": "11",
+                "frame_start": 18800,
+                "frame_end": 18832
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我不會再彈春日影了",
+                "episode": "11",
+                "frame_start": 12232,
+                "frame_end": 12264
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "這布局可說是堅若磐石",
+                "episode": "12",
+                "frame_start": 30800,
+                "frame_end": 30832
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不過姊姊我很擔心喔",
+                "episode": "10",
+                "frame_start": 9288,
+                "frame_end": 9328
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "有問題都可以告訴我",
+                "episode": "6",
+                "frame_start": 19392,
+                "frame_end": 19432
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "像名字一樣感覺好可愛喔",
+                "episode": "1-3",
+                "frame_start": 8384,
+                "frame_end": 8416
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "態度好差喔",
+                "episode": "1-3",
+                "frame_start": 50120,
+                "frame_end": 50160
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "心匕和 丰巾5勺勺-原案 植田和幸 響起了雨珠落下的音色.弓勺夕一宁#^> Craft Egg",
+                "episode": "1-3",
+                "frame_start": 69040,
+                "frame_end": 69088
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "全都是一些無趣的女人",
+                "episode": "5",
+                "frame_start": 5104,
+                "frame_end": 5152
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "原來妳是這麼想的呀",
+                "episode": "4",
+                "frame_start": 13392,
+                "frame_end": 13432
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "現在是講這個的時候嗎",
+                "episode": "11",
+                "frame_start": 12800,
+                "frame_end": 12832
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "對不起 不過",
+                "episode": "1-3",
+                "frame_start": 30088,
+                "frame_end": 30112
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不可以退出喔",
+                "episode": "11",
+                "frame_start": 16104,
+                "frame_end": 16136
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "她沒有說要退出",
+                "episode": "9",
+                "frame_start": 28584,
+                "frame_end": 28608
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "奇怪?奇怪?",
+                "episode": "1-3",
+                "frame_start": 12976,
+                "frame_end": 13040
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "燈在問妳話",
+                "episode": "1-3",
+                "frame_start": 2408,
+                "frame_end": 2440
+            },
+            "times": 6
+        },
+        {
+            "text": {
+                "text": "求求妳",
+                "episode": "8",
+                "frame_start": 28016,
+                "frame_end": 28024
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "是一輩子喔?一輩子",
+                "episode": "4",
+                "frame_start": 16672,
+                "frame_end": 16704
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "真的毫無品味",
+                "episode": "11",
+                "frame_start": 22608,
+                "frame_end": 22632
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "那個臭野貓",
+                "episode": "9",
+                "frame_start": 11384,
+                "frame_end": 11408
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "剛剛才在車站看到的",
+                "episode": "9",
+                "frame_start": 18840,
+                "frame_end": 18872
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "已經死了",
+                "episode": "13",
+                "frame_start": 1528,
+                "frame_end": 1560
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "以第一天來說還算不錯吧",
+                "episode": "1-3",
+                "frame_start": 12176,
+                "frame_end": 12216
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那無色卻存在著的事物",
+                "episode": "1-3",
+                "frame_start": 36952,
+                "frame_end": 37016
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "北 川 順 子 色指足/楨查 在現實與筆記中來來回回以求慰藉",
+                "episode": "1-3",
+                "frame_start": 32592,
+                "frame_end": 32648
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "媽媽也會覺得討厭啊",
+                "episode": "1-3",
+                "frame_start": 72376,
+                "frame_end": 72408
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "謝謝妳們,要加油喔",
+                "episode": "1-3",
+                "frame_start": 41176,
+                "frame_end": 41216
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我們要唱的歌是\"春日影\"",
+                "episode": "1-3",
+                "frame_start": 62208,
+                "frame_end": 62264
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "也要一輩子組樂團",
+                "episode": "11",
+                "frame_start": 2000,
+                "frame_end": 2040
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "小睦要不要和我一起去?",
+                "episode": "1-3",
+                "frame_start": 24656,
+                "frame_end": 24688
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "現在不先預約",
+                "episode": "5",
+                "frame_start": 12480,
+                "frame_end": 12504
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "晚安",
+                "episode": "1-3",
+                "frame_start": 72920,
+                "frame_end": 72944
+            },
+            "times": 6
+        },
+        {
+            "text": {
+                "text": "仔好想成為人類啊)",
+                "episode": "1-3",
+                "frame_start": 73816,
+                "frame_end": 73896
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "她和我約好要一輩子組樂團了",
+                "episode": "9",
+                "frame_start": 28232,
+                "frame_end": 28280
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "謝謝妳們,我先考慮一下吧",
+                "episode": "1-3",
+                "frame_start": 11640,
+                "frame_end": 11696
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "應該是大家在家都有努力練習吧",
+                "episode": "8",
+                "frame_start": 18440,
+                "frame_end": 18504
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "真的假的?",
+                "episode": "1-3",
+                "frame_start": 56112,
+                "frame_end": 56120
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "一定又會重蹈覆轍的",
+                "episode": "5",
+                "frame_start": 15088,
+                "frame_end": 15120
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "再見",
+                "episode": "5",
+                "frame_start": 8112,
+                "frame_end": 8128
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我幫妳把垃圾丟掉了喔",
+                "episode": "1-3",
+                "frame_start": 17792,
+                "frame_end": 17832
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "等-下,我正在打工耶",
+                "episode": "4",
+                "frame_start": 11032,
+                "frame_end": 11088
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "一定又會以失敗收場的",
+                "episode": "5",
+                "frame_start": 18912,
+                "frame_end": 18952
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "真的嗎?太好了",
+                "episode": "9",
+                "frame_start": 3072,
+                "frame_end": 3104
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "不嫌棄的話要不要一起玩?",
+                "episode": "1-3",
+                "frame_start": 11272,
+                "frame_end": 11304
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "我亂說的",
+                "episode": "4",
+                "frame_start": 18080,
+                "frame_end": 18104
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "燈,那些不用管了",
+                "episode": "12",
+                "frame_start": 616,
+                "frame_end": 640
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那妳能別用這種給人找麻煩的方式退團嗎",
+                "episode": "1-3",
+                "frame_start": 2584,
+                "frame_end": 2624
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "畢竟我們不過只是群一丘之貉罷了",
+                "episode": "13",
+                "frame_start": 20248,
+                "frame_end": 20320
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "所以應該已經死掉了",
+                "episode": "1-3",
+                "frame_start": 74704,
+                "frame_end": 74728
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "好的,謝謝您",
+                "episode": "1-3",
+                "frame_start": 5328,
+                "frame_end": 5376
+            },
+            "times": 6
+        },
+        {
+            "text": {
+                "text": "謝謝妳們",
+                "episode": "1-3",
+                "frame_start": 8320,
+                "frame_end": 8336
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "0UHNu LOL VIL1IHHO NGOC VU HONG NHI UYEN VY 啊啊,真是讓人活得難受的世界啊",
+                "episode": "1-3",
+                "frame_start": 66776,
+                "frame_end": 66832
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "所以說,我也很差勁",
+                "episode": "11",
+                "frame_start": 24576,
+                "frame_end": 24640
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我是來結束這樂團的",
+                "episode": "10",
+                "frame_start": 25216,
+                "frame_end": 25248
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "妳也盡快離開較為妥當喔",
+                "episode": "1-3",
+                "frame_start": 15792,
+                "frame_end": 15832
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳到底是怎樣?",
+                "episode": "5",
+                "frame_start": 19920,
+                "frame_end": 19944
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "0 妳是喝摩卡咖啡吧",
+                "episode": "4",
+                "frame_start": 1520,
+                "frame_end": 1552
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我拒絕的話 萬",
+                "episode": "11",
+                "frame_start": 15096,
+                "frame_end": 15096
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "請問這裡是",
+                "episode": "1-3",
+                "frame_start": 76040,
+                "frame_end": 76112
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我很不喜歡這種氣氛啊",
+                "episode": "1-3",
+                "frame_start": 21008,
+                "frame_end": 21064
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "對啊,真的好辛苦喔",
+                "episode": "1-3",
+                "frame_start": 9024,
+                "frame_end": 9064
+            },
+            "times": 8
+        },
+        {
+            "text": {
+                "text": "#5逃((年+y!佛5我沒有逃避0",
+                "episode": "4",
+                "frame_start": 33848,
+                "frame_end": 33848
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "就是說啊 我不知道該怎麼辦",
+                "episode": "10",
+                "frame_start": 1896,
+                "frame_end": 1920
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "立希,別這樣",
+                "episode": "1-3",
+                "frame_start": 2568,
+                "frame_end": 2576
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "她說她秉持不熬夜主義",
+                "episode": "11",
+                "frame_start": 27728,
+                "frame_end": 27768
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "雖然腦中變得一團混亂",
+                "episode": "10",
+                "frame_start": 27552,
+                "frame_end": 27600
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "It' s mygo耶, It's mygo",
+                "episode": "12",
+                "frame_start": 6040,
+                "frame_end": 6088
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我們有兩個人",
+                "episode": "1-3",
+                "frame_start": 25904,
+                "frame_end": 25936
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "別怪罪在別人身上",
+                "episode": "1-3",
+                "frame_start": 2952,
+                "frame_end": 2984
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "一輩子啊",
+                "episode": "4",
+                "frame_start": 17264,
+                "frame_end": 17264
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "好厲害 000",
+                "episode": "1-3",
+                "frame_start": 49200,
+                "frame_end": 49224
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "早 我是千早愛音",
+                "episode": "1-3",
+                "frame_start": 6424,
+                "frame_end": 6456
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "她好厲害喔",
+                "episode": "1-3",
+                "frame_start": 49760,
+                "frame_end": 49792
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "大家真沒品味",
+                "episode": "11",
+                "frame_start": 17480,
+                "frame_end": 17512
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "還有國王企鵝的",
+                "episode": "1-3",
+                "frame_start": 19264,
+                "frame_end": 19288
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "尤其燈妳才是最該多練習的人",
+                "episode": "1-3",
+                "frame_start": 3112,
+                "frame_end": 3168
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "過去軟弱的我",
+                "episode": "13",
+                "frame_start": 1472,
+                "frame_end": 1504
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不愧是羽丘的小呆萌",
+                "episode": "1-3",
+                "frame_start": 9472,
+                "frame_end": 9504
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳彈得好棒喔",
+                "episode": "1-3",
+                "frame_start": 14896,
+                "frame_end": 14928
+            },
+            "times": 16
+        },
+        {
+            "text": {
+                "text": "真是會虛情假意呢",
+                "episode": "8",
+                "frame_start": 26464,
+                "frame_end": 26496
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "樂奈,有抹茶螺旋麵包喔",
+                "episode": "7",
+                "frame_start": 8520,
+                "frame_end": 8568
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "好棒喔,我也要一樣的",
+                "episode": "1-3",
+                "frame_start": 46840,
+                "frame_end": 46880
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "我知道了,我知道了啦",
+                "episode": "4",
+                "frame_start": 17344,
+                "frame_end": 17344
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "Tomorin?",
+                "episode": "11",
+                "frame_start": 22696,
+                "frame_end": 22736
+            },
+            "times": 5
+        },
+        {
+            "text": {
+                "text": "OCOLA7 這個不用了",
+                "episode": "12",
+                "frame_start": 25864,
+                "frame_end": 25896
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我來了",
+                "episode": "6",
+                "frame_start": 16096,
+                "frame_end": 16104
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "面試就到這裡結束",
+                "episode": "1-3",
+                "frame_start": 5288,
+                "frame_end": 5320
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳一沮喪就會變得很安靜呢",
+                "episode": "6",
+                "frame_start": 25744,
+                "frame_end": 25792
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳真的要退出了嗎",
+                "episode": "1-3",
+                "frame_start": 2312,
+                "frame_end": 2368
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "會破壞Ave Mujica的世界觀",
+                "episode": "13",
+                "frame_start": 17960,
+                "frame_end": 18000
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "一旦加入就無法回頭了喔",
+                "episode": "13",
+                "frame_start": 1104,
+                "frame_end": 1144
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "來, Tomorin",
+                "episode": "13",
+                "frame_start": 5728,
+                "frame_end": 5744
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "剛才的演奏好棒喔",
+                "episode": "7",
+                "frame_start": 29264,
+                "frame_end": 29304
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳要道歉還不如別參加算了",
+                "episode": "7",
+                "frame_start": 8384,
+                "frame_end": 8432
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "藤田淳平(Elements Garden) 音柴 藤閒 仁 (Elements Garden) 緒方航貴.(7y口-陀 音槳宁4U夕夕一 /\"在校歲績也芥錯;)應該能順利入學吧",
+                "episode": "1-3",
+                "frame_start": 5536,
+                "frame_end": 5592
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我都說一直都有在看了啊",
+                "episode": "8",
+                "frame_start": 13976,
+                "frame_end": 14040
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳到底想幹嘛?",
+                "episode": "1-3",
+                "frame_start": 30768,
+                "frame_end": 30808
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "那我要先睡了 幫我把門鎖上吧 0",
+                "episode": "1-3",
+                "frame_start": 72736,
+                "frame_end": 72800
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我要吃",
+                "episode": "7",
+                "frame_start": 8576,
+                "frame_end": 8584
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "牠是阿德利企鵝屬",
+                "episode": "1-3",
+                "frame_start": 18424,
+                "frame_end": 18448
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "是鬍鬚企鵝",
+                "episode": "1-3",
+                "frame_start": 18336,
+                "frame_end": 18352
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我說啊,用這種態度和人講話",
+                "episode": "1-3",
+                "frame_start": 31280,
+                "frame_end": 31336
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不是啊",
+                "episode": "1-3",
+                "frame_start": 27960,
+                "frame_end": 27992
+            },
+            "times": 7
+        },
+        {
+            "text": {
+                "text": "爛老爸",
+                "episode": "13",
+                "frame_start": 33984,
+                "frame_end": 34008
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我的話題已經結束了嗎 對啊,好可愛喔",
+                "episode": "1-3",
+                "frame_start": 9568,
+                "frame_end": 9616
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "抱歉擅作主張找海鈴來",
+                "episode": "10",
+                "frame_start": 17104,
+                "frame_end": 17152
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那是誰?",
+                "episode": "1-3",
+                "frame_start": 26472,
+                "frame_end": 26488
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我知道了,那給我吧",
+                "episode": "1-3",
+                "frame_start": 19432,
+                "frame_end": 19472
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "要我怎麼做妳們才肯回來?",
+                "episode": "8",
+                "frame_start": 30064,
+                "frame_end": 30088
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "我都說討厭了吧",
+                "episode": "11",
+                "frame_start": 22504,
+                "frame_end": 22536
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "因為妳都沒有回覆我",
+                "episode": "1-3",
+                "frame_start": 56776,
+                "frame_end": 56800
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "/4<t<7.失 鎡飛t寸寸tKh\"+7 僕@中<碳-7 心主- 台\" 我要唱一首詩 1> 詩",
+                "episode": "10",
+                "frame_start": 11192,
+                "frame_end": 11248
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我不叫什麼Soyorin",
+                "episode": "11",
+                "frame_start": 23704,
+                "frame_end": 23744
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "這個是阿德利企鵝",
+                "episode": "1-3",
+                "frame_start": 18512,
+                "frame_end": 18544
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "昨天的你也很努力了",
+                "episode": "7",
+                "frame_start": 18344,
+                "frame_end": 18448
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "有趣的女孩子",
+                "episode": "10",
+                "frame_start": 13680,
+                "frame_end": 13744
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳要不要先去洗澡?",
+                "episode": "9",
+                "frame_start": 3824,
+                "frame_end": 3864
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "妳是誰",
+                "episode": "1-3",
+                "frame_start": 30392,
+                "frame_end": 30392
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "世界對我來說好遙遠",
+                "episode": "10",
+                "frame_start": 15144,
+                "frame_end": 15200
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "為什麼就只有我流不出眼淚呢",
+                "episode": "1-3",
+                "frame_start": 98656,
+                "frame_end": 98752
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "因為這些都是我自私的想法",
+                "episode": "5",
+                "frame_start": 16328,
+                "frame_end": 16376
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "請不要玩飲料機",
+                "episode": "1-3",
+                "frame_start": 88104,
+                "frame_end": 88144
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我看我也買張年票好了",
+                "episode": "13",
+                "frame_start": 11448,
+                "frame_end": 11496
+            },
+            "times": 4
+        },
+        {
+            "text": {
+                "text": "我都已經三天沒睡覺了",
+                "episode": "12",
+                "frame_start": 24776,
+                "frame_end": 24824
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "相信也不會有人責怪我的 _",
+                "episode": "1-3",
+                "frame_start": 33720,
+                "frame_end": 33856
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那邊不要動到喔 我當初是朋友邀我參加的",
+                "episode": "1-3",
+                "frame_start": 47784,
+                "frame_end": 47808
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "#2芒)誘士 俳2不會再邀妳了",
+                "episode": "1-3",
+                "frame_start": 34152,
+                "frame_end": 34152
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "希望你-也不要隱藏真心",
+                "episode": "7",
+                "frame_start": 18792,
+                "frame_end": 18808
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "Tomorin 花落知多少",
+                "episode": "11",
+                "frame_start": 25928,
+                "frame_end": 25960
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "是我自己講了那種奇怪的話",
+                "episode": "1-3",
+                "frame_start": 29888,
+                "frame_end": 29936
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "要是沒有小祥妳們的話,我就:",
+                "episode": "8",
+                "frame_start": 29984,
+                "frame_end": 30032
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳又這樣了",
+                "episode": "1-3",
+                "frame_start": 79776,
+                "frame_end": 79800
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "這種事沒什麼好在意的啊",
+                "episode": "1-3",
+                "frame_start": 13248,
+                "frame_end": 13264
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "腦中思緒轉個不停",
+                "episode": "12",
+                "frame_start": 20288,
+                "frame_end": 20320
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我喜歡企鵝",
+                "episode": "1-3",
+                "frame_start": 18312,
+                "frame_end": 18328
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "但我有種被妳鼓勵了的感覺",
+                "episode": "7",
+                "frame_start": 22208,
+                "frame_end": 22272
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "非常困難",
+                "episode": "11",
+                "frame_start": 29232,
+                "frame_end": 29256
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "應該幾乎沒有那種人吧",
+                "episode": "1-3",
+                "frame_start": 43960,
+                "frame_end": 44024
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳們早上有講話對吧?",
+                "episode": "1-3",
+                "frame_start": 9256,
+                "frame_end": 9288
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我沒聽見",
+                "episode": "4",
+                "frame_start": 18288,
+                "frame_end": 18312
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "Ril654777*1-1 5 OK,真是太好了 予3 /'1 5 12121 1_*70",
+                "episode": "11",
+                "frame_start": 13384,
+                "frame_end": 13416
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "丫8 是那傢伙自己發脾氣的",
+                "episode": "8",
+                "frame_start": 7368,
+                "frame_end": 7408
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "早安",
+                "episode": "1-3",
+                "frame_start": 39080,
+                "frame_end": 39136
+            },
+            "times": 10
+        },
+        {
+            "text": {
+                "text": "響板也不錯喔",
+                "episode": "4",
+                "frame_start": 22784,
+                "frame_end": 22824
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳只不過是一個學生",
+                "episode": "8",
+                "frame_start": 30312,
+                "frame_end": 30360
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "怎麼會:..簡直不敢相信",
+                "episode": "13",
+                "frame_start": 23688,
+                "frame_end": 23696
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那抬頭仰望最初一滴雨珠的今天的我",
+                "episode": "1-3",
+                "frame_start": 35760,
+                "frame_end": 35880
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我小學的時候也有在用呢",
+                "episode": "1-3",
+                "frame_start": 21248,
+                "frame_end": 21296
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "小祥今天是不是又不來了呢",
+                "episode": "1-3",
+                "frame_start": 96680,
+                "frame_end": 96752
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "爽世同學好清楚喔",
+                "episode": "1-3",
+                "frame_start": 47472,
+                "frame_end": 47512
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "終於能向前跨出一步了吧",
+                "episode": "4",
+                "frame_start": 22064,
+                "frame_end": 22128
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "讓我們一起迷失吧",
+                "episode": "10",
+                "frame_start": 20776,
+                "frame_end": 20816
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "我也得 起玩才行",
+                "episode": "1-3",
+                "frame_start": 12776,
+                "frame_end": 12784
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "因為祥好像快要壞掉了",
+                "episode": "13",
+                "frame_start": 1200,
+                "frame_end": 1264
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳的命名品味實在很讓人火大",
+                "episode": "11",
+                "frame_start": 22544,
+                "frame_end": 22600
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳好",
+                "episode": "1-3",
+                "frame_start": 44496,
+                "frame_end": 44512
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "樂團不需要我了吧?",
+                "episode": "9",
+                "frame_start": 30536,
+                "frame_end": 30576
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳這話是認真的嗎",
+                "episode": "9",
+                "frame_start": 22184,
+                "frame_end": 22240
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "木一L八一寸制作 株式會社丫口1| https:lanime.bang-dreamcom/mygo 公式木-L^-刁 就算稍微喘口氣休息一下",
+                "episode": "5",
+                "frame_start": 33352,
+                "frame_end": 33392
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "一下說\"妳們真的是朋友嗎\"",
+                "episode": "1-3",
+                "frame_start": 50328,
+                "frame_end": 50376
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "小燈的歌真的唱得好棒喔",
+                "episode": "1-3",
+                "frame_start": 65376,
+                "frame_end": 65440
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不可以碰這個",
+                "episode": "11",
+                "frame_start": 20496,
+                "frame_end": 20528
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "有點不太能想像呢",
+                "episode": "13",
+                "frame_start": 5280,
+                "frame_end": 5328
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "妳在開玩笑嗎",
+                "episode": "4",
+                "frame_start": 23256,
+                "frame_end": 23272
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "6 真是的 6_8",
+                "episode": "11",
+                "frame_start": 21056,
+                "frame_end": 21056
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "先等我一下",
+                "episode": "1-3",
+                "frame_start": 46056,
+                "frame_end": 46080
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我覺得 牠們...很可愛%",
+                "episode": "1-3",
+                "frame_start": 18760,
+                "frame_end": 18848
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "知道又能組樂團時感到很開心",
+                "episode": "5",
+                "frame_start": 16048,
+                "frame_end": 16104
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "什麼啦,完全搞不懂",
+                "episode": "11",
+                "frame_start": 1536,
+                "frame_end": 1584
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我也在想",
+                "episode": "1-3",
+                "frame_start": 9216,
+                "frame_end": 9232
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳們兩個先冷靜一點",
+                "episode": "6",
+                "frame_start": 21776,
+                "frame_end": 21816
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "早 希望大家願意和我當朋友",
+                "episode": "1-3",
+                "frame_start": 6520,
+                "frame_end": 6560
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我好難受%好難受",
+                "episode": "7",
+                "frame_start": 21448,
+                "frame_end": 21528
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不用 謝謝",
+                "episode": "7",
+                "frame_start": 12160,
+                "frame_end": 12192
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "搞不懂妳心裡到底在想什麼",
+                "episode": "10",
+                "frame_start": 17256,
+                "frame_end": 17320
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "怎麼這麼問?",
+                "episode": "4",
+                "frame_start": 152,
+                "frame_end": 168
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "0))1 好厲害喔",
+                "episode": "1-3",
+                "frame_start": 43152,
+                "frame_end": 43160
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "拜託妳的事妳明明都不肯做的",
+                "episode": "8",
+                "frame_start": 19464,
+                "frame_end": 19512
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "#5兆v(午. 併5 我沒有逃避!)",
+                "episode": "4",
+                "frame_start": 33936,
+                "frame_end": 33936
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我也很想去喔",
+                "episode": "9",
+                "frame_start": 3032,
+                "frame_end": 3064
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "#4-生尤5!? 僻4一輩子喔!3",
+                "episode": "1-3",
+                "frame_start": 102176,
+                "frame_end": 102232
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "只要妳肯停下來一切就都解決了啊",
+                "episode": "6",
+                "frame_start": 28960,
+                "frame_end": 28960
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "找在招募成員的樂團?",
+                "episode": "1-3",
+                "frame_start": 16208,
+                "frame_end": 16256
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "這個樂團是怎麼搞的啦",
+                "episode": "11",
+                "frame_start": 27872,
+                "frame_end": 27920
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我的人生已經失敗了吧",
+                "episode": "5",
+                "frame_start": 28608,
+                "frame_end": 28664
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "IANON TOKYO]",
+                "episode": "11",
+                "frame_start": 17152,
+                "frame_end": 17184
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那些全都是騙人的?",
+                "episode": "9",
+                "frame_start": 22312,
+                "frame_end": 22360
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "大家願意邀我參加我真的很高興",
+                "episode": "1-3",
+                "frame_start": 13296,
+                "frame_end": 13368
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "是這樣啊",
+                "episode": "1-3",
+                "frame_start": 11104,
+                "frame_end": 11120
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "沒關係的,不用勉強自己",
+                "episode": "4",
+                "frame_start": 17080,
+                "frame_end": 17144
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "真是累慘了",
+                "episode": "4",
+                "frame_start": 33416,
+                "frame_end": 33448
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "今天要不要喝大吉嶺?",
+                "episode": "1-3",
+                "frame_start": 58904,
+                "frame_end": 58936
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "我們學校滿多人玩的喔",
+                "episode": "1-3",
+                "frame_start": 10296,
+                "frame_end": 10336
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我感覺充滿了溫暖",
+                "episode": "8",
+                "frame_start": 11432,
+                "frame_end": 11520
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "一定又會以失敗收場",
+                "episode": "1-3",
+                "frame_start": 22384,
+                "frame_end": 22440
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我正在找組樂團的成員",
+                "episode": "1-3",
+                "frame_start": 15352,
+                "frame_end": 15392
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "什麼東西啊",
+                "episode": "12",
+                "frame_start": 6136,
+                "frame_end": 6152
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "小祥 4=3",
+                "episode": "1-3",
+                "frame_start": 96888,
+                "frame_end": 96912
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "真是奇怪的一天",
+                "episode": "4",
+                "frame_start": 18456,
+                "frame_end": 18504
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "真拿妳沒辦法",
+                "episode": "4",
+                "frame_start": 23096,
+                "frame_end": 23136
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "好痛喔",
+                "episode": "1-3",
+                "frame_start": 17424,
+                "frame_end": 17456
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "好好說明清楚",
+                "episode": "9",
+                "frame_start": 28392,
+                "frame_end": 28416
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我叫八幡海鈴",
+                "episode": "9",
+                "frame_start": 25936,
+                "frame_end": 25960
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我不是\"這傢伙%我叫愛音",
+                "episode": "4",
+                "frame_start": 18224,
+                "frame_end": 18224
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳叫愛音啊,我叫爽世",
+                "episode": "1-3",
+                "frame_start": 45648,
+                "frame_end": 45704
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "當然好啊",
+                "episode": "5",
+                "frame_start": 12200,
+                "frame_end": 12216
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那傢伙說不需要妳和樂奈",
+                "episode": "9",
+                "frame_start": 28984,
+                "frame_end": 29064
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "有錯的是那個突然退出的女生吧",
+                "episode": "4",
+                "frame_start": 920,
+                "frame_end": 976
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "但是,我確實傷害了她",
+                "episode": "8",
+                "frame_start": 7856,
+                "frame_end": 7928
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "沒有這回事啦",
+                "episode": "8",
+                "frame_start": 18392,
+                "frame_end": 18432
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "3&= 燈",
+                "episode": "1-3",
+                "frame_start": 30264,
+                "frame_end": 30264
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "是沒錯啊 P&05++",
+                "episode": "4",
+                "frame_start": 24320,
+                "frame_end": 24320
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "真讓人期待",
+                "episode": "1-3",
+                "frame_start": 84096,
+                "frame_end": 84120
+            },
+            "times": 3
+        },
+        {
+            "text": {
+                "text": "來了一群有趣的女生呢",
+                "episode": "10",
+                "frame_start": 14256,
+                "frame_end": 14304
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "很好看耶",
+                "episode": "12",
+                "frame_start": 6584,
+                "frame_end": 6608
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那個,我們是迷路之子樂團",
+                "episode": "12",
+                "frame_start": 4880,
+                "frame_end": 4920
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我早知道會這樣了",
+                "episode": "12",
+                "frame_start": 1128,
+                "frame_end": 1152
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "好了啦,快點過來",
+                "episode": "4",
+                "frame_start": 10984,
+                "frame_end": 11024
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "森 孚 貴安",
+                "episode": "1-3",
+                "frame_start": 37816,
+                "frame_end": 37856
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我叫豐川祥子",
+                "episode": "1-3",
+                "frame_start": 78704,
+                "frame_end": 78768
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不可能吧2",
+                "episode": "12",
+                "frame_start": 27360,
+                "frame_end": 27384
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "我有拜託妳別把我的事告訴其他人了吧",
+                "episode": "1-3",
+                "frame_start": 56808,
+                "frame_end": 56896
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "切都是小睦造成的",
+                "episode": "8",
+                "frame_start": 19960,
+                "frame_end": 19984
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "會被嚇到是當然的",
+                "episode": "1-3",
+                "frame_start": 42328,
+                "frame_end": 42368
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "讓妳久等了",
+                "episode": "1-3",
+                "frame_start": 58576,
+                "frame_end": 58600
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "燈,抱歉,快醒醒",
+                "episode": "11",
+                "frame_start": 27552,
+                "frame_end": 27584
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "讓人說不出話來了",
+                "episode": "1-3",
+                "frame_start": 94440,
+                "frame_end": 94480
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我想要道歉",
+                "episode": "8",
+                "frame_start": 7656,
+                "frame_end": 7680
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳說的燈是指高松燈嗎",
+                "episode": "1-3",
+                "frame_start": 50552,
+                "frame_end": 50608
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "雖然我不曉得應不應該道歉",
+                "episode": "8",
+                "frame_start": 7752,
+                "frame_end": 7832
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "沒問題嗎",
+                "episode": "7",
+                "frame_start": 11464,
+                "frame_end": 11480
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "(絕對不行 偵的不行)",
+                "episode": "11",
+                "frame_start": 17240,
+                "frame_end": 17240
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "這次我們大家一定要好好溝通",
+                "episode": "4",
+                "frame_start": 15544,
+                "frame_end": 15600
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "好厲害喔,妳會彈了耶",
+                "episode": "6",
+                "frame_start": 1576,
+                "frame_end": 1640
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "樂奈最喜歡有趣的事情了",
+                "episode": "10",
+                "frame_start": 14728,
+                "frame_end": 14792
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "練習要怎麼安排?",
+                "episode": "4",
+                "frame_start": 19744,
+                "frame_end": 19768
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "寸口` 確美|二 仕二卜7 J口yg0確 二知5札 訊息被封鎖確認方赴 ~b 1",
+                "episode": "8",
+                "frame_start": 17400,
+                "frame_end": 17472
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "不是不是",
+                "episode": "1-3",
+                "frame_start": 9296,
+                "frame_end": 9312
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "原來傳聞是真的啊",
+                "episode": "1-3",
+                "frame_start": 43816,
+                "frame_end": 43864
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "問我幹嘛 她是小燈的朋友嗎",
+                "episode": "1-3",
+                "frame_start": 30448,
+                "frame_end": 30496
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那麼現在開始進行班會",
+                "episode": "1-3",
+                "frame_start": 6952,
+                "frame_end": 7000
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "抹茶百匯",
+                "episode": "7",
+                "frame_start": 9104,
+                "frame_end": 9120
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "聽說抹茶對身體很好喔",
+                "episode": "13",
+                "frame_start": 5816,
+                "frame_end": 5856
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我們走吧 那是裝甜點的胃啦",
+                "episode": "7",
+                "frame_start": 9568,
+                "frame_end": 9608
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我還不曉得能不能組一輩子樂團",
+                "episode": "4",
+                "frame_start": 17696,
+                "frame_end": 17752
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "起去請教工作人員嗎 要",
+                "episode": "1-3",
+                "frame_start": 42816,
+                "frame_end": 42864
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "這些事總有一天得有人跟她說的",
+                "episode": "5",
+                "frame_start": 20992,
+                "frame_end": 21008
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我完全不懂妳的意思",
+                "episode": "9",
+                "frame_start": 24240,
+                "frame_end": 24288
+            },
+            "times": 1
         },
         {
             "text": {
@@ -138,64 +3747,523 @@
         },
         {
             "text": {
-                "text": "是啊",
+                "text": "怎麼辦,好開心喔",
+                "episode": "13",
+                "frame_start": 14112,
+                "frame_end": 14160
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "彷彿一切都沒發生過似地",
+                "episode": "1-3",
+                "frame_start": 37120,
+                "frame_end": 37120
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我再和她連絡看看",
+                "episode": "1-3",
+                "frame_start": 38800,
+                "frame_end": 38856
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "凜凜子小姐都說可以了",
+                "episode": "13",
+                "frame_start": 4080,
+                "frame_end": 4112
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "要是小祥退出的話%",
+                "episode": "1-3",
+                "frame_start": 2184,
+                "frame_end": 2216
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "那我也要",
                 "episode": "9",
-                "frame_start": 6208,
-                "frame_end": 6208
+                "frame_start": 3112,
+                "frame_end": 3136
             },
             "times": 1
         },
         {
             "text": {
-                "text": "是啊",
+                "text": "現在正是復權的時刻",
+                "episode": "13",
+                "frame_start": 25176,
+                "frame_end": 25216
+            },
+            "times": 2
+        },
+        {
+            "text": {
+                "text": "那樣更糟糕",
+                "episode": "4",
+                "frame_start": 23408,
+                "frame_end": 23424
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "為了不讓悲傷奪走切",
                 "episode": "1-3",
-                "frame_start": 45832,
-                "frame_end": 45856
+                "frame_start": 33272,
+                "frame_end": 33352
             },
             "times": 1
         },
         {
             "text": {
-                "text": "對啊",
+                "text": "好過分,她來又不會怎麼樣",
+                "episode": "11",
+                "frame_start": 9800,
+                "frame_end": 9848
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我要加入",
+                "episode": "13",
+                "frame_start": 984,
+                "frame_end": 1000
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "只要拉攏班上的吉祥物角色",
                 "episode": "1-3",
-                "frame_start": 10808,
-                "frame_end": 10816
+                "frame_start": 21912,
+                "frame_end": 21960
             },
             "times": 1
         },
         {
             "text": {
-                "text": "對啊",
+                "text": "樂奈,不可以吃掉喔",
+                "episode": "10",
+                "frame_start": 9752,
+                "frame_end": 9792
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我的衣服",
+                "episode": "11",
+                "frame_start": 31288,
+                "frame_end": 31320
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "1 一廿一名 Soy crychic Taki/Ba. CRYCHIC mi/Dr. 是啊 G Sakiko/0 目己紹介 Tomori/Key",
+                "episode": "9",
+                "frame_start": 6216,
+                "frame_end": 6224
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "請你從此再也不要放手",
+                "episode": "1-3",
+                "frame_start": 93704,
+                "frame_end": 93888
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我願意一輩子和燈在一起 h",
+                "episode": "4",
+                "frame_start": 16512,
+                "frame_end": 16560
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "處處聞啼鳥",
+                "episode": "11",
+                "frame_start": 25832,
+                "frame_end": 25864
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "又是企鵝",
+                "episode": "1-3",
+                "frame_start": 39528,
+                "frame_end": 39552
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我想樂奈應該不太需要擔心吧",
+                "episode": "6",
+                "frame_start": 18064,
+                "frame_end": 18112
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "樂奈,可以了 我們高中的學生都已經有各自的樂團了",
+                "episode": "1-3",
+                "frame_start": 47904,
+                "frame_end": 47936
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "(大公t除<)日曜!外練習 =>7\"7\"7% 太活動日+ 平日10匕己力 心足7計~3 要玩樂團的話我比較想當吉他歌手 18:30~ 8/.211/7# 苔冒.7卞尹-募.719@7. 士活動坏所太",
+                "episode": "1-3",
+                "frame_start": 13400,
+                "frame_end": 13400
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "怎麼辦呢",
+                "episode": "1-3",
+                "frame_start": 16120,
+                "frame_end": 16136
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "暫時還不急吧",
+                "episode": "11",
+                "frame_start": 7816,
+                "frame_end": 7848
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我才不想被小睦這樣講",
                 "episode": "12",
-                "frame_start": 6616,
-                "frame_end": 6632
+                "frame_start": 25792,
+                "frame_end": 25840
             },
             "times": 1
         },
         {
             "text": {
-                "text": "因為我以前組過樂團",
+                "text": "看起來像洋娃娃一樣,超可愛的",
                 "episode": "1-3",
-                "frame_start": 47592,
-                "frame_end": 47632
+                "frame_start": 55976,
+                "frame_end": 55984
             },
             "times": 1
         },
         {
             "text": {
-                "text": "是這樣嗎",
+                "text": "那個聲部真的好難吹喔",
+                "episode": "8",
+                "frame_start": 8608,
+                "frame_end": 8648
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我有在電視上看過",
+                "episode": "1-3",
+                "frame_start": 56144,
+                "frame_end": 56176
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "畢竟這是一輩子的事",
+                "episode": "12",
+                "frame_start": 26896,
+                "frame_end": 26920
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我猜我單純是喜歡找尋新種類而已",
+                "episode": "1-3",
+                "frame_start": 18952,
+                "frame_end": 19048
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "絕對不可能再復活了",
+                "episode": "8",
+                "frame_start": 27792,
+                "frame_end": 27832
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "只有我這麼想嗎",
+                "episode": "8",
+                "frame_start": 28816,
+                "frame_end": 28848
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳們說我是人偶?",
+                "episode": "13",
+                "frame_start": 23160,
+                "frame_end": 23200
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我是高松燈",
+                "episode": "1-3",
+                "frame_start": 7312,
+                "frame_end": 7368
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "你真的已經夠努力了",
                 "episode": "7",
-                "frame_start": 5256,
-                "frame_end": 5272
+                "frame_start": 16664,
+                "frame_end": 16760
             },
             "times": 1
         },
         {
             "text": {
-                "text": "我",
+                "text": "妳要不要和我一起組樂團呢?",
                 "episode": "1-3",
-                "frame_start": 3592,
-                "frame_end": 3616
+                "frame_start": 78912,
+                "frame_end": 78976
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳說什麼?",
+                "episode": "1-3",
+                "frame_start": 94680,
+                "frame_end": 94704
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我都說了",
+                "episode": "5",
+                "frame_start": 13632,
+                "frame_end": 13648
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "`;7<\"01 玉 兀 弄 十 儀武I5子 真次凜4子 普通\"和\"理所當然呢什麼呢?",
+                "episode": "7",
+                "frame_start": 30232,
+                "frame_end": 30296
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "畏畏縮縮哭哭啼啼的我",
+                "episode": "1-3",
+                "frame_start": 33008,
+                "frame_end": 33064
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "小黃瓜?",
+                "episode": "12",
+                "frame_start": 25184,
+                "frame_end": 25200
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "藤田淳平(Elements Garden 藤間 仁 (Elements Garden) 緒方航貴(7y口-|31一汐夕) 音槳宁4U夕夕一 札)述泰紀 (工-入夕心一`工y夕4*小)",
+                "episode": "1-3",
+                "frame_start": 5600,
+                "frame_end": 5600
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "02111--8--60#+;1== #05!1 61 14119=111 01#TI_ Tlusruffto{[",
+                "episode": "1-3",
+                "frame_start": 21384,
+                "frame_end": 21400
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "這是獨角仙",
+                "episode": "8",
+                "frame_start": 10968,
+                "frame_end": 10992
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "這是最後的警告",
+                "episode": "8",
+                "frame_start": 29288,
+                "frame_end": 29336
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "怎麼了嗎",
+                "episode": "1-3",
+                "frame_start": 26112,
+                "frame_end": 26136
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "#4_一生左+!? 佃4一輩子喔!3",
+                "episode": "1-3",
+                "frame_start": 102240,
+                "frame_end": 102240
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "起玩才行 我也得",
+                "episode": "1-3",
+                "frame_start": 12792,
+                "frame_end": 12808
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我查一下錄音室有沒有空著",
+                "episode": "7",
+                "frame_start": 11232,
+                "frame_end": 11256
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "衣服只有一半耶 總是:..迷路",
+                "episode": "12",
+                "frame_start": 5840,
+                "frame_end": 5864
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "開始還是簡單 點的比較好 我想",
+                "episode": "5",
+                "frame_start": 9584,
+                "frame_end": 9640
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "對不起,我不該笑妳的",
+                "episode": "1-3",
+                "frame_start": 29752,
+                "frame_end": 29816
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳沒有生氣嗎",
+                "episode": "4",
+                "frame_start": 14168,
+                "frame_end": 14192
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我沒說過那種話",
+                "episode": "8",
+                "frame_start": 200,
+                "frame_end": 224
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "看起來令人驚艷又華麗",
+                "episode": "12",
+                "frame_start": 29888,
+                "frame_end": 29936
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "可是我對那個Aftenglow還不太了解",
+                "episode": "1-3",
+                "frame_start": 13144,
+                "frame_end": 13216
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "妳還要改造嗎",
+                "episode": "11",
+                "frame_start": 26792,
+                "frame_end": 26816
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "也不是這樣",
+                "episode": "1-3",
+                "frame_start": 87648,
+                "frame_end": 87680
             },
             "times": 1
         },
@@ -206,59 +4274,402 @@
                 "frame_start": 7680,
                 "frame_end": 7696
             },
-            "times": 1
+            "times": 2
         },
         {
             "text": {
-                "text": "可以吃了嗎",
-                "episode": "13",
-                "frame_start": 4160,
-                "frame_end": 4184
+                "text": "說得也是",
+                "episode": "4",
+                "frame_start": 29656,
+                "frame_end": 29672
             },
             "times": 1
         },
         {
             "text": {
-                "text": "我還是會繼續下去",
-                "episode": "10",
-                "frame_start": 23504,
-                "frame_end": 23536
+                "text": " AT大事T二亡忑禮(1[1? 件重要的事了?) 伏家是不是忘記 _#31> 主役|二t",
+                "episode": "11",
+                "frame_start": 17080,
+                "frame_end": 17104
             },
             "times": 1
         },
         {
             "text": {
-                "text": "還是說就是我們造成的?",
+                "text": "感謝大家的觀賞",
+                "episode": "4",
+                "frame_start": 32408,
+                "frame_end": 32440
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "讓我深深受到感動",
                 "episode": "1-3",
-                "frame_start": 1584,
+                "frame_start": 82408,
+                "frame_end": 82456
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我也一樣搞不懂啊",
+                "episode": "11",
+                "frame_start": 1592,
                 "frame_end": 1632
             },
             "times": 1
         },
         {
-            "text": null,
-            "times": 3
-        },
-        {
-            "text": [
-                {
-                    "text": "對啊",
-                    "episode": "12",
-                    "frame_start": 80,
-                    "frame_end": 88
-                }
-            ],
+            "text": {
+                "text": "可是,春日影是CRYCHIC重要的:",
+                "episode": "8",
+                "frame_start": 26616,
+                "frame_end": 26680
+            },
             "times": 1
         },
         {
-            "text": [
-                {
-                    "text": "對啊",
-                    "episode": "1-3",
-                    "frame_start": 10808,
-                    "frame_end": 10816
-                }
-            ],
+            "text": {
+                "text": "她是我朋友",
+                "episode": "1-3",
+                "frame_start": 50856,
+                "frame_end": 50880
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "就是朋友,有意見嗎",
+                "episode": "1-3",
+                "frame_start": 30880,
+                "frame_end": 30936
+            },
+            "times": 1
+        },
+        {
+            "text": {
+                "text": "我相信她一定會懂的",
+                "episode": "5",
+                "frame_start": 17056,
+                "frame_end": 17096
+            },
+            "times": 1
+        },
+        {
+            "text": "為什麼?",
+            "episode": "1-3",
+            "frame_start": 1824,
+            "frame_end": 1848,
+            "times": 31
+        },
+        {
+            "text": "滿腦子都只想到自己呢",
+            "episode": "8",
+            "frame_start": 30784,
+            "frame_end": 30832,
+            "times": 19
+        },
+        {
+            "text": "滿腦子都只想到自己呢",
+            "episode": "9",
+            "frame_start": 15176,
+            "frame_end": 15216,
+            "times": 5
+        },
+        {
+            "text": "等一下,我們先坐下來講吧?",
+            "episode": "1-3",
+            "frame_start": 1352,
+            "frame_end": 1432,
+            "times": 25
+        },
+        {
+            "text": "為什麼要演奏春日影!",
+            "episode": "8",
+            "frame_start": 64,
+            "frame_end": 112,
+            "times": 7
+        },
+        {
+            "text": "是啊",
+            "episode": "1-3",
+            "frame_start": 45832,
+            "frame_end": 45856,
+            "times": 1
+        },
+        {
+            "text": "我的話題已經結束了嗎 對啊,好可愛喔",
+            "episode": "1-3",
+            "frame_start": 9568,
+            "frame_end": 9616,
+            "times": 1
+        },
+        {
+            "text": "還味道呢",
+            "episode": "10",
+            "frame_start": 1552,
+            "frame_end": 1576,
+            "times": 1
+        },
+        {
+            "text": "所以說",
+            "episode": "13",
+            "frame_start": 8328,
+            "frame_end": 8344,
+            "times": 1
+        },
+        {
+            "text": "那傢伙竟然敢無視燈",
+            "episode": "9",
+            "frame_start": 19776,
+            "frame_end": 19832,
+            "times": 16
+        },
+        {
+            "text": "我要退出CRYCHIC",
+            "episode": "1-3",
+            "frame_start": 1120,
+            "frame_end": 1192,
+            "times": 39
+        },
+        {
+            "text": "我沒那麼說",
+            "episode": "1-3",
+            "frame_start": 1968,
+            "frame_end": 1992,
+            "times": 23
+        },
+        {
+            "text": "妳想說什麼?",
+            "episode": "12",
+            "frame_start": 29360,
+            "frame_end": 29384,
+            "times": 4
+        },
+        {
+            "text": "牠是阿德利企鵝屬",
+            "episode": "1-3",
+            "frame_start": 18424,
+            "frame_end": 18448,
+            "times": 3
+        },
+        {
+            "text": "是又怎樣",
+            "episode": "1-3",
+            "frame_start": 31248,
+            "frame_end": 31272,
+            "times": 58
+        },
+        {
+            "text": "太好了",
+            "episode": "9",
+            "frame_start": 18128,
+            "frame_end": 18160,
+            "times": 4
+        },
+        {
+            "text": "是又怎樣",
+            "episode": "1-3",
+            "frame_start": 34552,
+            "frame_end": 34576,
+            "times": 15
+        },
+        {
+            "text": "還真是高高在上呢",
+            "episode": "13",
+            "frame_start": 1296,
+            "frame_end": 1328,
+            "times": 14
+        },
+        {
+            "text": "妳是來找我吵架的嗎",
+            "episode": "10",
+            "frame_start": 23200,
+            "frame_end": 23232,
+            "times": 16
+        },
+        {
+            "text": "是這樣嗎",
+            "episode": "1-3",
+            "frame_start": 2000,
+            "frame_end": 2064,
+            "times": 50
+        },
+        {
+            "text": "我沒有那麼厲害啦",
+            "episode": "5",
+            "frame_start": 25240,
+            "frame_end": 25272,
+            "times": 3
+        },
+        {
+            "text": "這裡還有其他企鵝系列的",
+            "episode": "1-3",
+            "frame_start": 18552,
+            "frame_end": 18592,
+            "times": 3
+        },
+        {
+            "text": "妳要不要先去洗澡?",
+            "episode": "9",
+            "frame_start": 3824,
+            "frame_end": 3864,
+            "times": 5
+        },
+        {
+            "text": "我今天是來講件事的",
+            "episode": "1-3",
+            "frame_start": 1008,
+            "frame_end": 1048,
+            "times": 22
+        },
+        {
+            "text": "我愛慕虛榮啦",
+            "episode": "10",
+            "frame_start": 20176,
+            "frame_end": 20200,
+            "times": 20
+        },
+        {
+            "text": "是我自己的問題",
+            "episode": "1-3",
+            "frame_start": 1728,
+            "frame_end": 1776,
+            "times": 22
+        },
+        {
+            "text": "所以應該已經死掉了",
+            "episode": "1-3",
+            "frame_start": 74704,
+            "frame_end": 74728,
+            "times": 2
+        },
+        {
+            "text": "我要加入",
+            "episode": "13",
+            "frame_start": 984,
+            "frame_end": 1000,
+            "times": 7
+        },
+        {
+            "text": "因為這些都是我自私的想法",
+            "episode": "5",
+            "frame_start": 16328,
+            "frame_end": 16376,
+            "times": 1
+        },
+        {
+            "text": "小祥",
+            "episode": "1-3",
+            "frame_start": 752,
+            "frame_end": 768,
+            "times": 13
+        },
+        {
+            "text": "好可愛喔",
+            "episode": "1-3",
+            "frame_start": 9656,
+            "frame_end": 9680,
+            "times": 1
+        },
+        {
+            "text": "為什麼? 發生什麼事了嗎",
+            "episode": "1-3",
+            "frame_start": 1480,
+            "frame_end": 1528,
+            "times": 34
+        },
+        {
+            "text": "滿腦子都只想到自己呢",
+            "episode": "9",
+            "frame_start": 8664,
+            "frame_end": 8712,
+            "times": 5
+        },
+        {
+            "text": "太好了,妳終於來了",
+            "episode": "1-3",
+            "frame_start": 776,
+            "frame_end": 784,
+            "times": 30
+        },
+        {
+            "text": "真的嗎",
+            "episode": "1-3",
+            "frame_start": 19160,
+            "frame_end": 19176,
+            "times": 8
+        },
+        {
+            "text": "傳訊息也都沒有回",
+            "episode": "1-3",
+            "frame_start": 920,
+            "frame_end": 960,
+            "times": 16
+        },
+        {
+            "text": "她是小燈的朋友嗎 問我幹嘛",
+            "episode": "1-3",
+            "frame_start": 30504,
+            "frame_end": 30504,
+            "times": 1
+        },
+        {
+            "text": "不過我想那孩子應該沒有惡意吧",
+            "episode": "1-3",
+            "frame_start": 41976,
+            "frame_end": 42024,
+            "times": 1
+        },
+        {
+            "text": "祝妳幸福",
+            "episode": "13",
+            "frame_start": 10296,
+            "frame_end": 10320,
+            "times": 5
+        },
+        {
+            "text": "一輩子和我一起組樂團嗎",
+            "episode": "1-3",
+            "frame_start": 29040,
+            "frame_end": 29120,
+            "times": 11
+        },
+        {
+            "text": "我沒關係",
+            "episode": "4",
+            "frame_start": 33056,
+            "frame_end": 33072,
+            "times": 2
+        },
+        {
+            "text": "那當然是騙人的啊",
+            "episode": "9",
+            "frame_start": 21600,
+            "frame_end": 21640,
+            "times": 3
+        },
+        {
+            "text": "妳終於來了 太好了 9",
+            "episode": "1-3",
+            "frame_start": 792,
+            "frame_end": 816,
+            "times": 15
+        },
+        {
+            "text": "就算我不在妳們也能練習吧",
+            "episode": "1-3",
+            "frame_start": 2736,
+            "frame_end": 2776,
+            "times": 3
+        },
+        {
+            "text": "她真的像貓 樣呢",
+            "episode": "6",
+            "frame_start": 18600,
+            "frame_end": 18656,
             "times": 1
         },
         {
@@ -266,169 +4677,2542 @@
             "episode": "1-3",
             "frame_start": 10808,
             "frame_end": 10816,
-            "times": 3
+            "times": 2
         },
         {
-            "text": "小祥",
-            "episode": "1-3",
-            "frame_start": 752,
+            "text": "媽媽很棒對不對?",
+            "episode": "9",
+            "frame_start": 728,
             "frame_end": 768,
             "times": 1
         },
         {
-            "text": "是這樣嗎",
+            "text": "還是說就是我們造成的?",
             "episode": "1-3",
-            "frame_start": 2000,
-            "frame_end": 2064,
-            "times": 1
+            "frame_start": 1584,
+            "frame_end": 1632,
+            "times": 12
         },
         {
-            "text": "可是,小祥是CRYCHIC的創始者啊",
+            "text": "妳們為什麼會吵架呢?",
             "episode": "1-3",
-            "frame_start": 2096,
-            "frame_end": 2176,
-            "times": 1
-        },
-        {
-            "text": "沒錯",
-            "episode": "1-3",
-            "frame_start": 48592,
-            "frame_end": 48608,
-            "times": 1
-        },
-        {
-            "text": "為什麼要演奏春日影!",
-            "episode": "7",
-            "frame_start": 30124,
-            "frame_end": 30168,
-            "times": 5
-        },
-        {
-            "text": "味道醇香,我很喜歡",
-            "episode": "1-3",
-            "frame_start": 45024,
-            "frame_end": 45064,
+            "frame_start": 50168,
+            "frame_end": 50200,
             "times": 2
         },
         {
-            "text": "是啊",
+            "text": "太棒了",
             "episode": "1-3",
-            "frame_start": 43136,
-            "frame_end": 43136,
-            "times": 5
+            "frame_start": 94360,
+            "frame_end": 94392,
+            "times": 3
         },
         {
-            "text": "是嗎",
+            "text": "為什麼都不講話?",
             "episode": "1-3",
-            "frame_start": 51536,
-            "frame_end": 51560,
-            "times": 2
-        },
-        {
-            "text": "為什麼?",
-            "episode": "1-3",
-            "frame_start": 1824,
-            "frame_end": 1848,
-            "times": 1
-        },
-        {
-            "text": "對啊",
-            "episode": "1-3",
-            "frame_start": 47968,
-            "frame_end": 47984,
-            "times": 1
-        },
-        {
-            "text": "太棒了,爽世同學LOVE",
-            "episode": "1-3",
-            "frame_start": 52224,
-            "frame_end": 52288,
-            "times": 1
-        },
-        {
-            "text": "我沒那麼說",
-            "episode": "1-3",
-            "frame_start": 1968,
-            "frame_end": 1992,
-            "times": 1
-        },
-        {
-            "text": "牠是阿德利企鵝屬",
-            "episode": "1-3",
-            "frame_start": 18424,
-            "frame_end": 18448,
-            "times": 1
-        },
-        {
-            "text": "椅背壓不下去",
-            "episode": "10",
-            "frame_start": 4136,
-            "frame_end": 4168,
-            "times": 1
-        },
-        {
-            "text": "妳要不要先去洗澡?",
-            "episode": "9",
-            "frame_start": 3824,
-            "frame_end": 3864,
-            "times": 1
-        },
-        {
-            "text": "\"春日影\"...",
-            "episode": "1-3",
-            "frame_start": 27368,
-            "frame_end": 27408,
-            "times": 1
-        },
-        {
-            "text": "我要退出CRYCHIC",
-            "episode": "1-3",
-            "frame_start": 1120,
-            "frame_end": 1192,
-            "times": 2
-        },
-        {
-            "text": "妳沒有來學校上課",
-            "episode": "1-3",
-            "frame_start": 888,
-            "frame_end": 912,
-            "times": 1
-        },
-        {
-            "text": "妳終於來了 太好了 9",
-            "episode": "1-3",
-            "frame_start": 792,
-            "frame_end": 816,
-            "times": 1
+            "frame_start": 2536,
+            "frame_end": 2560,
+            "times": 6
         },
         {
             "text": "妳全身都濕透了,沒事吧?",
             "episode": "1-3",
             "frame_start": 824,
             "frame_end": 880,
+            "times": 14
+        },
+        {
+            "text": "姊姊大人",
+            "episode": "13",
+            "frame_start": 21432,
+            "frame_end": 21448,
             "times": 1
         },
         {
-            "text": "傳訊息也都沒有回",
+            "text": "小祥現在在哪裡呢",
             "episode": "1-3",
-            "frame_start": 920,
-            "frame_end": 960,
+            "frame_start": 23848,
+            "frame_end": 23904,
             "times": 1
         },
         {
-            "text": "I055 CBanG Dream! Projeet LieansedW MuE",
+            "text": "妳不要緊吧?",
             "episode": "1-3",
-            "frame_start": 7512,
-            "frame_end": 7512,
+            "frame_start": 74160,
+            "frame_end": 74184,
             "times": 1
+        },
+        {
+            "text": "Soyorin?",
+            "episode": "11",
+            "frame_start": 16072,
+            "frame_end": 16096,
+            "times": 1
+        },
+        {
+            "text": "為什麼?",
+            "episode": "1-3",
+            "frame_start": 60000,
+            "frame_end": 60016,
+            "times": 1
+        },
+        {
+            "text": "那些全都是騙人的?",
+            "episode": "9",
+            "frame_start": 22312,
+            "frame_end": 22360,
+            "times": 4
+        },
+        {
+            "text": "有問題的話我們都能改進",
+            "episode": "1-3",
+            "frame_start": 1672,
+            "frame_end": 1720,
+            "times": 15
+        },
+        {
+            "text": "妳沒有來學校上課",
+            "episode": "1-3",
+            "frame_start": 888,
+            "frame_end": 912,
+            "times": 10
+        },
+        {
+            "text": "從來不覺得玩樂團開心過",
+            "episode": "1-3",
+            "frame_start": 3656,
+            "frame_end": 3784,
+            "times": 19
+        },
+        {
+            "text": "從來不覺得玩樂團開心過",
+            "episode": "1-3",
+            "frame_start": 97896,
+            "frame_end": 98016,
+            "times": 5
+        },
+        {
+            "text": "Tomorin呢",
+            "episode": "12",
+            "frame_start": 16760,
+            "frame_end": 16776,
+            "times": 1
+        },
+        {
+            "text": "我是高松燈",
+            "episode": "1-3",
+            "frame_start": 7312,
+            "frame_end": 7368,
+            "times": 3
+        },
+        {
+            "text": "早 我是千早愛音",
+            "episode": "1-3",
+            "frame_start": 6424,
+            "frame_end": 6456,
+            "times": 1
+        },
+        {
+            "text": "很可愛喔",
+            "episode": "1-3",
+            "frame_start": 8448,
+            "frame_end": 8456,
+            "times": 1
+        },
+        {
+            "text": "對啊",
+            "episode": "9",
+            "frame_start": 20784,
+            "frame_end": 20800,
+            "times": 1
+        },
+        {
+            "text": "妳喜歡她們嗎",
+            "episode": "7",
+            "frame_start": 9696,
+            "frame_end": 9712,
+            "times": 1
+        },
+        {
+            "text": "我看我也買張年票好了",
+            "episode": "13",
+            "frame_start": 11448,
+            "frame_end": 11496,
+            "times": 3
+        },
+        {
+            "text": "能不能也教我用呢?",
+            "episode": "1-3",
+            "frame_start": 89704,
+            "frame_end": 89744,
+            "times": 1
+        },
+        {
+            "text": "味道醇香,我很喜歡",
+            "episode": "1-3",
+            "frame_start": 45024,
+            "frame_end": 45064,
+            "times": 4
+        },
+        {
+            "text": "來了一群有趣的女生呢",
+            "episode": "10",
+            "frame_start": 14256,
+            "frame_end": 14304,
+            "times": 1
+        },
+        {
+            "text": "一輩子?",
+            "episode": "1-3",
+            "frame_start": 29288,
+            "frame_end": 29312,
+            "times": 6
+        },
+        {
+            "text": "我先拿去熱一下",
+            "episode": "9",
+            "frame_start": 3792,
+            "frame_end": 3816,
+            "times": 2
+        },
+        {
+            "text": "為什麼要演奏春日影!",
+            "episode": "7",
+            "frame_start": 30120,
+            "frame_end": 30168,
+            "times": 1
+        },
+        {
+            "text": "我不想就這麼放棄",
+            "episode": "10",
+            "frame_start": 27752,
+            "frame_end": 27792,
+            "times": 1
+        },
+        {
+            "text": "那麼一起實際試試看吧",
+            "episode": "6",
+            "frame_start": 13048,
+            "frame_end": 13088,
+            "times": 2
+        },
+        {
+            "text": "要加入嗎",
+            "episode": "1-3",
+            "frame_start": 20536,
+            "frame_end": 20552,
+            "times": 2
+        },
+        {
+            "text": "還不錯啊",
+            "episode": "12",
+            "frame_start": 24192,
+            "frame_end": 24208,
+            "times": 2
+        },
+        {
+            "text": "主唱是樂團的門面,為什麼要選燈",
+            "episode": "1-3",
+            "frame_start": 85480,
+            "frame_end": 85544,
+            "times": 1
+        },
+        {
+            "text": "為什麼妳會覺得玩樂團會以失敗收場?",
+            "episode": "1-3",
+            "frame_start": 27672,
+            "frame_end": 27744,
+            "times": 1
+        },
+        {
+            "text": "早 希望大家願意和我當朋友",
+            "episode": "1-3",
+            "frame_start": 6520,
+            "frame_end": 6560,
+            "times": 1
+        },
+        {
+            "text": "夾著尾巴逃回來了嗎",
+            "episode": "8",
+            "frame_start": 5608,
+            "frame_end": 5648,
+            "times": 1
+        },
+        {
+            "text": "好啊, 起吃吧",
+            "episode": "1-3",
+            "frame_start": 8288,
+            "frame_end": 8312,
+            "times": 3
+        },
+        {
+            "text": "好棒喔",
+            "episode": "1-3",
+            "frame_start": 55328,
+            "frame_end": 55352,
+            "times": 2
+        },
+        {
+            "text": "對啊,真的好辛苦喔",
+            "episode": "1-3",
+            "frame_start": 9024,
+            "frame_end": 9064,
+            "times": 2
+        },
+        {
+            "text": "普通\"和\"理所當然什麼呢?",
+            "episode": "1-3",
+            "frame_start": 31776,
+            "frame_end": 31880,
+            "times": 4
+        },
+        {
+            "text": "學會這個早上再忙也沒問題了",
+            "episode": "5",
+            "frame_start": 9040,
+            "frame_end": 9096,
+            "times": 1
+        },
+        {
+            "text": "又來了-個新人",
+            "episode": "13",
+            "frame_start": 22072,
+            "frame_end": 22112,
+            "times": 4
+        },
+        {
+            "text": "我都已經三天沒睡覺了",
+            "episode": "12",
+            "frame_start": 24776,
+            "frame_end": 24824,
+            "times": 4
+        },
+        {
+            "text": "嗜通\"和\"理所當然什麼呢?",
+            "episode": "1-3",
+            "frame_start": 65824,
+            "frame_end": 65928,
+            "times": 1
+        },
+        {
+            "text": "我也得 起玩才行",
+            "episode": "1-3",
+            "frame_start": 12776,
+            "frame_end": 12784,
+            "times": 2
+        },
+        {
+            "text": "或許也不是真的不可能吧",
+            "episode": "13",
+            "frame_start": 12504,
+            "frame_end": 12544,
+            "times": 2
+        },
+        {
+            "text": "可是,小祥是CRYCHIC的創始者啊",
+            "episode": "1-3",
+            "frame_start": 2096,
+            "frame_end": 2176,
+            "times": 11
+        },
+        {
+            "text": "我喜歡企鵝",
+            "episode": "1-3",
+            "frame_start": 18312,
+            "frame_end": 18328,
+            "times": 2
+        },
+        {
+            "text": "為什麼要演奏春日影!",
+            "episode": "7",
+            "frame_start": 30124,
+            "frame_end": 30168,
+            "times": 20
+        },
+        {
+            "text": "為什麼?",
+            "episode": "1-3",
+            "frame_start": 59752,
+            "frame_end": 59768,
+            "times": 2
+        },
+        {
+            "text": "之前的演唱會不是很快樂嗎",
+            "episode": "1-3",
+            "frame_start": 1856,
+            "frame_end": 1912,
+            "times": 11
+        },
+        {
+            "text": "我們都等兩小時五十六分三十-秒了耶",
+            "episode": "6",
+            "frame_start": 27480,
+            "frame_end": 27560,
+            "times": 3
+        },
+        {
+            "text": "都是她突然說要退出害的",
+            "episode": "4",
+            "frame_start": 12640,
+            "frame_end": 12680,
+            "times": 2
         },
         {
             "text": "連我們都不能說嗎",
             "episode": "1-3",
             "frame_start": 1544,
             "frame_end": 1576,
+            "times": 14
+        },
+        {
+            "text": "看星星嗎",
+            "episode": "13",
+            "frame_start": 16376,
+            "frame_end": 16400,
+            "times": 1
+        },
+        {
+            "text": "明明像大家一樣交到朋友了",
+            "episode": "1-3",
+            "frame_start": 77928,
+            "frame_end": 78056,
+            "times": 1
+        },
+        {
+            "text": "我都說討厭了吧",
+            "episode": "11",
+            "frame_start": 22504,
+            "frame_end": 22536,
+            "times": 2
+        },
+        {
+            "text": "因為長相和數字",
+            "episode": "12",
+            "frame_start": 29648,
+            "frame_end": 29704,
+            "times": 1
+        },
+        {
+            "text": "祝妳貴安",
+            "episode": "1-3",
+            "frame_start": 57880,
+            "frame_end": 57896,
+            "times": 1
+        },
+        {
+            "text": "全是祥子的錯吧",
+            "episode": "4",
+            "frame_start": 12616,
+            "frame_end": 12632,
+            "times": 1
+        },
+        {
+            "text": "我也一樣搞不懂啊",
+            "episode": "11",
+            "frame_start": 1592,
+            "frame_end": 1632,
+            "times": 1
+        },
+        {
+            "text": "妳到底是怎樣?",
+            "episode": "5",
+            "frame_start": 19920,
+            "frame_end": 19944,
+            "times": 1
+        },
+        {
+            "text": "是這樣嗎",
+            "episode": "1-3",
+            "frame_start": 45808,
+            "frame_end": 45824,
+            "times": 1
+        },
+        {
+            "text": "是這樣嗎",
+            "episode": "10",
+            "frame_start": 984,
+            "frame_end": 1008,
+            "times": 1
+        },
+        {
+            "text": "大家一起來試試看吧,好嗎",
+            "episode": "4",
+            "frame_start": 17792,
+            "frame_end": 17856,
+            "times": 1
+        },
+        {
+            "text": "那又怎麼樣?",
+            "episode": "8",
+            "frame_start": 464,
+            "frame_end": 480,
+            "times": 2
+        },
+        {
+            "text": "真的嗎?",
+            "episode": "4",
+            "frame_start": 21480,
+            "frame_end": 21496,
+            "times": 2
+        },
+        {
+            "text": "我要封鎖他",
+            "episode": "1-3",
+            "frame_start": 95840,
+            "frame_end": 95856,
+            "times": 6
+        },
+        {
+            "text": "不覺得很棒嗎",
+            "episode": "13",
+            "frame_start": 14880,
+            "frame_end": 14904,
+            "times": 1
+        },
+        {
+            "text": "消音就好了,不要封鎖吧",
+            "episode": "1-3",
+            "frame_start": 95880,
+            "frame_end": 95920,
+            "times": 8
+        },
+        {
+            "text": "可以吃了嗎",
+            "episode": "13",
+            "frame_start": 4160,
+            "frame_end": 4184,
+            "times": 1
+        },
+        {
+            "text": "從來不覺得玩樂團開心過",
+            "episode": "9",
+            "frame_start": 7616,
+            "frame_end": 7736,
+            "times": 2
+        },
+        {
+            "text": "好厲害喔",
+            "episode": "1-3",
+            "frame_start": 43144,
+            "frame_end": 43144,
+            "times": 4
+        },
+        {
+            "text": "想練習的話自己練不就好了",
+            "episode": "1-3",
+            "frame_start": 2808,
+            "frame_end": 2856,
+            "times": 1
+        },
+        {
+            "text": "一輩子?",
+            "episode": "4",
+            "frame_start": 16208,
+            "frame_end": 16232,
+            "times": 1
+        },
+        {
+            "text": "現在正是復權的時刻",
+            "episode": "13",
+            "frame_start": 25176,
+            "frame_end": 25216,
+            "times": 4
+        },
+        {
+            "text": "妳這話是認真的嗎",
+            "episode": "9",
+            "frame_start": 22184,
+            "frame_end": 22240,
+            "times": 1
+        },
+        {
+            "text": "不嫌棄的話要不要一起玩?",
+            "episode": "1-3",
+            "frame_start": 11272,
+            "frame_end": 11304,
+            "times": 2
+        },
+        {
+            "text": "真的假的?",
+            "episode": "1-3",
+            "frame_start": 56112,
+            "frame_end": 56120,
+            "times": 5
+        },
+        {
+            "text": "剛才那首是叫什麼啊",
+            "episode": "1-3",
+            "frame_start": 27320,
+            "frame_end": 27352,
+            "times": 1
+        },
+        {
+            "text": "妳也說過還想再辦一次吧",
+            "episode": "1-3",
+            "frame_start": 1920,
+            "frame_end": 1960,
+            "times": 2
+        },
+        {
+            "text": "我不知道",
+            "episode": "1-3",
+            "frame_start": 50208,
+            "frame_end": 50232,
+            "times": 4
+        },
+        {
+            "text": "我不知道",
+            "episode": "12",
+            "frame_start": 4656,
+            "frame_end": 4680,
+            "times": 3
+        },
+        {
+            "text": "\"春日影\"...",
+            "episode": "1-3",
+            "frame_start": 27368,
+            "frame_end": 27408,
+            "times": 2
+        },
+        {
+            "text": "這不是任何人的錯",
+            "episode": "4",
+            "frame_start": 1264,
+            "frame_end": 1312,
+            "times": 1
+        },
+        {
+            "text": "聽我說啦",
+            "episode": "1-3",
+            "frame_start": 25552,
+            "frame_end": 25576,
+            "times": 1
+        },
+        {
+            "text": "不知道",
+            "episode": "1-3",
+            "frame_start": 81928,
+            "frame_end": 81944,
+            "times": 1
+        },
+        {
+            "text": "沒人知道人生會發生什麼事",
+            "episode": "4",
+            "frame_start": 16856,
+            "frame_end": 16904,
+            "times": 1
+        },
+        {
+            "text": "起組樂團? 要不要",
+            "episode": "1-3",
+            "frame_start": 52040,
+            "frame_end": 52064,
+            "times": 1
+        },
+        {
+            "text": "不要講這種撒嬌的話了",
+            "episode": "1-3",
+            "frame_start": 3064,
+            "frame_end": 3104,
+            "times": 4
+        },
+        {
+            "text": "請不要玩飲料機",
+            "episode": "1-3",
+            "frame_start": 88104,
+            "frame_end": 88144,
+            "times": 1
+        },
+        {
+            "text": "因為封面的種類很多",
+            "episode": "1-3",
+            "frame_start": 75280,
+            "frame_end": 75312,
+            "times": 1
+        },
+        {
+            "text": "所以我渴望能夠收集 那稍縱即逝的瞬間",
+            "episode": "1-3",
+            "frame_start": 37344,
+            "frame_end": 37488,
+            "times": 2
+        },
+        {
+            "text": "尤其燈妳才是最該多練習的人",
+            "episode": "1-3",
+            "frame_start": 97392,
+            "frame_end": 97448,
+            "times": 1
+        },
+        {
+            "text": "Tomorin好可愛喔",
+            "episode": "13",
+            "frame_start": 12912,
+            "frame_end": 12952,
+            "times": 4
+        },
+        {
+            "text": "這樣很沒有教養喔",
+            "episode": "1-3",
+            "frame_start": 46928,
+            "frame_end": 46944,
+            "times": 2
+        },
+        {
+            "text": "啊啊,真是讓人活得難受的世界啊",
+            "episode": "1-3",
+            "frame_start": 32712,
+            "frame_end": 32720,
+            "times": 1
+        },
+        {
+            "text": "世界搖搖晃晃",
+            "episode": "1-3",
+            "frame_start": 77656,
+            "frame_end": 77752,
+            "times": 1
+        },
+        {
+            "text": "是啊,到底為什麼呢",
+            "episode": "4",
+            "frame_start": 4592,
+            "frame_end": 4656,
+            "times": 5
+        },
+        {
+            "text": "很好看耶",
+            "episode": "12",
+            "frame_start": 6584,
+            "frame_end": 6608,
+            "times": 2
+        },
+        {
+            "text": "對啊",
+            "episode": "1-3",
+            "frame_start": 10800,
+            "frame_end": 10816,
+            "times": 1
+        },
+        {
+            "text": "好的",
+            "episode": "1-3",
+            "frame_start": 6696,
+            "frame_end": 6704,
+            "times": 2
+        },
+        {
+            "text": "這個是阿德利企鵝",
+            "episode": "1-3",
+            "frame_start": 18512,
+            "frame_end": 18544,
+            "times": 2
+        },
+        {
+            "text": "她到底有沒有在看手機啊",
+            "episode": "8",
+            "frame_start": 6752,
+            "frame_end": 6800,
+            "times": 1
+        },
+        {
+            "text": "橋 本 飛 米 大 野壩 貢 禾 莪 孚 耆匿囂壟 石原 奏斗 原寬大 草本 松永颯人 中島進太郎 我也只能任其擺佈地仔立原地#未麗",
+            "episode": "1-3",
+            "frame_start": 66240,
+            "frame_end": 66296,
+            "times": 1
+        },
+        {
+            "text": "媽媽也會覺得討厭啊",
+            "episode": "1-3",
+            "frame_start": 72376,
+            "frame_end": 72408,
+            "times": 1
+        },
+        {
+            "text": "沒關係",
+            "episode": "7",
+            "frame_start": 1632,
+            "frame_end": 1648,
+            "times": 1
+        },
+        {
+            "text": "要用哪份樂譜?",
+            "episode": "6",
+            "frame_start": 16840,
+            "frame_end": 16864,
+            "times": 1
+        },
+        {
+            "text": "不要這麼大聲啦",
+            "episode": "10",
+            "frame_start": 19040,
+            "frame_end": 19080,
+            "times": 1
+        },
+        {
+            "text": "0))1 好厲害喔",
+            "episode": "1-3",
+            "frame_start": 43152,
+            "frame_end": 43160,
+            "times": 2
+        },
+        {
+            "text": "好厲害 000",
+            "episode": "1-3",
+            "frame_start": 49200,
+            "frame_end": 49224,
+            "times": 2
+        },
+        {
+            "text": "我喜歡",
+            "episode": "12",
+            "frame_start": 24216,
+            "frame_end": 24232,
+            "times": 1
+        },
+        {
+            "text": "好厲害喔",
+            "episode": "1-3",
+            "frame_start": 55192,
+            "frame_end": 55216,
+            "times": 1
+        },
+        {
+            "text": "好厲害喔",
+            "episode": "1-3",
+            "frame_start": 87240,
+            "frame_end": 87272,
+            "times": 1
+        },
+        {
+            "text": "一輩子啊",
+            "episode": "4",
+            "frame_start": 17264,
+            "frame_end": 17264,
+            "times": 3
+        },
+        {
+            "text": "春日影就好了吧",
+            "episode": "4",
+            "frame_start": 29152,
+            "frame_end": 29168,
+            "times": 1
+        },
+        {
+            "text": "好厲害",
+            "episode": "4",
+            "frame_start": 28408,
+            "frame_end": 28432,
+            "times": 2
+        },
+        {
+            "text": "好厲害",
+            "episode": "5",
+            "frame_start": 25096,
+            "frame_end": 25104,
+            "times": 2
+        },
+        {
+            "text": "我懂",
+            "episode": "1-3",
+            "frame_start": 40408,
+            "frame_end": 40432,
+            "times": 2
+        },
+        {
+            "text": "真是太好了",
+            "episode": "1-3",
+            "frame_start": 82304,
+            "frame_end": 82328,
+            "times": 4
+        },
+        {
+            "text": "還不錯吧",
+            "episode": "9",
+            "frame_start": 6064,
+            "frame_end": 6072,
+            "times": 1
+        },
+        {
+            "text": ")0 還不錯吧",
+            "episode": "9",
+            "frame_start": 6080,
+            "frame_end": 6080,
+            "times": 1
+        },
+        {
+            "text": "(不錯吧?)",
+            "episode": "11",
+            "frame_start": 17192,
+            "frame_end": 17224,
+            "times": 1
+        },
+        {
+            "text": "運氣真好",
+            "episode": "12",
+            "frame_start": 28248,
+            "frame_end": 28272,
+            "times": 1
+        },
+        {
+            "text": "M1~60 !!!!1 不錯吧?",
+            "episode": "12",
+            "frame_start": 24352,
+            "frame_end": 24352,
+            "times": 1
+        },
+        {
+            "text": "有趣的女人",
+            "episode": "5",
+            "frame_start": 5424,
+            "frame_end": 5456,
+            "times": 3
+        },
+        {
+            "text": "我要",
+            "episode": "5",
+            "frame_start": 4824,
+            "frame_end": 4832,
+            "times": 4
+        },
+        {
+            "text": "尤其燈妳才是最該多練習的人",
+            "episode": "1-3",
+            "frame_start": 3112,
+            "frame_end": 3168,
+            "times": 2
+        },
+        {
+            "text": "來了",
+            "episode": "8",
+            "frame_start": 7200,
+            "frame_end": 7216,
+            "times": 3
+        },
+        {
+            "text": "走吧走吧",
+            "episode": "9",
+            "frame_start": 16680,
+            "frame_end": 16696,
+            "times": 1
+        },
+        {
+            "text": "走吧",
+            "episode": "9",
+            "frame_start": 24984,
+            "frame_end": 25000,
+            "times": 1
+        },
+        {
+            "text": "h我倜在這裡重新粟出發吧",
+            "episode": "10",
+            "frame_start": 30944,
+            "frame_end": 31160,
+            "times": 1
+        },
+        {
+            "text": "謝謝",
+            "episode": "1-3",
+            "frame_start": 70816,
+            "frame_end": 70816,
+            "times": 1
+        },
+        {
+            "text": "是一輩子喔?一輩子",
+            "episode": "4",
+            "frame_start": 16672,
+            "frame_end": 16704,
+            "times": 1
+        },
+        {
+            "text": "有趣的女人 爽世同學,妳聽到她說什麼了嗎",
+            "episode": "4",
+            "frame_start": 18328,
+            "frame_end": 18384,
+            "times": 1
+        },
+        {
+            "text": "謝謝妳,幫了大忙",
+            "episode": "10",
+            "frame_start": 4496,
+            "frame_end": 4536,
+            "times": 1
+        },
+        {
+            "text": "差勁",
+            "episode": "1-3",
+            "frame_start": 31344,
+            "frame_end": 31368,
+            "times": 4
+        },
+        {
+            "text": "需要!",
+            "episode": "10",
+            "frame_start": 18944,
+            "frame_end": 18968,
+            "times": 1
+        },
+        {
+            "text": "到底有沒有要來",
+            "episode": "6",
+            "frame_start": 15984,
+            "frame_end": 16000,
+            "times": 1
+        },
+        {
+            "text": "妳到底是怎樣啊",
+            "episode": "4",
+            "frame_start": 13888,
+            "frame_end": 13920,
+            "times": 1
+        },
+        {
+            "text": "太好了",
+            "episode": "6",
+            "frame_start": 8456,
+            "frame_end": 8480,
+            "times": 2
+        },
+        {
+            "text": "我要吃",
+            "episode": "7",
+            "frame_start": 8576,
+            "frame_end": 8584,
+            "times": 1
+        },
+        {
+            "text": "太好了",
+            "episode": "9",
+            "frame_start": 16784,
+            "frame_end": 16800,
+            "times": 2
+        },
+        {
+            "text": "也沒有啦",
+            "episode": "1-3",
+            "frame_start": 8720,
+            "frame_end": 8768,
+            "times": 3
+        },
+        {
+            "text": "好的,謝謝您",
+            "episode": "1-3",
+            "frame_start": 5328,
+            "frame_end": 5376,
+            "times": 2
+        },
+        {
+            "text": "妳也盡快離開較為妥當喔",
+            "episode": "1-3",
+            "frame_start": 15792,
+            "frame_end": 15832,
+            "times": 2
+        },
+        {
+            "text": "要是沒有小祥妳們的話,我就:",
+            "episode": "8",
+            "frame_start": 29984,
+            "frame_end": 30032,
+            "times": 1
+        },
+        {
+            "text": "什麼啦,完全搞不懂",
+            "episode": "11",
+            "frame_start": 1536,
+            "frame_end": 1584,
+            "times": 1
+        },
+        {
+            "text": "早安",
+            "episode": "1-3",
+            "frame_start": 39912,
+            "frame_end": 39928,
+            "times": 2
+        },
+        {
+            "text": "一輩子在一起吧",
+            "episode": "4",
+            "frame_start": 16104,
+            "frame_end": 16144,
+            "times": 2
+        },
+        {
+            "text": "真的好厲害喔",
+            "episode": "5",
+            "frame_start": 25112,
+            "frame_end": 25136,
+            "times": 2
+        },
+        {
+            "text": "我大概會去英國留學吧",
+            "episode": "5",
+            "frame_start": 24928,
+            "frame_end": 24984,
+            "times": 1
+        },
+        {
+            "text": "昨天喝過伯爵紅茶了",
+            "episode": "1-3",
+            "frame_start": 58856,
+            "frame_end": 58896,
+            "times": 1
+        },
+        {
+            "text": "對不起",
+            "episode": "1-3",
+            "frame_start": 23248,
+            "frame_end": 23264,
+            "times": 1
+        },
+        {
+            "text": "一旦加入就無法回頭了喔",
+            "episode": "13",
+            "frame_start": 1104,
+            "frame_end": 1144,
+            "times": 2
+        },
+        {
+            "text": "我很感動",
+            "episode": "11",
+            "frame_start": 7680,
+            "frame_end": 7696,
+            "times": 1
+        },
+        {
+            "text": "我把妳加入群組了,以後別缺席",
+            "episode": "6",
+            "frame_start": 16424,
+            "frame_end": 16496,
+            "times": 4
+        },
+        {
+            "text": "我想應該不是",
+            "episode": "1-3",
+            "frame_start": 27912,
+            "frame_end": 27952,
+            "times": 1
+        },
+        {
+            "text": "我已經搞不懂了",
+            "episode": "11",
+            "frame_start": 1800,
+            "frame_end": 1832,
+            "times": 2
+        },
+        {
+            "text": "It' s mygo耶, It's mygo",
+            "episode": "12",
+            "frame_start": 6040,
+            "frame_end": 6088,
+            "times": 1
+        },
+        {
+            "text": "還有這樣太不負責了吧?",
+            "episode": "1-3",
+            "frame_start": 2448,
+            "frame_end": 2480,
+            "times": 3
+        },
+        {
+            "text": "真是有想法",
+            "episode": "1-3",
+            "frame_start": 5216,
+            "frame_end": 5240,
+            "times": 4
+        },
+        {
+            "text": "Tomorin",
+            "episode": "12",
+            "frame_start": 15128,
+            "frame_end": 15144,
+            "times": 1
+        },
+        {
+            "text": "今天是來討論樂團的事的吧?",
+            "episode": "1-3",
+            "frame_start": 59104,
+            "frame_end": 59160,
+            "times": 1
+        },
+        {
+            "text": "歡迪來到Ave Mujica的世界",
+            "episode": "13",
+            "frame_start": 26744,
+            "frame_end": 26784,
+            "times": 1
+        },
+        {
+            "text": "好老舊喔",
+            "episode": "5",
+            "frame_start": 992,
+            "frame_end": 1024,
+            "times": 1
+        },
+        {
+            "text": "走路小心腳邊喔",
+            "episode": "7",
+            "frame_start": 12232,
+            "frame_end": 12256,
+            "times": 1
+        },
+        {
+            "text": "大家是不是忘記更重要的事了?",
+            "episode": "11",
+            "frame_start": 12688,
+            "frame_end": 12736,
+            "times": 1
+        },
+        {
+            "text": "真是會虛情假意呢",
+            "episode": "8",
+            "frame_start": 26464,
+            "frame_end": 26496,
+            "times": 3
+        },
+        {
+            "text": "拜託妳的事妳明明都不肯做的",
+            "episode": "8",
+            "frame_start": 19464,
+            "frame_end": 19512,
+            "times": 1
+        },
+        {
+            "text": "只要是我能做的,我什麼都願意做",
+            "episode": "8",
+            "frame_start": 30096,
+            "frame_end": 30152,
+            "times": 4
+        },
+        {
+            "text": "怎麼會 簡直不敢相信",
+            "episode": "13",
+            "frame_start": 23648,
+            "frame_end": 23648,
+            "times": 1
+        },
+        {
+            "text": "我也說不太上來,但感覺有點震撼",
+            "episode": "4",
+            "frame_start": 328,
+            "frame_end": 400,
+            "times": 1
+        },
+        {
+            "text": "爛老爸",
+            "episode": "13",
+            "frame_start": 33984,
+            "frame_end": 34008,
+            "times": 1
+        },
+        {
+            "text": "我還不曉得能不能組一輩子樂團",
+            "episode": "4",
+            "frame_start": 17696,
+            "frame_end": 17752,
+            "times": 1
+        },
+        {
+            "text": "抹茶百匯",
+            "episode": "7",
+            "frame_start": 9104,
+            "frame_end": 9120,
+            "times": 1
+        },
+        {
+            "text": "大家會露出什麼表情呢",
+            "episode": "4",
+            "frame_start": 18640,
+            "frame_end": 18688,
+            "times": 1
+        },
+        {
+            "text": "早安",
+            "episode": "1-3",
+            "frame_start": 39080,
+            "frame_end": 39136,
+            "times": 3
+        },
+        {
+            "text": "如果心裡有什麼想法",
+            "episode": "4",
+            "frame_start": 8208,
+            "frame_end": 8240,
+            "times": 2
+        },
+        {
+            "text": "好可愛喔",
+            "episode": "1-3",
+            "frame_start": 39656,
+            "frame_end": 39680,
+            "times": 2
+        },
+        {
+            "text": "因為春日影是一首好歌",
+            "episode": "4",
+            "frame_start": 184,
+            "frame_end": 240,
+            "times": 2
+        },
+        {
+            "text": "太陽光活力了",
+            "episode": "1-3",
+            "frame_start": 7824,
+            "frame_end": 7864,
+            "times": 1
+        },
+        {
+            "text": "你已經非常努力了",
+            "episode": "7",
+            "frame_start": 18584,
+            "frame_end": 18640,
+            "times": 2
+        },
+        {
+            "text": "如何?",
+            "episode": "12",
+            "frame_start": 31040,
+            "frame_end": 31056,
+            "times": 1
+        },
+        {
+            "text": "一起在迷失之中前進",
+            "episode": "5",
+            "frame_start": 30696,
+            "frame_end": 30768,
+            "times": 2
+        },
+        {
+            "text": "ANON TOl/0明明是最佳選擇吧",
+            "episode": "11",
+            "frame_start": 17432,
+            "frame_end": 17472,
+            "times": 1
+        },
+        {
+            "text": "那我要先睡了 幫我把門鎖上吧 0",
+            "episode": "1-3",
+            "frame_start": 72736,
+            "frame_end": 72800,
+            "times": 1
+        },
+        {
+            "text": "我有前輩給的麵包",
+            "episode": "11",
+            "frame_start": 25440,
+            "frame_end": 25464,
+            "times": 1
+        },
+        {
+            "text": "仔好想成為人類啊)",
+            "episode": "1-3",
+            "frame_start": 73816,
+            "frame_end": 73896,
+            "times": 1
+        },
+        {
+            "text": "好想成為人類啊",
+            "episode": "1-3",
+            "frame_start": 78376,
+            "frame_end": 78456,
+            "times": 1
+        },
+        {
+            "text": "我好想!成為人類啊!",
+            "episode": "1-3",
+            "frame_start": 86176,
+            "frame_end": 86264,
+            "times": 1
+        },
+        {
+            "text": "它沒有結束",
+            "episode": "8",
+            "frame_start": 29064,
+            "frame_end": 29080,
+            "times": 1
+        },
+        {
+            "text": "那個真的害我笑出來了呢",
+            "episode": "1-3",
+            "frame_start": 40360,
+            "frame_end": 40400,
+            "times": 2
+        },
+        {
+            "text": "第一次演唱會前絕不能毀約喔",
+            "episode": "4",
+            "frame_start": 17952,
+            "frame_end": 18000,
+            "times": 1
+        },
+        {
+            "text": "就是說啊 我不知道該怎麼辦",
+            "episode": "10",
+            "frame_start": 1896,
+            "frame_end": 1920,
+            "times": 1
+        },
+        {
+            "text": "俄不會當妳的傳聲筒",
+            "episode": "9",
+            "frame_start": 15880,
+            "frame_end": 15920,
+            "times": 1
+        },
+        {
+            "text": "不愧是羽丘的小呆萌",
+            "episode": "1-3",
+            "frame_start": 9472,
+            "frame_end": 9504,
+            "times": 1
+        },
+        {
+            "text": "這下十幾二十萬跑不掉了",
+            "episode": "12",
+            "frame_start": 28280,
+            "frame_end": 28328,
+            "times": 3
+        },
+        {
+            "text": "真的很莫名其妙",
+            "episode": "1-3",
+            "frame_start": 50472,
+            "frame_end": 50504,
+            "times": 2
+        },
+        {
+            "text": "也不曉得她現在人在哪裡",
+            "episode": "4",
+            "frame_start": 4856,
+            "frame_end": 4896,
+            "times": 1
+        },
+        {
+            "text": "應該幾乎沒有那種人吧",
+            "episode": "1-3",
+            "frame_start": 43960,
+            "frame_end": 44024,
+            "times": 1
+        },
+        {
+            "text": "真的嗎",
+            "episode": "1-3",
+            "frame_start": 21760,
+            "frame_end": 21776,
+            "times": 2
+        },
+        {
+            "text": "太棒了,爽世同學LOVE",
+            "episode": "1-3",
+            "frame_start": 52224,
+            "frame_end": 52288,
+            "times": 2
+        },
+        {
+            "text": "真是太好了",
+            "episode": "4",
+            "frame_start": 21280,
+            "frame_end": 21304,
+            "times": 1
+        },
+        {
+            "text": "真是太好了",
+            "episode": "12",
+            "frame_start": 25728,
+            "frame_end": 25744,
+            "times": 3
+        },
+        {
+            "text": "太好了",
+            "episode": "12",
+            "frame_start": 27600,
+            "frame_end": 27624,
+            "times": 1
+        },
+        {
+            "text": "請問,要不要一起玩樂團?",
+            "episode": "1-3",
+            "frame_start": 15056,
+            "frame_end": 15104,
+            "times": 1
+        },
+        {
+            "text": "好過分,她來又不會怎麼樣",
+            "episode": "11",
+            "frame_start": 9800,
+            "frame_end": 9848,
+            "times": 1
+        },
+        {
+            "text": "北 川 順 子 色指足/楨查 在現實與筆記中來來回回以求慰藉",
+            "episode": "1-3",
+            "frame_start": 32592,
+            "frame_end": 32648,
+            "times": 1
+        },
+        {
+            "text": "之前因為誤會沒理解彼此的想法",
+            "episode": "4",
+            "frame_start": 15128,
+            "frame_end": 15176,
+            "times": 1
+        },
+        {
+            "text": "我們都難得一起過來了",
+            "episode": "1-3",
+            "frame_start": 27160,
+            "frame_end": 27184,
+            "times": 1
+        },
+        {
+            "text": "晚安",
+            "episode": "1-3",
+            "frame_start": 72920,
+            "frame_end": 72944,
+            "times": 2
+        },
+        {
+            "text": "太正經爪百了",
+            "episode": "1-3",
+            "frame_start": 7904,
+            "frame_end": 7928,
+            "times": 1
+        },
+        {
+            "text": "我們學校滿多人玩的喔",
+            "episode": "1-3",
+            "frame_start": 10296,
+            "frame_end": 10336,
+            "times": 1
+        },
+        {
+            "text": "每年都只感受到冰冷",
+            "episode": "7",
+            "frame_start": 23384,
+            "frame_end": 23512,
+            "times": 2
+        },
+        {
+            "text": "糟糕了糟糕了糟糕了糟糕了",
+            "episode": "5",
+            "frame_start": 6520,
+            "frame_end": 6568,
+            "times": 1
+        },
+        {
+            "text": "燈就是在等妳來啊",
+            "episode": "9",
+            "frame_start": 7352,
+            "frame_end": 7392,
+            "times": 1
+        },
+        {
+            "text": "小燈,我們 起去玩吧",
+            "episode": "1-3",
+            "frame_start": 22584,
+            "frame_end": 22624,
+            "times": 1
+        },
+        {
+            "text": "今晚也愉快地搖撼深淵",
+            "episode": "13",
+            "frame_start": 29248,
+            "frame_end": 29352,
+            "times": 1
+        },
+        {
+            "text": "好擔心這次的考試喔",
+            "episode": "10",
+            "frame_start": 520,
+            "frame_end": 568,
+            "times": 1
+        },
+        {
+            "text": "我要在這裡重新開始",
+            "episode": "1-3",
+            "frame_start": 5616,
+            "frame_end": 5656,
+            "times": 2
+        },
+        {
+            "text": "可是這很重要吧",
+            "episode": "4",
+            "frame_start": 25088,
+            "frame_end": 25112,
+            "times": 2
+        },
+        {
+            "text": "我的人生已經失敗了吧",
+            "episode": "5",
+            "frame_start": 28608,
+            "frame_end": 28664,
+            "times": 2
+        },
+        {
+            "text": "全都失敗了",
+            "episode": "10",
+            "frame_start": 1216,
+            "frame_end": 1280,
+            "times": 1
+        },
+        {
+            "text": "我已經徹底失敗了",
+            "episode": "5",
+            "frame_start": 22144,
+            "frame_end": 22184,
+            "times": 1
+        },
+        {
+            "text": "掰掰",
+            "episode": "1-3",
+            "frame_start": 40512,
+            "frame_end": 40528,
+            "times": 2
+        },
+        {
+            "text": "_17石10015 27 d險高CP值]用零甩錢就可叨 巾心5 Caf& 晚安齧姆齧姆",
+            "episode": "5",
+            "frame_start": 8736,
+            "frame_end": 8776,
+            "times": 3
+        },
+        {
+            "text": "CRYCHIC已經毀了",
+            "episode": "8",
+            "frame_start": 27728,
+            "frame_end": 27784,
+            "times": 1
+        },
+        {
+            "text": "初子;睦子,海子",
+            "episode": "13",
+            "frame_start": 19112,
+            "frame_end": 19152,
+            "times": 1
+        },
+        {
+            "text": "被剪開了!",
+            "episode": "11",
+            "frame_start": 31344,
+            "frame_end": 31344,
+            "times": 1
+        },
+        {
+            "text": "掰掰",
+            "episode": "1-3",
+            "frame_start": 41232,
+            "frame_end": 41256,
+            "times": 1
+        },
+        {
+            "text": "掰掰",
+            "episode": "5",
+            "frame_start": 6032,
+            "frame_end": 6048,
+            "times": 1
+        },
+        {
+            "text": "可是,氣氛一定不可能那麼熱裂的",
+            "episode": "7",
+            "frame_start": 10984,
+            "frame_end": 11056,
+            "times": 1
+        },
+        {
+            "text": "要是沒有大家在的話",
+            "episode": "6",
+            "frame_start": 23024,
+            "frame_end": 23072,
+            "times": 1
+        },
+        {
+            "text": "大家一定能再重新和好的",
+            "episode": "1-3",
+            "frame_start": 24872,
+            "frame_end": 24920,
+            "times": 1
+        },
+        {
+            "text": "果然還是要大家都在才行",
+            "episode": "6",
+            "frame_start": 25008,
+            "frame_end": 25064,
+            "times": 1
+        },
+        {
+            "text": "如果能被容許的話",
+            "episode": "10",
+            "frame_start": 27720,
+            "frame_end": 27744,
+            "times": 1
+        },
+        {
+            "text": "晚安",
+            "episode": "11",
+            "frame_start": 28952,
+            "frame_end": 28976,
+            "times": 1
+        },
+        {
+            "text": "可以用優惠券嗎",
+            "episode": "1-3",
+            "frame_start": 25960,
+            "frame_end": 25992,
+            "times": 2
+        },
+        {
+            "text": "請慢慢享用",
+            "episode": "1-3",
+            "frame_start": 83520,
+            "frame_end": 83520,
+            "times": 2
+        },
+        {
+            "text": "妳為什麼會選這裡的頂樓呢?",
+            "episode": "8",
+            "frame_start": 14728,
+            "frame_end": 14776,
+            "times": 1
+        },
+        {
+            "text": "感謝您讓我佔用的寶貴時間",
+            "episode": "13",
+            "frame_start": 144,
+            "frame_end": 200,
+            "times": 3
+        },
+        {
+            "text": "要拍囉",
+            "episode": "11",
+            "frame_start": 23368,
+            "frame_end": 23392,
+            "times": 1
+        },
+        {
+            "text": "甩力犬聲叫喊",
+            "episode": "12",
+            "frame_start": 20976,
+            "frame_end": 21128,
+            "times": 1
+        },
+        {
+            "text": "那妳能別用這種給人找麻煩的方式退團嗎",
+            "episode": "1-3",
+            "frame_start": 2584,
+            "frame_end": 2624,
+            "times": 1
+        },
+        {
+            "text": "不可以退出喔",
+            "episode": "11",
+            "frame_start": 16104,
+            "frame_end": 16136,
+            "times": 1
+        },
+        {
+            "text": "也就是復活",
+            "episode": "13",
+            "frame_start": 25136,
+            "frame_end": 25168,
+            "times": 1
+        },
+        {
+            "text": "妳現在不就在和我接觸了嗎",
+            "episode": "1-3",
+            "frame_start": 25488,
+            "frame_end": 25528,
+            "times": 1
+        },
+        {
+            "text": "她說她秉持不熬夜主義",
+            "episode": "11",
+            "frame_start": 27728,
+            "frame_end": 27768,
+            "times": 1
+        },
+        {
+            "text": "為什麼是妳睡眼惺怯啊",
+            "episode": "12",
+            "frame_start": 24720,
+            "frame_end": 24760,
+            "times": 1
+        },
+        {
+            "text": "人生這麼漫長會撐不住的喔",
+            "episode": "1-3",
+            "frame_start": 28560,
+            "frame_end": 28624,
+            "times": 1
+        },
+        {
+            "text": "有辦法背負其他人的人生嗎",
+            "episode": "8",
+            "frame_start": 30368,
+            "frame_end": 30416,
+            "times": 1
+        },
+        {
+            "text": "早安",
+            "episode": "1-3",
+            "frame_start": 39368,
+            "frame_end": 39384,
+            "times": 1
+        },
+        {
+            "text": "早安",
+            "episode": "4",
+            "frame_start": 19520,
+            "frame_end": 19568,
+            "times": 1
+        },
+        {
+            "text": "稍微睡上一覺吧",
+            "episode": "1-3",
+            "frame_start": 33136,
+            "frame_end": 33152,
+            "times": 1
+        },
+        {
+            "text": "求求妳",
+            "episode": "8",
+            "frame_start": 28016,
+            "frame_end": 28024,
+            "times": 1
+        },
+        {
+            "text": "又來了一個新人",
+            "episode": "13",
+            "frame_start": 22072,
+            "frame_end": 22112,
+            "times": 6
+        },
+        {
+            "text": "我也去休息室打聲招呼吧",
+            "episode": "7",
+            "frame_start": 5632,
+            "frame_end": 5688,
+            "times": 1
+        },
+        {
+            "text": "和那無關",
+            "episode": "4",
+            "frame_start": 10112,
+            "frame_end": 10152,
+            "times": 1
+        },
+        {
+            "text": "我還是會繼續下去",
+            "episode": "10",
+            "frame_start": 23504,
+            "frame_end": 23536,
+            "times": 4
+        },
+        {
+            "text": "我也一樣",
+            "episode": "5",
+            "frame_start": 30064,
+            "frame_end": 30224,
+            "times": 1
+        },
+        {
+            "text": "早 請多多指教",
+            "episode": "1-3",
+            "frame_start": 6568,
+            "frame_end": 6600,
+            "times": 1
+        },
+        {
+            "text": "我沒有那麼會迷路啦,我看得懂地圖啊",
+            "episode": "12",
+            "frame_start": 15720,
+            "frame_end": 15792,
+            "times": 1
+        },
+        {
+            "text": "貴安",
+            "episode": "1-3",
+            "frame_start": 37960,
+            "frame_end": 38000,
+            "times": 1
+        },
+        {
+            "text": "我沒說過那種話",
+            "episode": "8",
+            "frame_start": 200,
+            "frame_end": 224,
+            "times": 1
+        },
+        {
+            "text": "早安",
+            "episode": "10",
+            "frame_start": 18600,
+            "frame_end": 18640,
+            "times": 1
+        },
+        {
+            "text": "早安",
+            "episode": "10",
+            "frame_start": 1728,
+            "frame_end": 1744,
+            "times": 2
+        },
+        {
+            "text": "(` 是啊",
+            "episode": "1-3",
+            "frame_start": 43128,
+            "frame_end": 43128,
+            "times": 2
+        },
+        {
+            "text": "太過分了",
+            "episode": "8",
+            "frame_start": 632,
+            "frame_end": 648,
+            "times": 3
+        },
+        {
+            "text": "我也是因為這點才邀請她的",
+            "episode": "1-3",
+            "frame_start": 81056,
+            "frame_end": 81128,
+            "times": 1
+        },
+        {
+            "text": "妳是抱著多大的覺悟說出這種話的?",
+            "episode": "8",
+            "frame_start": 30232,
+            "frame_end": 30280,
+            "times": 1
+        },
+        {
+            "text": "未免也太霸道了",
+            "episode": "4",
+            "frame_start": 24976,
+            "frame_end": 25000,
+            "times": 1
+        },
+        {
+            "text": "小睦,站那邊拍不到喔",
+            "episode": "1-3",
+            "frame_start": 61104,
+            "frame_end": 61152,
+            "times": 1
+        },
+        {
+            "text": "真不敢相信",
+            "episode": "11",
+            "frame_start": 11760,
+            "frame_end": 11792,
+            "times": 2
+        },
+        {
+            "text": "怎麼了嗎",
+            "episode": "1-3",
+            "frame_start": 26112,
+            "frame_end": 26136,
+            "times": 1
+        },
+        {
+            "text": "對不起,忍不住就%",
+            "episode": "1-3",
+            "frame_start": 44168,
+            "frame_end": 44216,
+            "times": 1
+        },
+        {
+            "text": "她果然不需要我嘛",
+            "episode": "10",
+            "frame_start": 14600,
+            "frame_end": 14648,
+            "times": 1
+        },
+        {
+            "text": "這種事沒什麼好在意的啊",
+            "episode": "1-3",
+            "frame_start": 13248,
+            "frame_end": 13264,
+            "times": 1
+        },
+        {
+            "text": "Tomorin,可以講幾句話嗎",
+            "episode": "12",
+            "frame_start": 14560,
+            "frame_end": 14608,
+            "times": 1
+        },
+        {
+            "text": "放開我",
+            "episode": "10",
+            "frame_start": 24968,
+            "frame_end": 24984,
+            "times": 1
+        },
+        {
+            "text": "以第一天來說還算不錯吧",
+            "episode": "1-3",
+            "frame_start": 12176,
+            "frame_end": 12216,
+            "times": 1
+        },
+        {
+            "text": "太先入為主了喔",
+            "episode": "4",
+            "frame_start": 23432,
+            "frame_end": 23456,
+            "times": 2
+        },
+        {
+            "text": "意思是很好嗎 08",
+            "episode": "6",
+            "frame_start": 9744,
+            "frame_end": 9744,
+            "times": 1
+        },
+        {
+            "text": "聽起來好棒喔",
+            "episode": "6",
+            "frame_start": 9464,
+            "frame_end": 9496,
+            "times": 1
+        },
+        {
+            "text": "來,開始溝通吧",
+            "episode": "4",
+            "frame_start": 11368,
+            "frame_end": 11408,
+            "times": 1
+        },
+        {
+            "text": "我們完全沒有時間啊",
+            "episode": "5",
+            "frame_start": 11392,
+            "frame_end": 11416,
+            "times": 1
+        },
+        {
+            "text": "又沒有規定一定要全員到齊才能練習",
+            "episode": "1-3",
+            "frame_start": 2864,
+            "frame_end": 2928,
+            "times": 1
+        },
+        {
+            "text": "但妳願意加入我會很高興的",
+            "episode": "1-3",
+            "frame_start": 20728,
+            "frame_end": 20768,
+            "times": 1
+        },
+        {
+            "text": "我其實覺得有點羨慕",
+            "episode": "6",
+            "frame_start": 26088,
+            "frame_end": 26128,
+            "times": 1
+        },
+        {
+            "text": "這次我們大家一定要好好溝通",
+            "episode": "4",
+            "frame_start": 15544,
+            "frame_end": 15600,
+            "times": 1
+        },
+        {
+            "text": "我有拜託妳別把我的事告訴其他人了吧",
+            "episode": "1-3",
+            "frame_start": 56808,
+            "frame_end": 56896,
+            "times": 2
+        },
+        {
+            "text": "就由我來將牠結束掉",
+            "episode": "10",
+            "frame_start": 23864,
+            "frame_end": 23904,
+            "times": 1
+        },
+        {
+            "text": "怎麼辦呢",
+            "episode": "1-3",
+            "frame_start": 16120,
+            "frame_end": 16136,
+            "times": 1
+        },
+        {
+            "text": "我們本來真的沒有要演奏春日影的",
+            "episode": "8",
+            "frame_start": 25632,
+            "frame_end": 25712,
+            "times": 1
+        },
+        {
+            "text": "那個%我想問的是",
+            "episode": "5",
+            "frame_start": 4696,
+            "frame_end": 4728,
+            "times": 1
+        },
+        {
+            "text": "燈在問妳話",
+            "episode": "1-3",
+            "frame_start": 2408,
+            "frame_end": 2440,
+            "times": 2
+        },
+        {
+            "text": "我們要出場,五個人=起",
+            "episode": "11",
+            "frame_start": 13272,
+            "frame_end": 13320,
+            "times": 1
+        },
+        {
+            "text": "出發點明明就只是愛慕虛榮",
+            "episode": "10",
+            "frame_start": 23552,
+            "frame_end": 23592,
+            "times": 1
+        },
+        {
+            "text": "看起來令人驚艷又華麗",
+            "episode": "12",
+            "frame_start": 29888,
+            "frame_end": 29936,
+            "times": 1
+        },
+        {
+            "text": "真的覺得很開心",
+            "episode": "5",
+            "frame_start": 7864,
+            "frame_end": 7896,
+            "times": 1
+        },
+        {
+            "text": "一定又會以失敗收場的",
+            "episode": "5",
+            "frame_start": 18912,
+            "frame_end": 18952,
+            "times": 1
+        },
+        {
+            "text": "藤田淳平(Elements Garden 藤間 仁 (Elements Garden) 緒方航貴(7y口-|31一汐夕) 音槳宁4U夕夕一 札)述泰紀 (工-入夕心一`工y夕4*小)",
+            "episode": "1-3",
+            "frame_start": 5600,
+            "frame_end": 5600,
+            "times": 1
+        },
+        {
+            "text": "垃圾沒丟啊",
+            "episode": "1-3",
+            "frame_start": 17576,
+            "frame_end": 17616,
+            "times": 1
+        },
+        {
+            "text": "到現在都還執著於過去,真難看",
+            "episode": "8",
+            "frame_start": 26688,
+            "frame_end": 26744,
+            "times": 1
+        },
+        {
+            "text": "動不動就無視我",
+            "episode": "11",
+            "frame_start": 21000,
+            "frame_end": 21032,
+            "times": 1
+        },
+        {
+            "text": "長尾知夏 高根壽美于 是的,在這間學校我也想積極參與活動",
+            "episode": "1-3",
+            "frame_start": 5048,
+            "frame_end": 5120,
+            "times": 1
+        },
+        {
+            "text": "樂奈最喜歡有趣的事情了",
+            "episode": "10",
+            "frame_start": 14728,
+            "frame_end": 14792,
+            "times": 1
+        },
+        {
+            "text": "香澄,那邊還好嗎",
+            "episode": "1-3",
+            "frame_start": 25752,
+            "frame_end": 25792,
+            "times": 1
+        },
+        {
+            "text": "這種事不重要吧?",
+            "episode": "10",
+            "frame_start": 20080,
+            "frame_end": 20104,
+            "times": 1
+        },
+        {
+            "text": "我明明知道它有多重要",
+            "episode": "10",
+            "frame_start": 27488,
+            "frame_end": 27544,
+            "times": 1
+        },
+        {
+            "text": "燈",
+            "episode": "1-3",
+            "frame_start": 30632,
+            "frame_end": 30640,
+            "times": 1
+        },
+        {
+            "text": "是這樣啊",
+            "episode": "1-3",
+            "frame_start": 11104,
+            "frame_end": 11120,
+            "times": 1
+        },
+        {
+            "text": "為什麼要擅自跑過來?",
+            "episode": "1-3",
+            "frame_start": 56720,
+            "frame_end": 56752,
+            "times": 1
+        },
+        {
+            "text": "我們已經有一年不見了吧",
+            "episode": "8",
+            "frame_start": 13464,
+            "frame_end": 13520,
+            "times": 1
+        },
+        {
+            "text": "我很不喜歡這種氣氛啊",
+            "episode": "1-3",
+            "frame_start": 21008,
+            "frame_end": 21064,
+            "times": 1
+        },
+        {
+            "text": "那真是可喜可賀",
+            "episode": "11",
+            "frame_start": 6880,
+            "frame_end": 6904,
+            "times": 1
+        },
+        {
+            "text": "是啊,一起加油吧",
+            "episode": "7",
+            "frame_start": 29488,
+            "frame_end": 29520,
+            "times": 1
+        },
+        {
+            "text": "我是來結束這樂團的",
+            "episode": "10",
+            "frame_start": 25216,
+            "frame_end": 25248,
+            "times": 1
+        },
+        {
+            "text": "是嗎,太好了",
+            "episode": "4",
+            "frame_start": 12232,
+            "frame_end": 12280,
+            "times": 1
+        },
+        {
+            "text": "CRYCHIC真是太棒了",
+            "episode": "1-3",
+            "frame_start": 94400,
+            "frame_end": 94432,
+            "times": 1
+        },
+        {
+            "text": "只要有小燈在就夠了吧?",
+            "episode": "9",
+            "frame_start": 23008,
+            "frame_end": 23048,
+            "times": 1
+        },
+        {
+            "text": "沒問題嗎",
+            "episode": "7",
+            "frame_start": 11464,
+            "frame_end": 11480,
+            "times": 2
+        },
+        {
+            "text": "也誇獎我一下",
+            "episode": "8",
+            "frame_start": 18584,
+            "frame_end": 18592,
+            "times": 1
+        },
+        {
+            "text": "沒事吧?",
+            "episode": "1-3",
+            "frame_start": 34920,
+            "frame_end": 34936,
+            "times": 1
+        },
+        {
+            "text": "問我幹嘛 她是小燈的朋友嗎",
+            "episode": "1-3",
+            "frame_start": 30448,
+            "frame_end": 30496,
+            "times": 1
+        },
+        {
+            "text": "那裡有個有趣的女人",
+            "episode": "8",
+            "frame_start": 20736,
+            "frame_end": 20768,
+            "times": 1
+        },
+        {
+            "text": "怯何七心配L /又向憩的 別 工芳-垚廿 lis #00;=5 我對自己能不能持緞 #=6+/#`{3157<扣 T5 下去 有點不安就是了 013 這點我 -點也不會感到擔心喔",
+            "episode": "4",
+            "frame_start": 33568,
+            "frame_end": 33568,
+            "times": 1
+        },
+        {
+            "text": "#4-生尤5!? 僻4一輩子喔!3",
+            "episode": "1-3",
+            "frame_start": 102176,
+            "frame_end": 102232,
+            "times": 2
+        },
+        {
+            "text": "就是說啊",
+            "episode": "1-3",
+            "frame_start": 9128,
+            "frame_end": 9152,
+            "times": 1
+        },
+        {
+            "text": "沒品味的是妳們吧",
+            "episode": "11",
+            "frame_start": 22640,
+            "frame_end": 22688,
+            "times": 1
+        },
+        {
+            "text": "這樣啊",
+            "episode": "1-3",
+            "frame_start": 38328,
+            "frame_end": 38344,
+            "times": 1
+        },
+        {
+            "text": "這是夢嗎",
+            "episode": "13",
+            "frame_start": 15312,
+            "frame_end": 15336,
+            "times": 1
+        },
+        {
+            "text": "我早知道會這樣了",
+            "episode": "12",
+            "frame_start": 1128,
+            "frame_end": 1152,
+            "times": 1
+        },
+        {
+            "text": "我看得出來,這是%",
+            "episode": "1-3",
+            "frame_start": 90528,
+            "frame_end": 90592,
+            "times": 1
+        },
+        {
+            "text": "真是的,下次一定要讓妳試試",
+            "episode": "1-3",
+            "frame_start": 25584,
+            "frame_end": 25640,
+            "times": 1
+        },
+        {
+            "text": "妳們是什麼的朋友呢?",
+            "episode": "1-3",
+            "frame_start": 51136,
+            "frame_end": 51176,
+            "times": 1
+        },
+        {
+            "text": "小祥今天是不是又不來了呢",
+            "episode": "1-3",
+            "frame_start": 96680,
+            "frame_end": 96752,
+            "times": 1
+        },
+        {
+            "text": "我覺得不是好事喔",
+            "episode": "11",
+            "frame_start": 21912,
+            "frame_end": 21944,
+            "times": 1
+        },
+        {
+            "text": "這樣啊",
+            "episode": "1-3",
+            "frame_start": 23536,
+            "frame_end": 23560,
+            "times": 1
+        },
+        {
+            "text": "大家真的都有在組樂團耶",
+            "episode": "1-3",
+            "frame_start": 10680,
+            "frame_end": 10736,
+            "times": 1
+        },
+        {
+            "text": "而且挺壞心眼的不是嗎",
+            "episode": "10",
+            "frame_start": 23160,
+            "frame_end": 23192,
+            "times": 1
+        },
+        {
+            "text": "明天下午五點在RiN6集合)",
+            "episode": "4",
+            "frame_start": 27840,
+            "frame_end": 27928,
+            "times": 1
+        },
+        {
+            "text": "可以",
+            "episode": "1-3",
+            "frame_start": 26000,
+            "frame_end": 26008,
+            "times": 1
+        },
+        {
+            "text": "搞不懂妳心裡到底在想什麼",
+            "episode": "10",
+            "frame_start": 17256,
+            "frame_end": 17320,
+            "times": 1
+        },
+        {
+            "text": "妳等我 下",
+            "episode": "1-3",
+            "frame_start": 18600,
+            "frame_end": 18632,
+            "times": 1
+        },
+        {
+            "text": "妳還要改造嗎",
+            "episode": "11",
+            "frame_start": 26792,
+            "frame_end": 26816,
+            "times": 1
+        },
+        {
+            "text": "妳又這樣了",
+            "episode": "1-3",
+            "frame_start": 79776,
+            "frame_end": 79800,
+            "times": 1
+        },
+        {
+            "text": "等一下,練習還沒結束",
+            "episode": "6",
+            "frame_start": 17872,
+            "frame_end": 17920,
+            "times": 1
+        },
+        {
+            "text": "抱歉",
+            "episode": "1-3",
+            "frame_start": 13072,
+            "frame_end": 13088,
+            "times": 1
+        },
+        {
+            "text": "我不想再悲傷了",
+            "episode": "10",
+            "frame_start": 1328,
+            "frame_end": 1368,
+            "times": 1
+        },
+        {
+            "text": "真讓人期待",
+            "episode": "1-3",
+            "frame_start": 84096,
+            "frame_end": 84120,
+            "times": 1
+        },
+        {
+            "text": "好溫暖",
+            "episode": "6",
+            "frame_start": 9664,
+            "frame_end": 9688,
+            "times": 1
+        },
+        {
+            "text": "是啊",
+            "episode": "1-3",
+            "frame_start": 43136,
+            "frame_end": 43136,
+            "times": 1
+        },
+        {
+            "text": "已經要預約了嗎",
+            "episode": "5",
+            "frame_start": 12224,
+            "frame_end": 12256,
+            "times": 1
+        },
+        {
+            "text": "燈才可愛",
+            "episode": "6",
+            "frame_start": 30176,
+            "frame_end": 30208,
+            "times": 1
+        },
+        {
+            "text": "過去軟弱的我",
+            "episode": "13",
+            "frame_start": 1472,
+            "frame_end": 1504,
+            "times": 1
+        },
+        {
+            "text": "等一下",
+            "episode": "1-3",
+            "frame_start": 3336,
+            "frame_end": 3336,
+            "times": 1
+        },
+        {
+            "text": "已經死了",
+            "episode": "13",
+            "frame_start": 1528,
+            "frame_end": 1560,
+            "times": 1
+        },
+        {
+            "text": "我幫妳把垃圾丟掉了喔",
+            "episode": "1-3",
+            "frame_start": 17792,
+            "frame_end": 17832,
+            "times": 1
+        },
+        {
+            "text": "大家真沒品味",
+            "episode": "11",
+            "frame_start": 17480,
+            "frame_end": 17512,
+            "times": 1
+        },
+        {
+            "text": "這是最後的警告",
+            "episode": "8",
+            "frame_start": 29288,
+            "frame_end": 29336,
             "times": 1
         }
     ],
-    "times": 90
+    "times": 2902
 }

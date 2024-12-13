@@ -421,7 +421,14 @@
             "frame_start": 7512,
             "frame_end": 7512,
             "times": 1
+        },
+        {
+            "text": "這樣啊",
+            "episode": "1-3",
+            "frame_start": 38328,
+            "frame_end": 38344,
+            "times": 1
         }
     ],
-    "times": 86
+    "times": 87
 }

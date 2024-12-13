@@ -12,3 +12,9 @@ src/13.mp4
 .env
 sub_process.py
 logs/
+logs/2024-12-12.log
+logs/ranks.json
+logs/2024-12-12.log
+mygo-bot/
+logs/
+logs/ranks.json

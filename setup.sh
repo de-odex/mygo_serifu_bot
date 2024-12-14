@@ -35,4 +35,5 @@ pip install -r requirements.txt
 
 # 运行主程序
 echo "运行主程序..."
+screen -R bot
 python main.py

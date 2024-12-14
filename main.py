@@ -51,7 +51,8 @@ async def update_status():
         await bot.change_presence(activity=discord.CustomActivity(name=f'GO了{data['total_times']}次 | {server_count} 個伺服器'))
         logging.info(f'伺服器狀態更新為: GO了{data['total_times']}次 | {server_count} 個伺服器')
     else:
-        logging.error(f'伺服器狀態更新失敗')
+        logging.error(f'伺服器狀態更新失敗: {response.status_code}')
+
 
 
 def text_process(text):
@@ -133,9 +134,8 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 
 def record(text):
     text = text[0]
-    url = f'{base_url}/ranks'
     headers = {'Content-Type': 'application/json'}
-    response = requests.post(url, json=text, headers=headers)
+    response = requests.post(f'{base_url}/ranks', json=text, headers=headers)
     if response.status_code == 200:
         logging.info(f'status code : {response.status_code} Data updated')
     else:

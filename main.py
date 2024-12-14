@@ -14,8 +14,11 @@ import logging
 from collections import Counter
 import requests
 
-base_url = 'https://mygo-api.yichen0403.us.kg/api'
 load_dotenv()
+base_url = 'https://mygo-api.yichen0403.us.kg/api'
+API_TOKEN = os.getenv('API_TOKEN')
+
+
 intents = discord.Intents.default()
 bot =  commands.AutoShardedBot(command_prefix="!", intents=intents)
 error_gif_link = 'https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif'
@@ -133,7 +136,10 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 
 def record(text):
     text = text[0]
-    headers = {'Content-Type': 'application/json'}
+    headers = {
+                'Content-Type': 'application/json',
+               'Authorization': f'Bearer {API_TOKEN}'
+               }
     response = requests.post(f'{base_url}/ranks', json=text, headers=headers)
     if response.status_code == 200:
         logging.info(f'status code : {response.status_code} Data updated')

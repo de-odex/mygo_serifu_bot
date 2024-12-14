@@ -12,11 +12,12 @@ from discord.ext import commands, tasks
 import asyncio
 import logging
 from collections import Counter
+import requests
 
-
+base_url = 'https://mygo-api.yichen0403.us.kg/api'
 load_dotenv()
 intents = discord.Intents.default()
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot =  commands.AutoShardedBot(command_prefix="!", intents=intents)
 error_gif_link = 'https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif'
 
 
@@ -44,12 +45,13 @@ async def on_ready():
 @tasks.loop(minutes=15)  
 async def update_status():
     server_count = len(bot.guilds)
-    record(None)
-    with open('logs/ranks.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    times = data['times']
-    await bot.change_presence(activity=discord.CustomActivity(name=f'GO了{times}次 | {server_count} 個伺服器'))
-    logging.info(f'伺服器狀態更新為: GO了{times}次 | {server_count} 個伺服器')
+    response = requests.get(f'{base_url}/ranks/total')
+    if response.status_code == 200:
+        data = response.json()
+        await bot.change_presence(activity=discord.CustomActivity(name=f'GO了{data['total_times']}次 | {server_count} 個伺服器'))
+        logging.info(f'伺服器狀態更新為: GO了{data['total_times']}次 | {server_count} 個伺服器')
+    else:
+        logging.error(f'伺服器狀態更新失敗')
 
 
 def text_process(text):
@@ -130,38 +132,15 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 
 
 def record(text):
-
-    # print(text)
-    if not os.path.exists('logs/ranks.json'):
-        with open('logs/ranks.json', 'w', encoding='utf-8') as f:
-            json.dump({"title": [], "times": 0}, f, indent=4, ensure_ascii=False)
-    
-
-    with open('logs/ranks.json', 'r', encoding='utf-8') as f:
-        try:
-            data = json.load(f)
-        except json.JSONDecodeError:
-            data = {"title": [], "times": 0} 
-
-    if text == None:
-        return
-    # 更新
-    data['times'] += 1
     text = text[0]
-    for item in data['title']:
-        if item['text'] == text['text'] and item['episode'] == text['episode'] and item['frame_start'] == text['frame_start']:
-            item['times'] += 1
-            break
+    url = f'{base_url}/ranks'
+    headers = {'Content-Type': 'application/json'}
+    response = requests.post(url, json=text, headers=headers)
+    if response.status_code == 200:
+        logging.info(f'status code : {response.status_code} Data updated')
     else:
-        new_record = {"text": text['text'], "episode": text['episode'], "frame_start": text['frame_start'], "frame_end": text['frame_end'], "times": 1}
-        data['title'].append(new_record)
+        logging.error(f'status code : {response.status_code} Data update failed')
         
-    
-
-    with open('logs/ranks.json', 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
-        
-
 
 
 def run_ffmpeg_sync(episode, timestamp, end_frame):
@@ -193,7 +172,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     if len(result) == 0:
         embed = discord.Embed(title="❌錯誤",description='請再試一次，或是沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
-        await interaction.response.send_message(embed=embed, ephemeral=True)
+        await interaction.followup.send(embed=embed, ephemeral=True)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         return
     start_time = datetime.now()

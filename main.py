@@ -88,8 +88,7 @@ def text_process_precise(text):    #answer value
                     })
             except:
                 pass
-    except Exception as e:
-            logging.info(f'json load : {text}，錯誤: {e}')
+    except Exception as e:   #沒有點自動完成或是沒有此台詞會直接 傳入text本身，要傳回空清單，告訴使用者沒有此台詞
             results = []
         # print(results)
     return results
@@ -172,7 +171,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     if len(result) == 0:
         embed = discord.Embed(title="❌錯誤",description='請再試一次，或是沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
-        await interaction.followup.send(embed=embed, ephemeral=True)
+        await interaction.response.send_message(embed=embed, ephemeral=True)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         return
     start_time = datetime.now()

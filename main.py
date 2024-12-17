@@ -14,8 +14,11 @@ import logging
 from collections import Counter
 import requests
 
-base_url = 'https://mygo-api.yichen0403.us.kg/api'
 load_dotenv()
+base_url = 'https://mygo-api.yichen0403.us.kg/api'
+API_TOKEN = os.getenv('API_TOKEN')
+
+
 intents = discord.Intents.default()
 bot =  commands.AutoShardedBot(command_prefix="!", intents=intents)
 error_gif_link = 'https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif'
@@ -50,8 +53,15 @@ async def update_status():
         data = response.json()
         await bot.change_presence(activity=discord.CustomActivity(name=f'GO了{data['total_times']}次 | {server_count} 個伺服器'))
         logging.info(f'伺服器狀態更新為: GO了{data['total_times']}次 | {server_count} 個伺服器')
+        response = requests.post(f'{base_url}/record_server_count',json={'server_count': server_count})
+        if response.status_code == 200:
+            logging.info(f'伺服器狀態更新成功: {response.status_code}')
+        else:
+            logging.error(f'伺服器狀態更新失敗: {response.status_code}')
+
     else:
-        logging.error(f'伺服器狀態更新失敗')
+        logging.error(f'伺服器狀態更新失敗: {response.status_code}')
+
 
 
 def text_process(text):
@@ -87,8 +97,7 @@ def text_process_precise(text):    #answer value
                     })
             except:
                 pass
-    except Exception as e:
-            logging.info(f'json load : {text}，錯誤: {e}')
+    except Exception as e:   #沒有點自動完成或是沒有此台詞會直接 傳入text本身，要傳回空清單，告訴使用者沒有此台詞
             results = []
         # print(results)
     return results
@@ -133,9 +142,11 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 
 def record(text):
     text = text[0]
-    url = f'{base_url}/ranks'
-    headers = {'Content-Type': 'application/json'}
-    response = requests.post(url, json=text, headers=headers)
+    headers = {
+                'Content-Type': 'application/json',
+               'Authorization': f'Bearer {API_TOKEN}'
+               }
+    response = requests.post(f'{base_url}/ranks', json=text, headers=headers)
     if response.status_code == 200:
         logging.info(f'status code : {response.status_code} Data updated')
     else:
@@ -172,7 +183,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     if len(result) == 0:
         embed = discord.Embed(title="❌錯誤",description='請再試一次，或是沒有你要找的台詞...', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
-        await interaction.followup.send(embed=embed, ephemeral=True)
+        await interaction.response.send_message(embed=embed, ephemeral=True)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         return
     start_time = datetime.now()

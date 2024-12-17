@@ -48,13 +48,21 @@ async def on_ready():
 @tasks.loop(minutes=15)  
 async def update_status():
     server_count = len(bot.guilds)
-    response = requests.get(f'{base_url}/ranks/total')
+    app_info = await bot.application_info()
+    user_count = app_info.approximate_user_install_count
+    response = requests.get(f"{base_url}/ranks/total")
     if response.status_code == 200:
         data = response.json()
-        await bot.change_presence(activity=discord.CustomActivity(name=f'GO了{data['total_times']}次 | {server_count} 個伺服器'))
-        logging.info(f'伺服器狀態更新為: GO了{data['total_times']}次 | {server_count} 個伺服器')
+        await bot.change_presence(activity=discord.CustomActivity(name="GO了{data['total_times']}次 | {server_count} 個伺服器"))
+        logging.info(f"伺服器狀態更新為: GO了{data['total_times']}次 | {server_count} 個伺服器")
+        response = requests.post(f"{base_url}/record_server_count",json={'server_count': server_count,'user_count': user_count})
+        if response.status_code == 200:
+            logging.info(f"伺服器狀態更新成功: {response.status_code}")
+        else:
+            logging.error(f"伺服器狀態更新失敗: {response.status_code}")
+
     else:
-        logging.error(f'伺服器狀態更新失敗: {response.status_code}')
+        logging.error(f"伺服器狀態更新失敗: {response.status_code}")
 
 
 
@@ -138,23 +146,23 @@ def record(text):
     text = text[0]
     headers = {
                 'Content-Type': 'application/json',
-               'Authorization': f'Bearer {API_TOKEN}'
+               'Authorization': f"Bearer {API_TOKEN}"
                }
-    response = requests.post(f'{base_url}/ranks', json=text, headers=headers)
+    response = requests.post(f"{base_url}/ranks", json=text, headers=headers)
     if response.status_code == 200:
-        logging.info(f'status code : {response.status_code} Data updated')
+        logging.info(f"status code : {response.status_code} Data updated")
     else:
-        logging.error(f'status code : {response.status_code} Data update failed')
+        logging.error(f"status code : {response.status_code} Data update failed")
         
 
 
 def run_ffmpeg_sync(episode, timestamp, end_frame):
-    palettegen = ffmpeg.input(filename=f'src/{episode}.mp4', ss=timestamp) \
+    palettegen = ffmpeg.input(filename=f"src/{episode}.mp4", ss=timestamp) \
         .trim(start_frame=0, end_frame=end_frame + 1.0) \
         .filter(filter_name='scale', width=-1, height=720) \
         .filter(filter_name='palettegen', stats_mode='diff')
     
-    scale = ffmpeg.input(filename=f'src/{episode}.mp4', ss=timestamp) \
+    scale = ffmpeg.input(filename=f"src/{episode}.mp4", ss=timestamp) \
         .filter(filter_name='scale', width=-1, height=720)
     
     try:
@@ -188,7 +196,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
     frame_number = frame_number + back_frames + 15
     timestamp = frame_number / 23.98
     #ffmpeg-python
-    buffer, error = ffmpeg.input(filename=f'src/{str(episode)}.mp4', ss=timestamp) \
+    buffer, error = ffmpeg.input(filename=f"src/{str(episode)}.mp4", ss=timestamp) \
             .output('pipe:', vframes=1, format='image2', vcodec='png') \
             .global_args('-loglevel', 'error')\
             .run(capture_stdout=True)
@@ -196,10 +204,10 @@ async def mygo(interaction: discord.Interaction, text: str, second: float= 0.0):
         embed = discord.Embed(title="❌錯誤.",description='FFMPEG出事啦', color=discord.Color.red())
         embed.set_image(url=error_gif_link)
         await interaction.followup.send(embed=embed)
-        logging.error(f'伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}')
+        logging.error(f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}")
         return
     #send
-    await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f'{str(frame_number)}.png'))
+    await interaction.followup.send(file=discord.File(fp=io.BytesIO(buffer), filename=f"{str(frame_number)}.png"))
     end_time = datetime.now()
     timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
     run_time = end_time - start_time
@@ -228,7 +236,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
     await interaction.response.defer()
     episode = result[0]['episode']
     frame_number = result[0]['frame_start']
-    frame_number = frame_number + 5
+    frame_number = frame_number + 8
     timestamp = frame_number / 23.98
     embed = discord.Embed(title="GIF製作中...",description='視畫面複雜程度，可能需要一些時間', color=discord.Color.green())
     msg = await interaction.followup.send(embed=embed,ephemeral=True)
@@ -245,7 +253,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float= 
         logging.info(f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}")
         return
     
-    await msg.edit(embed = None, attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f'{str(frame_number)}.gif')])
+    await msg.edit(embed = None, attachments=[discord.File(fp=io.BytesIO(buffer2), filename=f"{str(frame_number)}.gif")])
     end_time = datetime.now()
     timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
     run_time = end_time - start_time

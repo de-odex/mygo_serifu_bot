@@ -45,7 +45,6 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/07/c6fe3ad3e685340704d314d765b7912993bcb8dc198f0e7a89382d37974b/win32_setctime-1.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/f5/d5/688db678e987c3e0fb17867970700b92603cadf36c56e5fb08f23e822a0c/yarl-1.18.3-cp313-cp313-win_amd64.whl
-      - pypi: .
 packages:
 - pypi: https://files.pythonhosted.org/packages/1b/9a/e4886864ce06e1579bd428208127fbdc0d62049c751e4e9e3b509c0059dc/aiohappyeyeballs-2.5.0-py3-none-any.whl
   name: aiohappyeyeballs
@@ -348,18 +347,6 @@ packages:
   requires_dist:
   - typing-extensions>=4.1.0 ; python_full_version < '3.11'
   requires_python: '>=3.8'
-- pypi: .
-  name: mygo-serifu-bot
-  version: 0.1.0
-  sha256: 86f1609d01347e0ca4039edb9d957ce0b3374bc3c704bda5cd4dee36be6b092d
-  requires_dist:
-  - discord>=2.3.2,<3
-  - python-dotenv>=1.0.1,<2
-  - ffmpeg-python>=0.2.0,<0.3
-  - requests>=2.32.3,<3
-  - loguru>=0.7.3,<0.8
-  requires_python: '>=3.11'
-  editable: true
 - conda: https://conda.anaconda.org/conda-forge/win-64/openssl-3.4.1-ha4e3fda_0.conda
   sha256: 56dcc2b4430bfc1724e32661c34b71ae33a23a14149866fc5645361cfd3b3a6a
   md5: 0730f8094f7088592594f9bf3ae62b3f

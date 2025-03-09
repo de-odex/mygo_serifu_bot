@@ -10,13 +10,13 @@ from pathlib import Path
 import discord
 import ffmpeg
 from discord import app_commands
-from discord.ext import commands, tasks
+from discord.ext import commands
 from dotenv import load_dotenv
 from loguru import logger
 
-import api
-
 load_dotenv()
+
+from . import api
 
 self_path = Path(__file__)
 project_path = self_path.parent.parent
@@ -27,8 +27,8 @@ intents = discord.Intents.default()
 bot = commands.AutoShardedBot(command_prefix="!", intents=intents)
 
 logger.add(
-    (project_path / "logs" / self_path.stem).with_suffix("log"),
-    rotation="at 00:00",
+    (project_path / "logs" / self_path.stem).with_suffix(".log"),
+    rotation="00:00",
     retention="7 days",
     compression="lzma",
 )

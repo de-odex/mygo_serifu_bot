@@ -20,6 +20,7 @@ load_dotenv()
 
 self_path = Path(__file__)
 project_path = self_path.parent.parent
+assets_path = project_path / "assets"
 
 intents = discord.Intents.default()
 bot = commands.AutoShardedBot(command_prefix="!", intents=intents)
@@ -43,7 +44,7 @@ async def on_ready():
 
 
 def text_process(text):
-    with open("src/ocr_data_3.json", "r", encoding="utf-8") as f:
+    with open(assets_path / "ocr_data_3.json", "r", encoding="utf-8") as f:
         data = json.load(f)
     results = []
     for item in data["result"]:
@@ -62,7 +63,7 @@ def text_process(text):
 def text_process_precise(text):  # answer value
     try:
         text = json.loads(text)
-        with open("src/ocr_data_3.json", "r", encoding="utf-8") as f:
+        with open(assets_path / "ocr_data_3.json", "r", encoding="utf-8") as f:
             data = json.load(f)
         results = []
         for item in data["result"]:
@@ -132,13 +133,13 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
 
 def run_ffmpeg_sync(episode, timestamp, end_frame):
     palettegen = (
-        ffmpeg.input(filename=f"src/{episode}.mp4", ss=timestamp)
+        ffmpeg.input(filename=assets_path / f"{episode}.mp4", ss=timestamp)
         .trim(start_frame=0, end_frame=end_frame + 1.0)
         .filter(filter_name="scale", width=-1, height=720)
         .filter(filter_name="palettegen", stats_mode="diff")
     )
 
-    scale = ffmpeg.input(filename=f"src/{episode}.mp4", ss=timestamp).filter(
+    scale = ffmpeg.input(filename=assets_path / f"{episode}.mp4", ss=timestamp).filter(
         filter_name="scale", width=-1, height=720
     )
 
@@ -186,7 +187,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0)
     timestamp = frame_number / 23.98
     # ffmpeg-python
     buffer, error = (
-        ffmpeg.input(filename=f"src/{str(episode)}.mp4", ss=timestamp)
+        ffmpeg.input(filename=assets_path / f"{episode}.mp4", ss=timestamp)
         .output("pipe:", vframes=1, format="image2", vcodec="png")
         .global_args("-loglevel", "error")
         .run(capture_stdout=True)

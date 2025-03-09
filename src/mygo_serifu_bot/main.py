@@ -2,10 +2,10 @@ import asyncio
 import datetime
 import io
 import json
-import logging
 import os
 from collections import Counter
 from datetime import datetime
+from pathlib import Path
 
 import discord
 import ffmpeg
@@ -13,8 +13,10 @@ import requests
 from discord import app_commands
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
+from loguru import logger
 
 load_dotenv()
+self_path = Path(__file__)
 base_url = "https://mygo-api.yichen0403.us.kg/api"
 API_TOKEN = os.getenv("API_TOKEN")
 
@@ -25,15 +27,11 @@ error_gif_link = "https://raw.githubusercontent.com/eason102/mygo_serifu_bot/ref
 
 
 # logging
-log_filename = datetime.now().strftime("logs/%Y-%m-%d.log")
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s --> %(levelname)s: %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-    handlers=[
-        logging.FileHandler(log_filename, encoding="utf-8"),
-        logging.StreamHandler(),
-    ],
+logger.add(
+    (self_path.parent / "logs" / self_path.stem).with_suffix("log"),
+    rotation="at 00:00",
+    retention="7 days",
+    compression="lzma",
 )
 
 
@@ -41,7 +39,7 @@ logging.basicConfig(
 async def on_ready():
     synced = await bot.tree.sync()
     server_count = len(bot.guilds)
-    logging.info(f"已上線: {bot.user} | 在 {server_count} 個伺服器中")
+    logger.info(f"已上線: {bot.user} | 在 {server_count} 個伺服器中")
     update_status.start()
 
 
@@ -58,7 +56,7 @@ async def update_status():
                 name="GO了{data['total_times']}次 | {server_count} 個伺服器"
             )
         )
-        logging.info(
+        logger.info(
             f"伺服器狀態更新為: GO了{data['total_times']}次 | {server_count} 個伺服器"
         )
         response = requests.post(
@@ -66,12 +64,12 @@ async def update_status():
             json={"server_count": server_count, "user_count": user_count},
         )
         if response.status_code == 200:
-            logging.info(f"伺服器狀態更新成功: {response.status_code}")
+            logger.info(f"伺服器狀態更新成功: {response.status_code}")
         else:
-            logging.error(f"伺服器狀態更新失敗: {response.status_code}")
+            logger.error(f"伺服器狀態更新失敗: {response.status_code}")
 
     else:
-        logging.error(f"伺服器狀態更新失敗: {response.status_code}")
+        logger.error(f"伺服器狀態更新失敗: {response.status_code}")
 
 
 def text_process(text):
@@ -166,9 +164,9 @@ def record(text):
     }
     response = requests.post(f"{base_url}/ranks", json=text, headers=headers)
     if response.status_code == 200:
-        logging.info(f"status code : {response.status_code} Data updated")
+        logger.info(f"status code : {response.status_code} Data updated")
     else:
-        logging.error(f"status code : {response.status_code} Data update failed")
+        logger.error(f"status code : {response.status_code} Data update failed")
 
 
 def run_ffmpeg_sync(episode, timestamp, end_frame):
@@ -238,7 +236,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0)
         )
         embed.set_image(url=error_gif_link)
         await interaction.followup.send(embed=embed)
-        logging.error(
+        logger.error(
             f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}"
         )
         return
@@ -250,7 +248,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0)
     timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
     run_time = end_time - start_time
     total_seconds = run_time.total_seconds()
-    logging.info(
+    logger.info(
         f"伺服器ID: {interaction.guild_id} 台詞: {result[0]['text']} 耗時: {total_seconds:.3f} 秒"
     )
     record(result)
@@ -303,7 +301,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
         # await msg.edit(embed=embed)
         end_time = datetime.now()
         timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
-        logging.info(
+        logger.info(
             f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}"
         )
         return
@@ -318,7 +316,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
     timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
     run_time = end_time - start_time
     total_seconds = run_time.total_seconds()
-    logging.info(
+    logger.info(
         f"伺服器ID: {interaction.guild_id} 台詞: {result[0]['text']} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒"
     )
     record(result)

@@ -17,10 +17,9 @@ from loguru import logger
 load_dotenv()
 
 from . import api
+from .constants import assets_path, project_path
 
 self_path = Path(__file__)
-project_path = self_path.parent.parent
-assets_path = project_path / "assets"
 error_gif_link = "https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif"
 
 intents = discord.Intents.default()

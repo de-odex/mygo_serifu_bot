@@ -9,23 +9,21 @@ from pathlib import Path
 
 import discord
 import ffmpeg
-import requests
 from discord import app_commands
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
 from loguru import logger
 
+import api
+
 load_dotenv()
+
 self_path = Path(__file__)
 project_path = self_path.parent.parent
-base_url = "https://mygo-api.yichen0403.us.kg/api"
-API_TOKEN = os.getenv("API_TOKEN")
-
 
 intents = discord.Intents.default()
 bot = commands.AutoShardedBot(command_prefix="!", intents=intents)
 error_gif_link = "https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif"
-
 
 # logging
 logger.add(
@@ -41,37 +39,7 @@ async def on_ready():
     synced = await bot.tree.sync()
     server_count = len(bot.guilds)
     logger.info(f"Online: {bot.user} | in {server_count} servers")
-    update_status.start()
-
-
-@tasks.loop(minutes=15)
-async def update_status():
-    server_count = len(bot.guilds)
-    app_info = await bot.application_info()
-    user_count = app_info.approximate_user_install_count
-    response = requests.get(f"{base_url}/ranks/total")
-    if response.status_code == 200:
-        data = response.json()
-        await bot.change_presence(
-            activity=discord.CustomActivity(
-                # TODO: verify translation
-                name="GO {data['total_times']} times | {server_count} servers"
-            )
-        )
-        logger.info(
-            f"The server status has been updated to: GO {data['total_times']} times | {server_count} servers"
-        )
-        response = requests.post(
-            f"{base_url}/record_server_count",
-            json={"server_count": server_count, "user_count": user_count},
-        )
-        if response.status_code == 200:
-            logger.info(f"Server status update successfully: {response.status_code}")
-        else:
-            logger.error(f"Server status update failed: {response.status_code}")
-
-    else:
-        logger.error(f"Server status update failed: {response.status_code}")
+    api.update_status.start(bot)
 
 
 def text_process(text):
@@ -162,19 +130,6 @@ async def text_autocompletion(interaction: discord.Interaction, current: str):
     return data
 
 
-def record(text):
-    text = text[0]
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {API_TOKEN}",
-    }
-    response = requests.post(f"{base_url}/ranks", json=text, headers=headers)
-    if response.status_code == 200:
-        logger.info(f"status code : {response.status_code} Data updated")
-    else:
-        logger.error(f"status code : {response.status_code} Data update failed")
-
-
 def run_ffmpeg_sync(episode, timestamp, end_frame):
     palettegen = (
         ffmpeg.input(filename=f"src/{episode}.mp4", ss=timestamp)
@@ -259,7 +214,7 @@ async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0)
     logger.info(
         f"Server ID: {interaction.guild_id} Line: {result[0]['text']} Time taken: {total_seconds:.3f} seconds"
     )
-    record(result)
+    api.record(result)
 
 
 @bot.tree.command(name="mygogif", description="Search for MyGO lines and create GIFs")
@@ -333,7 +288,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
     logger.info(
         f"Server ID: {interaction.guild_id} Line: {result[0]['text']} Duration: {str(duration)} seconds GIF processing time: {total_seconds:.3f} seconds"
     )
-    record(result)
+    api.record(result)
 
 
 bot.run(os.getenv("DISCORD_TOKEN"))

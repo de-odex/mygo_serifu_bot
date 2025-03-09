@@ -1,9 +1,15 @@
 [project]
-authors = [{name = "de-odex", email = "de-odex@users.noreply.github.com"}]
+authors = [{ name = "de-odex", email = "de-odex@users.noreply.github.com" }]
 name = "mygo_serifu_bot"
 requires-python = ">= 3.11"
 version = "0.1.0"
-dependencies = [ "discord>=2.3.2,<3", "python-dotenv>=1.0.1,<2", "ffmpeg-python>=0.2.0,<0.3", "requests>=2.32.3,<3", "loguru>=0.7.3,<0.8"]
+dependencies = [
+  "discord>=2.3.2,<3",
+  "python-dotenv>=1.0.1,<2",
+  "ffmpeg-python>=0.2.0,<0.3",
+  "requests>=2.32.3,<3",
+  "loguru>=0.7.3,<0.8",
+]
 
 [build-system]
 build-backend = "hatchling.build"

@@ -351,13 +351,13 @@ packages:
 - pypi: .
   name: mygo-serifu-bot
   version: 0.1.0
-  sha256: cf50b1d13a1e9a1c2a0473a5346ca4c60d57e922aaffb88c36d22e7ffd3f4088
+  sha256: 86f1609d01347e0ca4039edb9d957ce0b3374bc3c704bda5cd4dee36be6b092d
   requires_dist:
   - discord>=2.3.2,<3
   - python-dotenv>=1.0.1,<2
   - ffmpeg-python>=0.2.0,<0.3
   - requests>=2.32.3,<3
-  - loguru
+  - loguru>=0.7.3,<0.8
   requires_python: '>=3.11'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/win-64/openssl-3.4.1-ha4e3fda_0.conda

@@ -1,7 +1,7 @@
 import json
 
 # 讀取未格式化的 JSON 檔案
-input_file = "src/ocr_data.json"   # 輸入檔案名
+input_file = "src/ocr_data.json"  # 輸入檔案名
 output_file = "src/new.json"  # 輸出檔案名
 
 # 讀取原始 JSON 串

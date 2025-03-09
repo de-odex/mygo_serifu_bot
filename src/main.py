@@ -21,12 +21,11 @@ load_dotenv()
 self_path = Path(__file__)
 project_path = self_path.parent.parent
 assets_path = project_path / "assets"
+error_gif_link = "https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif"
 
 intents = discord.Intents.default()
 bot = commands.AutoShardedBot(command_prefix="!", intents=intents)
-error_gif_link = "https://raw.githubusercontent.com/eason102/mygo_serifu_bot/refs/heads/main/src/error.gif"
 
-# logging
 logger.add(
     (project_path / "logs" / self_path.stem).with_suffix("log"),
     rotation="at 00:00",
@@ -37,7 +36,7 @@ logger.add(
 
 @bot.event
 async def on_ready():
-    synced = await bot.tree.sync()
+    await bot.tree.sync()
     server_count = len(bot.guilds)
     logger.info(f"Online: {bot.user} | in {server_count} servers")
     api.update_status.start(bot)
@@ -176,7 +175,6 @@ async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0)
         )
         embed.set_image(url=error_gif_link)
         await interaction.response.send_message(embed=embed, ephemeral=True)
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         return
     start_time = datetime.now()
     await interaction.response.defer()
@@ -209,7 +207,6 @@ async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0)
         file=discord.File(fp=io.BytesIO(buffer), filename=f"{str(frame_number)}.png")
     )
     end_time = datetime.now()
-    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
     run_time = end_time - start_time
     total_seconds = run_time.total_seconds()
     logger.info(
@@ -269,8 +266,6 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
         )
         embed.set_image(url=error_gif_link)
         # await msg.edit(embed=embed)
-        end_time = datetime.now()
-        timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
         logger.info(
             f"Server ID: {interaction.guild_id} Line: {result['text']} Error: {error}"
         )
@@ -283,7 +278,6 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
         ],
     )
     end_time = datetime.now()
-    timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
     run_time = end_time - start_time
     total_seconds = run_time.total_seconds()
     logger.info(
@@ -292,4 +286,5 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
     api.record(result)
 
 
-bot.run(os.getenv("DISCORD_TOKEN"))
+if __name__ == "__main__":
+    bot.run(os.getenv("DISCORD_TOKEN"))

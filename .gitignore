@@ -2,6 +2,9 @@
 sub_process.py
 
 assets/*.mp4
+assets/mygo/
+assets/ave mujica/
+assets/metadata.json
 logs/
 mygo-bot/
 

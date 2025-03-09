@@ -39,7 +39,7 @@ logger.add(
 async def on_ready():
     synced = await bot.tree.sync()
     server_count = len(bot.guilds)
-    logger.info(f"已上線: {bot.user} | 在 {server_count} 個伺服器中")
+    logger.info(f"Online: {bot.user} | in {server_count} servers")
     update_status.start()
 
 
@@ -53,23 +53,24 @@ async def update_status():
         data = response.json()
         await bot.change_presence(
             activity=discord.CustomActivity(
-                name="GO了{data['total_times']}次 | {server_count} 個伺服器"
+                # TODO: verify translation
+                name="GO {data['total_times']} times | {server_count} servers"
             )
         )
         logger.info(
-            f"伺服器狀態更新為: GO了{data['total_times']}次 | {server_count} 個伺服器"
+            f"The server status has been updated to: GO {data['total_times']} times | {server_count} servers"
         )
         response = requests.post(
             f"{base_url}/record_server_count",
             json={"server_count": server_count, "user_count": user_count},
         )
         if response.status_code == 200:
-            logger.info(f"伺服器狀態更新成功: {response.status_code}")
+            logger.info(f"Server status update successfully: {response.status_code}")
         else:
-            logger.error(f"伺服器狀態更新失敗: {response.status_code}")
+            logger.error(f"Server status update failed: {response.status_code}")
 
     else:
-        logger.error(f"伺服器狀態更新失敗: {response.status_code}")
+        logger.error(f"Server status update failed: {response.status_code}")
 
 
 def text_process(text):
@@ -111,9 +112,13 @@ def text_process_precise(text):  # answer value
                     )
             except:
                 pass
-    except (
-        Exception
-    ) as e:  # 沒有點自動完成或是沒有此台詞會直接 傳入text本身，要傳回空清單，告訴使用者沒有此台詞
+    except Exception as e:
+        # If there is no autocomplete suggestion or if the specified line does
+        # not exist, the text itself will be directly passed in.
+        # An empty list should be returned to inform the user that the specified
+        # line does not exist.
+        # (Wow, translating Chinese comments into English directly is quite the
+        # experience)
         results = []
     # print(results)
     return results
@@ -200,16 +205,16 @@ def run_ffmpeg_sync(episode, timestamp, end_frame):
         return None, str(e)
 
 
-@bot.tree.command(name="mygo", description="搜尋MyGO台詞")
+@bot.tree.command(name="mygo", description="Search for MyGO lines")
 @app_commands.autocomplete(text=text_autocompletion)
-@app_commands.describe(text="需要尋找的台詞")
-@app_commands.describe(second="延後秒數(可小數點)")
+@app_commands.describe(text="The line to search for")
+@app_commands.describe(second="Delayed seconds (can be decimal)")
 async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0):
     result = text_process_precise(text)
     if len(result) == 0:
         embed = discord.Embed(
-            title="❌錯誤",
-            description="請再試一次，或是沒有你要找的台詞...",
+            title="❌Error",
+            description="Please try again, or the line you are looking for does not exist...",
             color=discord.Color.red(),
         )
         embed.set_image(url=error_gif_link)
@@ -232,12 +237,14 @@ async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0)
     )
     if error:
         embed = discord.Embed(
-            title="❌錯誤.", description="FFMPEG出事啦", color=discord.Color.red()
+            title="❌Error",
+            description="Something happened to FFMPEG",
+            color=discord.Color.red(),
         )
         embed.set_image(url=error_gif_link)
         await interaction.followup.send(embed=embed)
         logger.error(
-            f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}"
+            f"Server ID: {interaction.guild_id} Line: {result['text']} Error: {error}"
         )
         return
     # send
@@ -249,27 +256,31 @@ async def mygo(interaction: discord.Interaction, text: str, second: float = 0.0)
     run_time = end_time - start_time
     total_seconds = run_time.total_seconds()
     logger.info(
-        f"伺服器ID: {interaction.guild_id} 台詞: {result[0]['text']} 耗時: {total_seconds:.3f} 秒"
+        f"Server ID: {interaction.guild_id} Line: {result[0]['text']} Time taken: {total_seconds:.3f} seconds"
     )
     record(result)
 
 
-@bot.tree.command(name="mygogif", description="搜尋MyGO台詞並製作GIF")
+@bot.tree.command(name="mygogif", description="Search for MyGO lines and create GIFs")
 @app_commands.autocomplete(text=text_autocompletion)
-@app_commands.describe(text="需要尋找的台詞")
-@app_commands.describe(duration="製作GIF的秒數(可小數點)-未填預設1.5秒-最大3秒")
+@app_commands.describe(text="The line to search for")
+@app_commands.describe(
+    duration="Number of seconds to make GIF (decimal point) - default 1.5 s, max 3 s."
+)
 async def mygogif(interaction: discord.Interaction, text: str, duration: float = 1.5):
     if duration > 3.0:
         embed = discord.Embed(
-            title="❌錯誤", description="GIF製作間隔最多3秒", color=discord.Color.red()
+            title="❌Error",
+            description="The maximum interval for GIF creation is 3 seconds.",
+            color=discord.Color.red(),
         )
         await interaction.response.send_message(embed=embed, ephemeral=True)
         return
     result = text_process_precise(text)
     if len(result) == 0:
         embed = discord.Embed(
-            title="❌錯誤",
-            description="請再試一次，或是沒有你要找的台詞...",
+            title="❌Error",
+            description="Please try again, or the line you are looking for does not exist...",
             color=discord.Color.red(),
         )
         embed.set_image(url=error_gif_link)
@@ -282,8 +293,8 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
     frame_number = frame_number + 8
     timestamp = frame_number / 23.98
     embed = discord.Embed(
-        title="GIF製作中...",
-        description="視畫面複雜程度，可能需要一些時間",
+        title="GIF is being produced...",
+        description="Depending on the complexity of the picture, it may take some time.",
         color=discord.Color.green(),
     )
     msg = await interaction.followup.send(embed=embed, ephemeral=True)
@@ -295,14 +306,16 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
 
     if error:
         embed = discord.Embed(
-            title="❌錯誤", description="FFMPEG出事啦", color=discord.Color.red()
+            title="❌Error",
+            description="Something happened to FFMPEG",
+            color=discord.Color.red(),
         )
         embed.set_image(url=error_gif_link)
         # await msg.edit(embed=embed)
         end_time = datetime.now()
         timestamp = end_time.strftime("%Y-%m-%d %H:%M:%S")
         logger.info(
-            f"伺服器ID: {interaction.guild_id} 台詞: {result['text']} 錯誤: {error}"
+            f"Server ID: {interaction.guild_id} Line: {result['text']} Error: {error}"
         )
         return
 
@@ -317,7 +330,7 @@ async def mygogif(interaction: discord.Interaction, text: str, duration: float =
     run_time = end_time - start_time
     total_seconds = run_time.total_seconds()
     logger.info(
-        f"伺服器ID: {interaction.guild_id} 台詞: {result[0]['text']} {str(duration)}秒GIF耗時: {total_seconds:.3f} 秒"
+        f"Server ID: {interaction.guild_id} Line: {result[0]['text']} Duration: {str(duration)} seconds GIF processing time: {total_seconds:.3f} seconds"
     )
     record(result)
 

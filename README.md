@@ -1,7 +1,12 @@
-# MyGO 台詞搜尋 Discord 機器人
+# MyGO!!!!! Line Search Discord Bot
+An attempt to port [MyGO 台詞搜尋 Discord 機器人](https://github.com/eason102/mygo_serifu_bot) into an English version.
 
-**邀請連結**:  
-[https://discord.com/oauth2/authorize?client_id=1315838959708012604](https://discord.com/oauth2/authorize?client_id=1315838959708012604 "https://discord.com/oauth2/authorize?client_id=1315838959708012604")
+**Invite**:  
+TBA
+
+---
+## WORK IN PROGRESS
+Below are the original previews and part of the original README.
 
 ---
 

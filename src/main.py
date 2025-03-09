@@ -17,6 +17,7 @@ from loguru import logger
 
 load_dotenv()
 self_path = Path(__file__)
+project_path = self_path.parent.parent
 base_url = "https://mygo-api.yichen0403.us.kg/api"
 API_TOKEN = os.getenv("API_TOKEN")
 
@@ -28,7 +29,7 @@ error_gif_link = "https://raw.githubusercontent.com/eason102/mygo_serifu_bot/ref
 
 # logging
 logger.add(
-    (self_path.parent / "logs" / self_path.stem).with_suffix("log"),
+    (project_path / "logs" / self_path.stem).with_suffix("log"),
     rotation="at 00:00",
     retention="7 days",
     compression="lzma",

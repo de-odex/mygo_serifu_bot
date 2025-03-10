@@ -20,8 +20,6 @@ from loguru import logger
 
 from .constants import assets_path, metadata_path, project_path
 
-load_dotenv()
-
 self_path = Path(__file__)
 
 
@@ -59,6 +57,14 @@ discord.utils.setup_logging(
     handler=InterceptHandler(),
     root=False,
 )
+
+
+if Path("proto.env").is_file():
+    logger.warning("loading proto.env as environment file...")
+    load_dotenv("proto.env")
+else:
+    load_dotenv()
+
 
 from . import search
 from .search import watch

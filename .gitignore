@@ -1,4 +1,4 @@
-.env
+*.env
 sub_process.py
 
 assets/*.mp4

@@ -91,43 +91,40 @@ def _humanise(ms):
     return f"{minutes}m{seconds}s"
 
 
-def text_autocompletion(show):
-    async def autocomplete(interaction: discord.Interaction, current: str):
-        with search.ix.searcher() as searcher:
-            if show:
-                current += f' show:"{show}"'
-            results = search.search(searcher, current)
-            data = []
+async def autocomplete(interaction: discord.Interaction, current: str):
+    with search.ix.searcher() as searcher:
+        results = search.search(searcher, current)
+        data = []
 
-            for index, entry in enumerate(results):
-                name = "("
-                if entry["show"] == "mygo":
-                    name += "MyGO "
-                elif entry["show"] == "ave mujica":
-                    name += "Ave Mujica "
-                name += f"Ep{entry['episode']} {_humanise(entry['start'])}) "
-                if entry["name"]:
-                    name += f"{entry['name']}: "
-                name += f"{entry['text']}"
+        for index, entry in enumerate(results):
+            name = "("
+            if entry["show"] == "mygo":
+                name += "MyGO "
+            elif entry["show"] == "ave mujica":
+                name += "Ave Mujica "
+            name += f"Ep{entry['episode']} {_humanise(entry['start'])}) "
+            if entry["name"]:
+                name += f"{entry['name']}: "
+            name += f"{entry['text']}"
 
-                s_data = {
-                    "show": entry["show"],
-                    "episode": entry["episode"],
-                    "start": entry["start"],
-                    "end": entry["end"],
-                }
+            s_data = {
+                "show": entry["show"],
+                "episode": entry["episode"],
+                "start": entry["start"],
+                "end": entry["end"],
+            }
 
-                name = (name[:95] + "(...)") if len(name) > 100 else name
-                data.append(
-                    discord.app_commands.Choice(
-                        name=name, value=json.dumps(s_data, ensure_ascii=False)
-                    )
+            name = (name[:95] + "(...)") if len(name) > 100 else name
+            data.append(
+                discord.app_commands.Choice(
+                    name=name, value=json.dumps(s_data, ensure_ascii=False)
                 )
+            )
 
-                if index >= 25:
-                    break
+            if index >= 25:
+                break
 
-            return data
+        return data
 
     return autocomplete
 
@@ -258,14 +255,7 @@ async def image(
             result = search.search(searcher, query)
             if len(result) == 0:
                 raise ValueError("No lines were found, please try again.")
-                # embed = discord.Embed(
-                #     title="❌Error",
-                #     description="Please try again, or the line you are looking for does not exist...",
-                #     color=discord.Color.red(),
-                # )
-                # embed.set_image(url=error_gif_link)
-                # await interaction.response.send_message(embed=embed, ephemeral=True)
-                # return
+
             result = result[0].fields()
 
         await interaction.response.defer()
@@ -328,14 +318,7 @@ async def gif(
             result = search.search(searcher, query)
             if len(result) == 0:
                 raise ValueError("No lines were found, please try again.")
-                # embed = discord.Embed(
-                #     title="❌Error",
-                #     description="Please try again, or the line you are looking for does not exist...",
-                #     color=discord.Color.red(),
-                # )
-                # embed.set_image(url=error_gif_link)
-                # await interaction.response.send_message(embed=embed, ephemeral=True)
-                # return
+
             result = result[0].fields()
 
         await interaction.response.defer()
@@ -397,7 +380,7 @@ image_describe = dict(
     description="Search for MyGO and Ave Mujica lines",
 )
 @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
-@app_commands.autocomplete(text=text_autocompletion(None))
+@app_commands.autocomplete(text=autocomplete)
 @app_commands.describe(**image_describe)
 async def avemygo(
     interaction: discord.Interaction,
@@ -421,7 +404,7 @@ gif_describe = dict(
     description="Search for MyGO and Ave Mujica lines and create GIFs",
 )
 @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
-@app_commands.autocomplete(text=text_autocompletion(None))
+@app_commands.autocomplete(text=autocomplete)
 @app_commands.describe(**gif_describe)
 async def avemygogif(
     interaction: discord.Interaction,

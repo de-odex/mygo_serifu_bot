@@ -6,7 +6,7 @@ from whoosh.analysis import NgramWordAnalyzer
 from whoosh.fields import NUMERIC, TEXT, Schema
 from whoosh.index import create_in, exists_in, open_dir
 from whoosh.qparser import FieldAliasPlugin, MultifieldParser, QueryParser
-from whoosh.searching import Searcher
+from whoosh.searching import Results, Searcher
 
 from .constants import assets_path, project_path
 from .media import Episode, gen_metadata
@@ -58,7 +58,7 @@ def gen_cache():
     data = gen_metadata()
     index_path.mkdir(parents=True, exist_ok=True)
     ix = create_in(index_path, schema)
-    with ix.writer() as writer:
+    with ix.writer(limitmb=512) as writer:
         for show_name, show in data.items():
             for episode in show:
                 logger.debug(episode.filename)
@@ -87,9 +87,8 @@ parser.add_plugin(
 )
 
 
-# return empty list if line doesn't exist
-@logger.catch(default=[])
-def search(searcher: Searcher, query: str):
+@logger.catch()
+def search(searcher: Searcher, query: str) -> Results:
     logger.debug(f"searching {query!r}")
     logger.trace(query)
     query = parser.parse(query)

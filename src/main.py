@@ -372,34 +372,6 @@ image_describe = dict(
 )
 
 
-# @bot.tree.command(
-#     name="mygo",
-#     description="[OBSOLETE] Search for MyGO lines",
-# )
-# @app_commands.autocomplete(text=text_autocompletion("mygo"))
-# @app_commands.describe(**image_describe)
-# async def mygo(
-#     interaction: discord.Interaction,
-#     text: str,
-#     second: float = 0.75,
-# ):
-#     await image(interaction, text, second)
-
-
-# @bot.tree.command(
-#     name="avemu",
-#     description="[OBSOLETE] Search for Ave Mujica lines",
-# )
-# @app_commands.autocomplete(text=text_autocompletion("ave mujica"))
-# @app_commands.describe(**image_describe)
-# async def avemu(
-#     interaction: discord.Interaction,
-#     text: str,
-#     second: float = 0.75,
-# ):
-#     await image(interaction, text, second)
-
-
 @bot.tree.command(
     name="avemygo",
     description="Search for MyGO and Ave Mujica lines",
@@ -421,36 +393,6 @@ gif_describe = dict(
     duration_limit="Max GIF duration (in seconds) - default 5s, max 10s.",
     spoiler="Spoiler the GIF",
 )
-
-
-# @bot.tree.command(
-#     name="mygogif",
-#     description="[OBSOLETE] Search for MyGO lines and create GIFs",
-# )
-# @app_commands.autocomplete(text=text_autocompletion("mygo"))
-# @app_commands.describe(**gif_describe)
-# async def mygogif(
-#     interaction: discord.Interaction,
-#     text: str,
-#     duration_limit: float = 5.0,
-#     spoiler: bool = False,
-# ):
-#     await gif(interaction, text, duration_limit, spoiler)
-
-
-# @bot.tree.command(
-#     name="avemugif",
-#     description="[OBSOLETE] Search for Ave Mujica lines and create GIFs",
-# )
-# @app_commands.autocomplete(text=text_autocompletion("ave mujica"))
-# @app_commands.describe(**gif_describe)
-# async def avemugif(
-#     interaction: discord.Interaction,
-#     text: str,
-#     duration_limit: float = 5.0,
-#     spoiler: bool = False,
-# ):
-#     await gif(interaction, text, duration_limit, spoiler)
 
 
 @bot.tree.command(

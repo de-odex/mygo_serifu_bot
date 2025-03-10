@@ -10,6 +10,8 @@ dependencies = [
   "requests>=2.32.3,<3",
   "loguru>=0.7.3,<0.8",
   "pysubs2>=1.8.0,<2",
+  "whoosh>=2.7.4,<3",
+  "watchfiles>=1.0.4,<2",
 ]
 
 [build-system]

@@ -208,6 +208,7 @@ def _inserted(e, **kwargs):
 # ===== command main bodies =====
 
 
+@logger.catch(onerror=_error)
 async def image(
     interaction: discord.Interaction,
     text: str,

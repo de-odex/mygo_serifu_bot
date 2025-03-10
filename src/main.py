@@ -107,19 +107,10 @@ async def autocomplete(interaction: discord.Interaction, current: str):
                 name += f"{entry['name']}: "
             name += f"{entry['text']}"
 
-            s_data = {
-                "show": entry["show"],
-                "episode": entry["episode"],
-                "start": entry["start"],
-                "end": entry["end"],
-            }
+            value = f"s:'{entry['show']}' e:'{entry['episode']}' start:{entry['start']}"
 
             name = (name[:95] + "(...)") if len(name) > 100 else name
-            data.append(
-                discord.app_commands.Choice(
-                    name=name, value=json.dumps(s_data, ensure_ascii=False)
-                )
-            )
+            data.append(discord.app_commands.Choice(name=name, value=value))
 
             if index >= 25:
                 break
@@ -245,14 +236,7 @@ async def image(
 
         result = None
         with search.ix.searcher() as searcher:
-            query = None
-            try:
-                text = json.loads(text)
-                query = f"show:\"{text['show']}\" episode:'{text['episode']}' start:{text['start']} "
-            except json.JSONDecodeError:
-                query = text
-
-            result = search.search(searcher, query)
+            result = search.search(searcher, text)
             if len(result) == 0:
                 raise ValueError("No lines were found, please try again.")
 
@@ -308,14 +292,7 @@ async def gif(
 
         result = None
         with search.ix.searcher() as searcher:
-            query = None
-            try:
-                text = json.loads(text)
-                query = f"show:\"{text['show']}\" episode:'{text['episode']}' start:{text['start']} "
-            except json.JSONDecodeError:
-                query = text
-
-            result = search.search(searcher, query)
+            result = search.search(searcher, text)
             if len(result) == 0:
                 raise ValueError("No lines were found, please try again.")
 

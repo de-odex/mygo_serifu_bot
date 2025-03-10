@@ -126,7 +126,29 @@ def text_autocompletion(show):
     return autocomplete
 
 
-def run_ffmpeg_sync(
+def ffmpeg_image(
+    show: str,
+    episode: str,
+    start_offset_ms: int,
+):
+    filename = str((assets_path / show / episode).relative_to(Path.cwd()))
+    buffer, _ = (
+        ffmpeg.input(filename=filename, ss=f"{start_offset_ms}ms")
+        .filter(filter_name="subtitles", filename=filename, si=0)
+        .output(
+            "pipe:",
+            ss=f"{start_offset_ms}ms",
+            vframes=1,
+            format="image2",
+            vcodec="png",
+        )
+        .global_args("-copyts", "-loglevel", "error")
+        .run(capture_stdout=True)
+    )
+    return buffer, _
+
+
+def ffmpeg_gif(
     show: str,
     episode: str,
     start_ms: int,
@@ -246,19 +268,11 @@ async def image(
 
         start_ms = result["start"]
         start_offset_ms = max(0, start_ms + int(second * 1000))
-        filename = assets_path / result["show"] / result["filename"]
-        buffer, _ = (
-            ffmpeg.input(filename=filename, ss=f"{start_offset_ms}ms")
-            .filter(filter_name="subtitles", filename=filename, si=0)
-            .output(
-                "pipe:",
-                ss=f"{start_offset_ms}ms",
-                vframes=1,
-                format="image2",
-                vcodec="png",
-            )
-            .global_args("-copyts", "-loglevel", "error")
-            .run(capture_stdout=True)
+        buffer, _ = await asyncio.to_thread(
+            ffmpeg_image,
+            result["show"],
+            result["filename"],
+            start_offset_ms,
         )
 
         await interaction.followup.send(
@@ -334,7 +348,7 @@ async def gif(
             end_ms = result["end"]
             duration = min(end_ms - start_ms, dur_limit)
             buffer2, _ = await asyncio.to_thread(
-                run_ffmpeg_sync,
+                ffmpeg_gif,
                 result["show"],
                 result["filename"],
                 start_ms,

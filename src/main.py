@@ -376,6 +376,7 @@ image_describe = dict(
     name="avemygo",
     description="Search for MyGO and Ave Mujica lines",
 )
+@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
 @app_commands.autocomplete(text=text_autocompletion(None))
 @app_commands.describe(**image_describe)
 async def avemygo(
@@ -399,6 +400,7 @@ gif_describe = dict(
     name="avemygogif",
     description="Search for MyGO and Ave Mujica lines and create GIFs",
 )
+@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
 @app_commands.autocomplete(text=text_autocompletion(None))
 @app_commands.describe(**gif_describe)
 async def avemygogif(

@@ -187,9 +187,12 @@ def ffmpeg_gif(
     return buffer2, error
 
 
-async def _error(exc: Exception):
-    interaction = exc.interaction
-
+async def _error(
+    interaction: discord.Interaction,
+    exc: app_commands.AppCommandError,
+):
+    command = interaction.command
+    logger.exception(f"An error occurred in {command.name}")
     description = "An unexpected error has occurred."
     match exc:
         case ValueError(msg):
@@ -204,8 +207,8 @@ async def _error(exc: Exception):
     )
     embed.set_image(url=error_gif_link)
 
-    if hasattr(exc, "msg"):
-        msg = exc.msg
+    if "msg" in interaction.extras:
+        msg = interaction.extras["msg"]
         await msg.edit(embed=embed)
         # logger.info(
         #     # f"Server ID: {interaction.guild_id} Line: {result['text']} Error: {error}"
@@ -215,133 +218,7 @@ async def _error(exc: Exception):
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-def _inserted(e, **kwargs):
-    for k, v in kwargs.items():
-        setattr(e, k, v)
-    return e
-
-
-# ===== command main bodies =====
-
-
-@logger.catch(onerror=_error)
-async def image(
-    interaction: discord.Interaction,
-    text: str,
-    second: float,
-):
-    # ugh
-    try:
-        logger.info(f"Server ID: {interaction.guild_id} Request: {text}")
-
-        result = None
-        with search.ix.searcher() as searcher:
-            result = search.search(searcher, text)
-            if len(result) == 0:
-                raise ValueError("No lines were found, please try again.")
-
-            result = result[0].fields()
-
-        await interaction.response.defer()
-
-        start_time = datetime.now()
-
-        start_ms = result["start"]
-        start_offset_ms = max(0, start_ms + int(second * 1000))
-        buffer, _ = await asyncio.to_thread(
-            ffmpeg_image,
-            result["show"],
-            result["filename"],
-            start_offset_ms,
-        )
-
-        await interaction.followup.send(
-            file=discord.File(
-                fp=io.BytesIO(buffer),
-                filename=f"{result['show']}-Ep{result['episode']}-{start_offset_ms}.png",
-            )
-        )
-        end_time = datetime.now()
-
-        run_time = end_time - start_time
-        total_seconds = run_time.total_seconds()
-        logger.info(
-            f"Server ID: {interaction.guild_id} Line: {result['text']} Time taken: {total_seconds:.3f} seconds"
-        )
-    except Exception as e:
-        raise _inserted(e, interaction=interaction)
-
-
-@logger.catch(onerror=_error)
-async def gif(
-    interaction: discord.Interaction,
-    text: str,
-    dur_limit: float,
-    spoiler: bool,
-):
-    # ugh
-    try:
-        logger.info(f"Server ID: {interaction.guild_id} Request: {text}")
-
-        # TODO: hardcoded
-        max_dur_limit = 10.0
-        if dur_limit > max_dur_limit:
-            raise ValueError(
-                f"The maximum duration for GIF creation is {max_dur_limit}s."
-            )
-
-        result = None
-        with search.ix.searcher() as searcher:
-            result = search.search(searcher, text)
-            if len(result) == 0:
-                raise ValueError("No lines were found, please try again.")
-
-            result = result[0].fields()
-
-        await interaction.response.defer()
-        embed = discord.Embed(
-            title="GIF is being produced...",
-            description="Depending on the complexity of the picture, it may take some time.",
-            color=discord.Color.green(),
-        )
-        msg = await interaction.followup.send(embed=embed, ephemeral=True)
-
-        try:
-            start_time = datetime.now()
-
-            dur_limit = int(dur_limit * 1000)
-            start_ms = result["start"]
-            end_ms = result["end"]
-            duration = min(end_ms - start_ms, dur_limit)
-            buffer2, _ = await asyncio.to_thread(
-                ffmpeg_gif,
-                result["show"],
-                result["filename"],
-                start_ms,
-                duration,
-            )
-
-            await msg.edit(
-                embed=None,
-                attachments=[
-                    discord.File(
-                        fp=io.BytesIO(buffer2),
-                        filename=f"{result['show']}-Ep{result['episode']}-{result['start']}-{dur_limit}.gif",
-                        spoiler=spoiler,
-                    )
-                ],
-            )
-            end_time = datetime.now()
-
-            run_time = end_time - start_time
-            total_seconds = run_time.total_seconds()
-            logger.info(
-                f"Server ID: {interaction.guild_id} Line: {result['text']} Duration: {duration}ms GIF processing time: {total_seconds:.3f}s"
-            )
-        except Exception as e:
-            raise _inserted(e, msg=msg)
-    except Exception as e:
-        raise _inserted(e, interaction=interaction)
+bot.tree.on_error = _error
 
 
 # ===== image commands =====
@@ -364,7 +241,42 @@ async def avemygo(
     text: str,
     second: float = 0.75,
 ):
-    await image(interaction, text, second)
+    logger.info(f"Server ID: {interaction.guild_id} Request: {text}")
+
+    result = None
+    with search.ix.searcher() as searcher:
+        result = search.search(searcher, text)
+        if len(result) == 0:
+            raise ValueError("No lines were found, please try again.")
+
+        result = result[0].fields()
+
+    await interaction.response.defer()
+
+    start_time = datetime.now()
+
+    start_ms = result["start"]
+    start_offset_ms = max(0, start_ms + int(second * 1000))
+    buffer, _ = await asyncio.to_thread(
+        ffmpeg_image,
+        result["show"],
+        result["filename"],
+        start_offset_ms,
+    )
+
+    await interaction.followup.send(
+        file=discord.File(
+            fp=io.BytesIO(buffer),
+            filename=f"{result['show']}-Ep{result['episode']}-{start_offset_ms}.png",
+        )
+    )
+    end_time = datetime.now()
+
+    run_time = end_time - start_time
+    total_seconds = run_time.total_seconds()
+    logger.info(
+        f"Server ID: {interaction.guild_id} Line: {result['text']} Time taken: {total_seconds:.3f} seconds"
+    )
 
 
 # ===== gif commands =====
@@ -389,7 +301,62 @@ async def avemygogif(
     duration_limit: float = 5.0,
     spoiler: bool = False,
 ):
-    await gif(interaction, text, duration_limit, spoiler)
+    logger.info(f"Server ID: {interaction.guild_id} Request: {text}")
+
+    # TODO: hardcoded
+    max_dur_limit = 10.0
+    if duration_limit > max_dur_limit:
+        raise ValueError(f"The maximum duration for GIF creation is {max_dur_limit}s.")
+
+    result = None
+    with search.ix.searcher() as searcher:
+        result = search.search(searcher, text)
+        if len(result) == 0:
+            raise ValueError("No lines were found, please try again.")
+
+        result = result[0].fields()
+
+    await interaction.response.defer()
+    embed = discord.Embed(
+        title="GIF is being produced...",
+        description="Depending on the complexity of the picture, it may take some time.",
+        color=discord.Color.green(),
+    )
+    msg = interaction.extras["msg"] = await interaction.followup.send(
+        embed=embed, ephemeral=True
+    )
+
+    start_time = datetime.now()
+
+    duration_limit = int(duration_limit * 1000)
+    start_ms = result["start"]
+    end_ms = result["end"]
+    duration = min(end_ms - start_ms, duration_limit)
+    buffer2, _ = await asyncio.to_thread(
+        ffmpeg_gif,
+        result["show"],
+        result["filename"],
+        start_ms,
+        duration,
+    )
+
+    await msg.edit(
+        embed=None,
+        attachments=[
+            discord.File(
+                fp=io.BytesIO(buffer2),
+                filename=f"{result['show']}-Ep{result['episode']}-{result['start']}-{duration_limit}.gif",
+                spoiler=spoiler,
+            )
+        ],
+    )
+    end_time = datetime.now()
+
+    run_time = end_time - start_time
+    total_seconds = run_time.total_seconds()
+    logger.info(
+        f"Server ID: {interaction.guild_id} Line: {result['text']} Duration: {duration}ms GIF processing time: {total_seconds:.3f}s"
+    )
 
 
 # ===== async running =====

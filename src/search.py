@@ -2,6 +2,7 @@ from pathlib import Path
 
 from loguru import logger
 from watchfiles import Change, DefaultFilter, awatch
+from whoosh.analysis import NgramWordAnalyzer
 from whoosh.fields import NUMERIC, TEXT, Schema
 from whoosh.index import create_in, exists_in, open_dir
 from whoosh.qparser import FieldAliasPlugin, MultifieldParser, QueryParser
@@ -15,7 +16,11 @@ schema = Schema(
     episode=NUMERIC(stored=True),
     filename=TEXT(stored=True),
     name=TEXT(stored=True),
-    text=TEXT(stored=True),
+    text=TEXT(
+        stored=True,
+        analyzer=NgramWordAnalyzer(minsize=2, maxsize=5),
+        phrase=False,
+    ),
     start=NUMERIC(stored=True),
     end=NUMERIC(stored=True),
 )

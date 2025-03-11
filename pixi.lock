@@ -632,7 +632,7 @@ packages:
 - pypi: .
   name: mygo-serifu-bot
   version: 0.1.0
-  sha256: 35b11b51b8adc247472b0e849c275d87ec06e54c83828cfc52ec80a4ad1ebbbb
+  sha256: cd3c2e598faf4b76f41b47201d5082669262b9520ed20a85eb6360cee965a36f
   requires_dist:
   - discord>=2.3.2,<3
   - python-dotenv>=1.0.1,<2

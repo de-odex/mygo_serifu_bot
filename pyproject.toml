@@ -26,3 +26,4 @@ platforms = ["win-64", "linux-64"]
 mygo_serifu_bot = { path = ".", editable = true }
 
 [tool.pixi.tasks]
+start = "python -m mygo_serifu_bot.main"

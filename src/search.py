@@ -1,12 +1,14 @@
+import shutil
 from pathlib import Path
 
 from loguru import logger
 from watchfiles import Change, DefaultFilter, awatch
 from whoosh.analysis import NgramWordAnalyzer
 from whoosh.fields import NUMERIC, TEXT, Schema
-from whoosh.index import create_in, exists_in, open_dir
+from whoosh.index import Index, create_in, exists_in, open_dir
 from whoosh.qparser import FieldAliasPlugin, MultifieldParser, QueryParser
 from whoosh.searching import Results, Searcher
+from whoosh.writing import IndexWriter
 
 from .constants import assets_path, project_path
 from .media import Episode, gen_metadata
@@ -28,8 +30,8 @@ schema = Schema(
 index_path = project_path / "index"
 
 
-def cache_add(writer, show_name, episode: Episode):
-    logger.debug(f"adding to cache: {show_name} {episode.filename}")
+def index_add(writer: IndexWriter, show_name: str, episode: Episode):
+    logger.info(f"adding to cache: {show_name} {episode.filename}")
     for line in episode.lines:
         # logger.trace(f"writing to index: {line.text}")
         writer.add_document(
@@ -45,15 +47,15 @@ def cache_add(writer, show_name, episode: Episode):
         )
 
 
-def cache_del(writer, show_name, filename):
-    logger.debug(f"deleting from cache: {show_name} {filename}")
+def index_del(writer: IndexWriter, show_name: str, filename: str):
+    logger.info(f"deleting from cache: {show_name} {filename}")
     query = QueryParser("text", ix.schema).parse(
         f'show:"{show_name}" filename:{filename}'
     )
     writer.delete_by_query(query)
 
 
-def gen_cache():
+def gen_index_full():
     logger.info("Generating index")
     data = gen_metadata()
     index_path.mkdir(parents=True, exist_ok=True)
@@ -62,40 +64,53 @@ def gen_cache():
         for show_name, show in data.items():
             for episode in show:
                 logger.debug(episode.filename)
-                cache_add(writer, show_name, episode)
+                index_add(writer, show_name, episode)
     return ix
 
 
-ix = None
-if exists_in(index_path):
-    logger.info(f"Search index found in {index_path}")
-    ix = open_dir(index_path)
-else:
-    logger.info(f"Search index not found in {index_path}, creating")
-    ix = gen_cache()
+def gen_index_partial(ix: Index):
+    """generate index if file not found"""
+    logger.info("Generating index")
+    # TODO: hardcoded
+    with ix.writer(limitmb=512) as writer, ix.searcher() as searcher:
+        for show_name in ["mygo", "ave mujica"]:
+            show_path = assets_path / show_name
 
-
-parser = MultifieldParser(["show", "name", "text"], ix.schema)
-parser.add_plugin(
-    FieldAliasPlugin(
-        {
-            "show": ["series", "s"],
-            "episode": ["ep", "e"],
-            "name": ["actor", "n"],
-        }
-    )
-)
+            for episode_path in show_path.glob("*.mkv"):
+                logger.debug(episode_path)
+                # check if in index
+                results = search(
+                    searcher, f"show:'{show_name}' filename:'{episode_path.name}'"
+                )
+                if results.is_empty():
+                    index_add(writer, show_name, Episode.from_path(episode_path))
+    return ix
 
 
 @logger.catch()
 def search(searcher: Searcher, query: str) -> Results:
     logger.debug(f"searching {query!r}")
+
+    parser = MultifieldParser(["show", "name", "text"], ix.schema)
+    parser.add_plugin(
+        FieldAliasPlugin(
+            {
+                "show": ["series", "s"],
+                "episode": ["ep", "e"],
+                "name": ["actor", "n"],
+            }
+        )
+    )
+
     logger.trace(query)
     query = parser.parse(query)
     logger.trace(query)
     result = searcher.search(query)
     logger.trace(list(result))
     return result
+
+
+# ===== file watching =====
 
 
 class MkvFilter(DefaultFilter):
@@ -109,14 +124,33 @@ async def watch():
     logger.info(f"Watching files in {assets_path}")
     async for changes in awatch(assets_path, watch_filter=MkvFilter()):
         for change, path in changes:
-            if change not in [Change.modified, Change.deleted]:
-                continue
             path = Path(path)
             show = path.parent.name
             logger.debug(f"change seen: {change} {path}")
             with ix.writer() as writer:
-                if change == Change.modified:
-                    ep = Episode.from_path(path)
-                    cache_add(writer, show, ep)
-                elif change == Change.deleted:
-                    cache_del(writer, show, path.name)
+                match change:
+                    case Change.added:
+                        ep = Episode.from_path(path)
+                        index_add(writer, show, ep)
+                    case Change.modified:
+                        index_del(writer, show, path.name)
+                        ep = Episode.from_path(path)
+                        index_add(writer, show, ep)
+                    case Change.deleted:
+                        index_del(writer, show, path.name)
+
+
+ix = None
+if exists_in(index_path):
+    logger.info(f"Search index found in {index_path}")
+    ix = open_dir(index_path)
+    if ix.schema == schema:
+        logger.info("Schema matches, checking integrity")
+        ix = gen_index_partial(ix)
+    else:
+        logger.info("Schema mismatch, regenerating index")
+        shutil.rmtree(index_path)
+        ix = gen_index_full()
+else:
+    logger.info(f"Search index not found in {index_path}, creating")
+    ix = gen_index_full()

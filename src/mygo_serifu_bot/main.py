@@ -1,13 +1,10 @@
 import asyncio
 import datetime
-import datetime as dt
 import inspect
 import io
-import json
 import logging
 import os
 import shlex
-from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -18,7 +15,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 from loguru import logger
 
-from .constants import assets_path, metadata_path, project_path
+from .constants import assets_path, project_path
 
 self_path = Path(__file__)
 
@@ -83,7 +80,7 @@ async def on_ready():
     logger.info(f"Online: {bot.user} | in {server_count} servers")
 
 
-def _humanise(ms):
+def _humanise(ms: int) -> str:
     seconds = ms // 1000
     minutes = seconds // 60
     seconds %= 60
@@ -91,10 +88,12 @@ def _humanise(ms):
     return f"{minutes}m{seconds}s"
 
 
-async def autocomplete(interaction: discord.Interaction, current: str):
-    with search.ix.searcher() as searcher:
+async def autocomplete(
+    interaction: discord.Interaction, current: str
+) -> list[app_commands.Choice[str]]:
+    with search.ix.searcher() as searcher:  # type: ignore
         results = search.search(searcher, current)
-        data = []
+        data: list[app_commands.Choice[str]] = []
 
         for index, entry in enumerate(results):
             name = "("
@@ -102,7 +101,7 @@ async def autocomplete(interaction: discord.Interaction, current: str):
                 name += "MyGO "
             elif entry["show"] == "ave mujica":
                 name += "Ave Mujica "
-            name += f"Ep{entry['episode']} {_humanise(entry['start'])}) "
+            name += f"Ep{entry['episode']} {_humanise(entry['start'])}) "  # type: ignore
             if entry["name"]:
                 name += f"{entry['name']}: "
             name += f"{entry['text']}"
@@ -126,20 +125,21 @@ def ffmpeg_image(
     start_offset_ms: int,
 ):
     filename = str((assets_path / show / episode).relative_to(Path.cwd()))
-    buffer, _ = (
+    pipeline = (
         ffmpeg.input(filename=filename, ss=f"{start_offset_ms}ms")
-        .filter(filter_name="subtitles", filename=filename, si=0)
+        .subtitles(filename=filename, stream_index=0)
         .output(
-            "pipe:",
+            filename="pipe:",
             ss=f"{start_offset_ms}ms",
             vframes=1,
-            format="image2",
+            f="image2",
             vcodec="png",
         )
-        .global_args("-copyts", "-loglevel", "error")
-        .run(capture_stdout=True)
+        .global_args(copyts=True, loglevel="error")
     )
-    return buffer, _
+    logger.debug(shlex.join(pipeline.compile()))
+    buffer, error = pipeline.run(capture_stdout=True)
+    return buffer, error
 
 
 def ffmpeg_gif(
@@ -154,37 +154,37 @@ def ffmpeg_gif(
     filename = str((assets_path / show / episode).relative_to(Path.cwd()))
     in_pipe = (
         ffmpeg.input(filename=filename, ss=start_str, t=duration_str)
-        .filter(filter_name="scale", width=-1, height=432)
-        .filter(filter_name="subtitles", filename=filename, si=0)
+        .scale(w=-1, h=432)
+        .subtitles(filename=filename, stream_index=0)
         # .trim(start=0, end=f"{duration}ms")
         .split()
     )
 
     palettegen = (
-        in_pipe[0]
+        in_pipe.video(0)
         # .trim(start=0, end=f"{duration}ms")
-        .filter(filter_name="palettegen", stats_mode="diff")
+        .palettegen(stats_mode="diff")
     )
 
     pipeline = (
-        ffmpeg.filter(
-            [in_pipe[1], palettegen],
-            filter_name="paletteuse",
+        in_pipe.video(1)
+        .paletteuse(
+            palettegen,
             dither="bayer",
             diff_mode="rectangle",
         )
         .output(
-            "pipe:1",
+            filename="pipe:1",
             ss=start_str,
             t=duration_str,
-            format="gif",
+            f="gif",
             vcodec="gif",
         )
-        .global_args("-copyts", "-loglevel", "error")
+        .global_args(copyts=True, loglevel="error")
     )
     logger.debug(shlex.join(pipeline.compile()))
-    buffer2, error = pipeline.run(capture_stdout=True)
-    return buffer2, error
+    buffer, error = pipeline.run(capture_stdout=True)
+    return buffer, error
 
 
 async def _error(
@@ -193,12 +193,16 @@ async def _error(
 ):
     command = interaction.command
     logger.exception(f"An error occurred in {command.name}")
-    description = "An unexpected error has occurred."
-    match exc:
-        case ValueError(msg):
-            description = msg
-        case ffmpeg.Error():
-            description = "Something happened to FFmpeg..."
+    description: str = "An unexpected error has occurred."
+    if isinstance(exc, app_commands.CommandInvokeError):
+        match exc.original:
+            case ValueError() as exc_orig:
+                description = str(exc_orig)
+            case ffmpeg.FFMpegExecuteError():
+                description = "Something happened to FFmpeg..."
+            case _:
+                # Don't report exception message
+                pass
 
     embed = discord.Embed(
         title="❌Error",
@@ -244,23 +248,23 @@ async def avemygo(
     logger.info(f"Server ID: {interaction.guild_id} Request: {text}")
 
     result = None
-    with search.ix.searcher() as searcher:
+    with search.ix.searcher() as searcher:  # type: ignore
         result = search.search(searcher, text)
         if len(result) == 0:
             raise ValueError("No lines were found, please try again.")
 
-        result = result[0].fields()
+        result = result[0].fields()  # type: ignore
 
     await interaction.response.defer()
 
     start_time = datetime.now()
 
-    start_ms = result["start"]
-    start_offset_ms = max(0, start_ms + int(second * 1000))
+    start_ms = result["start"]  # type: ignore
+    start_offset_ms = max(0, start_ms + int(second * 1000))  # type: ignore
     buffer, _ = await asyncio.to_thread(
         ffmpeg_image,
-        result["show"],
-        result["filename"],
+        result["show"],  # type: ignore
+        result["filename"],  # type: ignore
         start_offset_ms,
     )
 
@@ -309,12 +313,12 @@ async def avemygogif(
         raise ValueError(f"The maximum duration for GIF creation is {max_dur_limit}s.")
 
     result = None
-    with search.ix.searcher() as searcher:
+    with search.ix.searcher() as searcher:  # type: ignore
         result = search.search(searcher, text)
         if len(result) == 0:
             raise ValueError("No lines were found, please try again.")
 
-        result = result[0].fields()
+        result = result[0].fields()  # type: ignore
 
     await interaction.response.defer()
     embed = discord.Embed(
@@ -322,21 +326,22 @@ async def avemygogif(
         description="Depending on the complexity of the picture, it may take some time.",
         color=discord.Color.green(),
     )
+    # wait=True needed for type checker to use correct return type
     msg = interaction.extras["msg"] = await interaction.followup.send(
-        embed=embed, ephemeral=True
+        wait=True, embed=embed, ephemeral=True
     )
 
     start_time = datetime.now()
 
     duration_limit = int(duration_limit * 1000)
-    start_ms = result["start"]
-    end_ms = result["end"]
-    duration = min(end_ms - start_ms, duration_limit)
+    start_ms = result["start"]  # type: ignore
+    end_ms = result["end"]  # type: ignore
+    duration = min(end_ms - start_ms, duration_limit)  # type: ignore
     buffer2, _ = await asyncio.to_thread(
         ffmpeg_gif,
-        result["show"],
-        result["filename"],
-        start_ms,
+        result["show"],  # type: ignore
+        result["filename"],  # type: ignore
+        start_ms,  # type: ignore
         duration,
     )
 
@@ -364,6 +369,8 @@ async def avemygogif(
 
 async def bot_run():
     DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+    if not DISCORD_TOKEN:
+        raise OSError("missing required environment variable DISCORD_TOKEN")
 
     async with bot:
         await bot.start(DISCORD_TOKEN, reconnect=True)

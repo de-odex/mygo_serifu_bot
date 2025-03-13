@@ -1,5 +1,4 @@
 import re
-from contextlib import contextmanager
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -21,7 +20,7 @@ class Episode:
         name: str
         text: str
 
-    filename: Path
+    filename: str
     lines: list[Line] = field(default_factory=list)
 
     @property
@@ -49,13 +48,13 @@ class Episode:
             raise ValueError("No English subtitles found")
 
         # I AM LAZY I AM SO SORRY ABOUT THIS UGLY BLOCK
-        sub_files = []
+        sub_files: list[bytes] = []
         for stream in subtitle_streams:
             stream_index = stream["index"]
-            out, err = (
+            out, _ = (
                 ffmpeg.input(path)
-                .output("pipe:1", map=f"0:{stream_index}", format="ass")
-                .global_args("-n", "-loglevel", "error")
+                .output(filename="pipe:1", map=f"0:{stream_index}", f="ass")
+                .global_args(n=True, loglevel="error")
                 .run(capture_stdout=True)
             )
             sub_files.append(out)
@@ -87,7 +86,7 @@ class Episode:
 def gen_metadata() -> dict[str, list[Episode]]:
     """Generate the video and subtitle metadata if not found."""
     logger.info("Generating video metadata")
-    shows = {
+    shows: dict[str, list[Episode]] = {
         "mygo": [],
         "ave mujica": [],
     }
